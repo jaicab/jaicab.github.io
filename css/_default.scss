@@ -1,0 +1,34 @@
+// Colors
+$color-main: #069;
+$color-alt: #333;
+$color-back: #e6e6e6;
+
+
+// Fonts
+$font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-alt: Georgia, "Century Schoolbook", "Palatino Linotype", "Books Antiqua", Palatino, serif;
+
+$font-size: .5em;
+$font-size-small: 0.85em;
+$font-size-big: 1/0.85em;
+
+
+// Breakpoints
+$bp-mobile-small: "(min-width: "+(320/16)+"em)";
+$bp-mobile-big: "(min-width: "+(480/16)+"em)";
+$bp-tablet-small: "(min-width: "+(640/16)+"em)";
+$bp-tablet-big: "(min-width: "+(720/16)+"em)";
+$bp-desktop-small: "(min-width: "+(960/16)+"em)";
+$bp-desktop-big: "(min-width: "+(1360/16)+"em)";
+
+$bp-retina: "only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi)";
+
+$bp-print: "print";
+
+
+// Margins
+$margin: 0.75em;
+$round: 2px;
+
+

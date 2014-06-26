@@ -4,7 +4,10 @@ email: contact@jaicab.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 baseurl: ""
 url: "http://jaicab.com"
+username: "jaicab"
+twitter: "jaicab_"
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude: [README.md, css/*.scss]
