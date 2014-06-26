@@ -1,0 +1,75 @@
+
+
+.page-header{
+	background: $color-main;
+	color: $color-back;
+	position: relative;
+	border-bottom: $margin solid $color-main;
+
+	.logo{
+		font-weight: 900;
+		text-align: center;
+		font-size: 1.5em;
+		line-height: 1.75;
+		padding-top: $margin/2;
+
+		a{
+			color: $color-back !important;
+		}
+
+		.page-description{
+			display: none;
+			visibility: none;
+		}
+	}
+
+	@include bp(mobile-small) {
+		overflow: auto; 
+
+		.logo{
+			width: 30%;
+			float: left;
+		}
+	}
+
+	@include bp(mobile-big) {
+
+		.logo__j::after{
+			content: 'AI';
+		}
+		.logo__c::after{
+			content: 'AB';
+		}
+
+	}
+	@include bp(desktop-small) {
+		padding-left: 1em;
+
+		.logo{
+			font-size: 2em;
+			width: auto;
+			text-align: left;
+
+			.page-description{
+				display: block;
+				visibility: visible;
+				font-weight: 500;
+				font-size: 0.5em;
+				line-height: 1;
+				padding: 0 0 $margin 0;
+			}
+		}
+
+		.logo__j::after{
+			content: 'AIME';
+		}
+		.logo__c::after{
+			content: 'ABALLERO';
+		}
+
+		.logo__c::before{
+			content: ' ';
+		}
+		
+	}
+}

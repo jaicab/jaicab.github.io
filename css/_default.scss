@@ -1,14 +1,23 @@
+
 // Colors
 $color-main: #069;
+$color-main-2: darken($color-main, 10%);
+$color-main-3: darken($color-main, 20%);
 $color-alt: #333;
-$color-back: #e6e6e6;
+$color-back: #f2f2f2;
+$color-text: #111;
+
+
+// Margins
+$margin: 1em;
+$round: 2px;
 
 
 // Fonts
-$font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font: "Cooper Hewitt", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-alt: Georgia, "Century Schoolbook", "Palatino Linotype", "Books Antiqua", Palatino, serif;
 
-$font-size: .5em;
+$font-size: 1.2em;
 $font-size-small: 0.85em;
 $font-size-big: 1/0.85em;
 
@@ -25,10 +34,5 @@ $bp-retina: "only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi)";
 
 $bp-print: "print";
-
-
-// Margins
-$margin: 0.75em;
-$round: 2px;
 
 

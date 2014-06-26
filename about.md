@@ -1,5 +1,7 @@
 ---
 layout: page
+header: header-dark
+
 title: About
 permalink: /about/
 ---

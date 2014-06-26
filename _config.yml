@@ -1,7 +1,8 @@
 # Site settings
 title: Jaime Caballero
 email: contact@jaicab.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Freelance front-end architect based in Spain"
+intro: "Jaime Caballero is a front-end architect, designer and developer from Spain."
 baseurl: ""
 url: "http://jaicab.com"
 username: "jaicab"

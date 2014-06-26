@@ -1,0 +1,51 @@
+@mixin ch($path, $bold, $italic){
+
+  @font-face {
+    font-family: "Cooper Hewitt";
+    src: url('../cdn/font/CooperHewitt-' + $path + '.eot');
+    src: url('../cdn/font/CooperHewitt-' + $path + '.eot?#iefix') format('embedded-opentype'),
+         url('../cdn/font/CooperHewitt-' + $path + '.woff') format('woff'),
+         url('../cdn/font/CooperHewitt-' + $path + '.ttf') format('truetype'),
+         url('../cdn/font/CooperHewitt-' + $path + '.svg#' + $path) format('svg');
+
+    @if $bold{
+      font-weight: $bold;
+    }
+    @if $italic{
+      font-style: italic;
+    }
+  }
+
+}
+
+
+// MEDIA QUERY MIXIN
+@mixin bp($point) {
+  @if $point == retina {
+    @media #{$bp-retina}  { @content; }
+  }
+  @else if $point == print {
+    @media #{$bp-print}  { @content; }
+  }
+  @else if $point == desktop-big {
+    @media #{$bp-desktop-big} { @content; }
+  }
+  @else if $point == desktop-small {
+    @media #{$bp-desktop-small} { @content; }
+  }
+  @else if $point == tablet-big {
+    @media #{$bp-tablet-big}  { @content; }
+  }
+  @else if $point == tablet-small {
+    @media #{$bp-tablet-small}  { @content; }
+  }
+  @else if $point == mobile-big {
+    @media #{$bp-mobile-big}  { @content; }
+  }
+  @else if $point == mobile-small {
+    @media #{$bp-mobile-small}  { @content; }
+  }
+  @else {
+    @warn "Value not supported";
+  }
+}

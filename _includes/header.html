@@ -1,11 +1,19 @@
-<header>
+<header class="page-header">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <div class="wrap">
 
-    <nav class="site-nav">
-      {% for page in site.pages %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endfor %}
+    <div class="logo"><a class="site-title" href="{{ site.baseurl }}/" title="{{ site.title }}">
+      <span class="logo__j">J</span><span class="logo__c">C</span>
+      <div class="page-description">{{ site.description }}</div>
+    </a></div>
+
+    <nav class="page-nav" role="nav">
+      <ul>
+        <li><a class="page-link" href="/about/">ABOUT</a></li>
+        <li><a class="page-link" href="/work/">WORK</a></li>
+      </ul>
     </nav>
+
+  </div>
 
 </header>

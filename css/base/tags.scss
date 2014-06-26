@@ -1,3 +1,63 @@
-body{
-	background: $color-main;
+html{
+	background: $color-back;
+	background-size: 100% auto;
+	font: $font-size $font;
+	line-height: 1.5;
+	color: $color-text;
 }
+
+img{
+	max-width: 100%;
+}
+
+
+a{
+	color: $color-main;
+	text-decoration: none;
+	transition: 0.5s all;
+
+	&:hover,
+	&:active,
+	&:focus{
+		color: darken($color-main, 20%);
+	}
+}
+
+ul{
+	list-style: square;
+	padding: 0 0 0 $margin;
+}
+
+
+h1,h2,h3,h4,h5,h6{
+	font-weight: 300;
+	margin: 0;
+	line-height: 1;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+// Classes
+
+%wrap{
+	max-width: 90%;
+	margin: 0 auto;
+}
+section .wrap{
+	@extend %wrap;
+	padding: $margin;
+}
+
+.header-dark header{
+	border-color: $color-main-2;
+}
+
+.header-darker header{
+	border-color: $color-main-3;
+}
+
