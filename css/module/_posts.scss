@@ -4,17 +4,30 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	background: $color-main;
+	text-shadow: 0 1px 0 $color-main-3;
 
-	@for $i from 1 to 10{
-		.post:nth-child(#{$i}){
-			background: darken($color-main, 5% * $i);
+	@for $i from 1 to 12{
+		.post__link:nth-child(#{$i}){
+			background: lighten($color-main-3, 5% * $i);
 		}
 	}
 }
 
-.post{
+.post__link{
 	color: $color-back;
-	padding: $margin;
+	padding: $margin $margin $margin 0;
+
+	&:hover,
+	&:active,
+	&:focus{
+		background: $color-alt !important;
+	}
+
+	@include bp(desktop-small) {
+		margin-left: -700px;
+		padding-left: 700px;
+	}
 }
 
 .post__time{
@@ -23,7 +36,8 @@
 	text-align: right;
 }
 
-.post__link{
+.post__link a{
 	display: block;
 	color: $color-back;
+	padding-left: $margin/2; //fixes the padding and mantains the isle
 }

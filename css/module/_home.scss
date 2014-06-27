@@ -1,0 +1,17 @@
+
+.home-section,
+.home-aside{
+	padding-top: $margin/2;
+}
+
+.home-aside{
+	padding-left: $margin;
+	padding-right: $margin;
+}
+
+@include bp(desktop-small) {
+	.home-section,
+	.home-aside{
+		padding-top: 0;
+	}
+}

@@ -38,7 +38,7 @@ ul{
 %header{
 	font-weight: 300;
 	margin: 0;
-	line-height: 1;
+	line-height: 1.2;
 }
 
 h1, .h1{
@@ -65,12 +65,11 @@ nav ul{
 // Classes
 
 %wrap{
-	max-width: 90%;
+	max-width: 1100px;
 	margin: 0 auto;
 }
-section .wrap{
+.wrap{
 	@extend %wrap;
-	padding: $margin;
 }
 
 .header-dark header{

@@ -1,30 +1,55 @@
 ---
 layout: default
 ---
-<div class="grid">
-  <section class="g--two-thirds">
+<div class="wrap grid">
+  <section class="home-section g--two-thirds">
   <div class="">
-
 
     <ul class="posts">
       {% for post in site.posts %}
       {% for post in site.posts %}
-        <li class="post">
+        <li class="post__link">
           <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-          <h2><a class="post__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} {{ post.title }} {{ post.title }}</a></h2>
+        </li>
+        <li class="post__link">
+          <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        </li>
+        <li class="post__link">
+          <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         </li>
       {% endfor %}
       {% endfor %}
     </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
   </div>
+  <ol class="pagination">
+    <li class="pagination__prev">
+        {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+            <a href="/">Previous</a>
+        {% else %}
+            <a href="/page{{paginator.previous_page}}">Previous</a>
+        {% endif %}
+        {% else %}
+            Previous
+        {% endif %}
+    </li><li class="pagination__next">
+        {% if paginator.next_page %}
+            <a href="/page{{paginator.next_page}}">Next</a>
+        {% else %}
+            Next
+        {% endif %}
+    </li>
+  </ol>
   </section>
 
-  <aside class="g--one-third g-padding-left">
+  <aside class="home-aside g--one-third g-padding-left">
 
-    <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, <b>consectetur adipisicing</b> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   </aside>
 </div>

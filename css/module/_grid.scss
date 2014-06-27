@@ -17,16 +17,16 @@
 }
 
 
-@include bp(desktop-small) {
+@include bp(tablet-big) {
 
 	.g--two-thirds{
 		float: left;
-		width: 70%;
+		width: 65%;
 	}
 
 	.g--one-third{
 		float: left;
-		width: 30%;
+		width: 35%;
 	}
 
 }

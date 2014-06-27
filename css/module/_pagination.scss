@@ -1,0 +1,19 @@
+
+.pagination{
+	text-align: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pagination__prev,
+.pagination__next{
+	display: inline-block;
+	color: $color-alt;
+	padding: $margin;
+	font-weight: 300;
+
+	a{
+		font-weight: 500;
+	}
+}

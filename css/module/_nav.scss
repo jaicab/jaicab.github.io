@@ -6,7 +6,7 @@
 	line-height: 2;
 
 	@for $i from 1 to 4{
-		li:nth-child(#{$i}){
+		li:nth-child(#{$i}) a{
 			background: darken($color-main, 10% * $i);
 		}
 	}
@@ -54,6 +54,9 @@
 	}
 
 	@include bp(desktop-small) {
-		padding: $margin*3 $margin*2 $margin/2 $margin*2;
+		text-transform: lowercase;
+		padding: $margin*2 $margin*2 $margin/2 $margin*2;
+		color: $color-main;
+		background: none !important;
 	}
 }

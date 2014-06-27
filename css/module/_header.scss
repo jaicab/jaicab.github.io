@@ -14,7 +14,7 @@
 		padding-top: $margin/2;
 
 		a{
-			color: $color-back !important;
+			color: inherit;
 		}
 	}
 
@@ -44,6 +44,8 @@
 	}
 	@include bp(desktop-small) {
 		padding-left: 1em;
+		color: $color-main;
+		background: none;
 
 		.logo{
 			font-size: 2em;
