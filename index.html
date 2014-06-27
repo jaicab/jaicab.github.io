@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <div class="wrap grid">
   <section class="home-section g--two-thirds">
   <div class="">
@@ -11,10 +12,6 @@ layout: default
         <li class="post__link">
           <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
           <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} {{ post.title }} {{ post.title }}</a></h2>
-        </li>
-        <li class="post__link">
-          <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         </li>
         <li class="post__link">
           <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
