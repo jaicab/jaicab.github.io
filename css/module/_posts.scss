@@ -4,29 +4,56 @@
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	background: $color-main;
 	text-shadow: 0 1px 0 $color-main-3;
+	transition: all .5s;
+}
 
-	@for $i from 1 to 12{
-		.post__link:nth-child(#{$i}){
-			background: lighten($color-main-3, 5% * $i);
+@keyframes posts {
+	0%{
+		transform: translateX(-50%);
+	}
+	100%{
+		transform: translateZ(0);
+	}
+}
+
+// Magic happens
+@for $i from 1 to 11{
+	.posts .post__link:nth-child(#{$i}){
+		background: darken(lighten($color-main, 15%), 4% * $i);
+	}
+}
+
+@include bp(tablet-big) {
+	@for $i from 1 to 11{
+
+		.posts .post__link:nth-child(#{$i}){
+			animation: posts ($i*0.9)*0.3s ease-out;
+		}
+
+	}
+
+	.post__link{
+
+		&:hover,
+		&:active,
+		&:focus{
+			transform: scale(1.05);
+			box-shadow: 0 0 $margin $color-alt;
 		}
 	}
 }
 
 .post__link{
 	color: $color-back;
+	background: $color-main;
 	padding: $margin $margin $margin 0;
+	transition: 0.25s all;
 
-	&:hover,
-	&:active,
-	&:focus{
-		background: $color-alt !important;
-	}
 
 	@include bp(desktop-small) {
-		margin-left: -700px;
-		padding-left: 700px;
+		margin-left: -800px;
+		padding-left: 800px;
 	}
 }
 
@@ -37,7 +64,13 @@
 }
 
 .post__link a{
-	display: block;
+	display: inline-block;
 	color: $color-back;
-	padding-left: $margin/2; //fixes the padding and mantains the isle
+	margin-left: $margin/2; //fixes the padding and mantains the isle
+
+	&:hover,
+	&:active,
+	&:focus{
+		text-decoration: underline;
+	}
 }

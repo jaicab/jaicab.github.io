@@ -42,14 +42,12 @@
 
 	box-shadow: 0 0 $color-back inset;
 
-	transition:  box-shadow .25s;
+	transition: background-color .25s;
 
 	&:hover,
 	&:focus,
 	&:active{
-		transition: color .25s,  box-shadow 0.5s 0 cubic-bezier(.06,.94,.66,1.63);
-
-		box-shadow: 0 (-$font-size*3) $color-back inset;
+		background-color: $color-back;
 		color: $color-main;
 	}
 
@@ -58,5 +56,13 @@
 		padding: $margin*2 $margin*2 $margin/2 $margin*2;
 		color: $color-main;
 		background: none !important;
+		transition: color .25s,  box-shadow 0.5s 0 ease-out;
+
+		&:hover,
+		&:focus,
+		&:active{
+			box-shadow: 0 ($font-size*4) $color-main inset;
+			color: $color-back;
+		}
 	}
 }

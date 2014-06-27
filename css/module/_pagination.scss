@@ -10,7 +10,7 @@
 .pagination__next{
 	display: inline-block;
 	color: $color-alt;
-	padding: $margin;
+	padding: $margin*2 $margin;
 	font-weight: 300;
 
 	a{

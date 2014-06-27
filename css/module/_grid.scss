@@ -21,11 +21,23 @@
 
 	.g--two-thirds{
 		float: left;
-		width: 65%;
+		width: 50%;
 	}
 
 	.g--one-third{
 		float: left;
+		width: 50%;
+	}
+
+}
+
+@include bp(desktop-small) {
+
+	.g--two-thirds{
+		width: 65%;
+	}
+
+	.g--one-third{
 		width: 35%;
 	}
 

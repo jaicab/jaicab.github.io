@@ -37,8 +37,9 @@ ul{
 
 %header{
 	font-weight: 300;
-	margin: 0;
+	margin: .75em 0 0 0;
 	line-height: 1.2;
+	color: $color-main;
 }
 
 h1, .h1{
@@ -48,11 +49,12 @@ h1, .h1{
 
 h2, .h2{
 	@extend %header;
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
 h3, .h3{
 	@extend %header;
+	font-size: 1.2em;
 }
 
 nav ul{

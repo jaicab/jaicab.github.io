@@ -1,17 +1,32 @@
 
-.home-section,
-.home-aside{
+.home__section,
+.home__aside{
 	padding-top: $margin/2;
 }
 
-.home-aside{
+.home__aside{
 	padding-left: $margin;
 	padding-right: $margin;
 }
 
+@include bp(tablet-big) {
+	.home__section,
+	.home__aside{
+		padding-top: $margin;
+	}
+
+	.home__aside{
+		padding-left: $margin*2;
+	}
+}
+
 @include bp(desktop-small) {
-	.home-section,
-	.home-aside{
+	.home__section,
+	.home__aside{
 		padding-top: 0;
+	}
+
+	.home__aside{
+		padding-left: $margin*3;
 	}
 }
