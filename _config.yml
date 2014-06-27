@@ -12,6 +12,7 @@ twitter: "jaicab_"
 markdown: kramdown
 permalink: pretty
 exclude: [README.md, css/*.scss]
+highlighter: pygments
 
 # Pagination
 paginate: 1

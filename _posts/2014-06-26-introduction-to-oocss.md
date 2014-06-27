@@ -21,7 +21,7 @@ Abstraction is the very first thing you have to consider when buildin a CSS obje
 ##Let's do a quick example
 Applying these principles can be difficult at first. Let's see how this would apply in a real piece of code like this one:
 
-    :::scss
+{% highlight css %}
 	/* The bad way */
 	.box-1 {
 		border: 1px solid #CCC;
@@ -35,6 +35,7 @@ Applying these principles can be difficult at first. Let's see how this would ap
 		height: 120px
 		border-radius: 10px;
 	}
+{% endhighlight %}
 
 As you can see, we're repeating code, so if we had to change the `border-radius` or the `background` it would mean to check all the places it's been set. How do we make it more scalable and easy to mantain? We can abstract the visual properties into another class.
 

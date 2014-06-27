@@ -68,6 +68,15 @@
 	color: $color-back;
 	margin-left: $margin/2; //fixes the padding and mantains the isle
 
+	.header-dark .post_link:nth-child(1){
+		background: $color-main-2;
+	}
+
+	.header-darker .post_link:nth-child(3){
+		background: $color-main-3;
+	}
+
+
 	&:hover,
 	&:active,
 	&:focus{
