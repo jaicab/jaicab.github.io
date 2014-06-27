@@ -1,0 +1,29 @@
+
+
+.posts{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	@for $i from 1 to 10{
+		.post:nth-child(#{$i}){
+			background: darken($color-main, 5% * $i);
+		}
+	}
+}
+
+.post{
+	color: $color-back;
+	padding: $margin;
+}
+
+.post__time{
+	font-weight: 300;
+	display: block;
+	text-align: right;
+}
+
+.post__link{
+	display: block;
+	color: $color-back;
+}

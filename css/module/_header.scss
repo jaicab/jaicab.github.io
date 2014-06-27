@@ -4,23 +4,23 @@
 	background: $color-main;
 	color: $color-back;
 	position: relative;
-	border-bottom: $margin solid $color-main;
+	border-top: $margin/2 solid $color-main;
 
 	.logo{
 		font-weight: 900;
 		text-align: center;
 		font-size: 1.5em;
-		line-height: 1.75;
+		line-height: 1.5;
 		padding-top: $margin/2;
 
 		a{
 			color: $color-back !important;
 		}
+	}
 
-		.page-description{
-			display: none;
-			visibility: none;
-		}
+	.page-description{
+		display: none;
+		visibility: none;
 	}
 
 	@include bp(mobile-small) {
@@ -49,15 +49,14 @@
 			font-size: 2em;
 			width: auto;
 			text-align: left;
-
-			.page-description{
-				display: block;
-				visibility: visible;
-				font-weight: 500;
-				font-size: 0.5em;
-				line-height: 1;
-				padding: 0 0 $margin 0;
-			}
+		}
+		.page-description{
+			display: block;
+			visibility: visible;
+			font-weight: 500;
+			font-size: 0.5em;
+			line-height: 1;
+			padding: $margin/2 0 $margin 0;
 		}
 
 		.logo__j::after{

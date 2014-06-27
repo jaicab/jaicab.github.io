@@ -1,0 +1,32 @@
+
+
+.grid{
+	&::after{
+		content: '';
+		display: table;
+	}
+}
+
+%g{
+	float:left;
+}
+
+.g--half{
+	@extend %g;
+	width: 50%;
+}
+
+
+@include bp(desktop-small) {
+
+	.g--two-thirds{
+		float: left;
+		width: 70%;
+	}
+
+	.g--one-third{
+		float: left;
+		width: 30%;
+	}
+
+}

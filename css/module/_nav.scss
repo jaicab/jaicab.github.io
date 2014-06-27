@@ -5,25 +5,6 @@
 	text-align: center;
 	line-height: 2;
 
-	a{
-		display: block;
-		color: $color-back;
-		padding-top: $margin/2;
-
-		box-shadow: 0 0 $color-back inset;
-
-		transition:  box-shadow .25s;
-
-		&:hover,
-		&:focus,
-		&:active{
-			transition: color .25s,  box-shadow 0.5s 0 cubic-bezier(.06,.94,.66,1.63);
-
-			box-shadow: 0 (-$font-size*3) $color-back inset;
-			color: $color-main;
-		}
-	}
-
 	@for $i from 1 to 4{
 		li:nth-child(#{$i}){
 			background: darken($color-main, 10% * $i);
@@ -45,14 +26,34 @@
 	@include bp(desktop-small) {
 		width: auto;
 		float: right;
-		line-height: 2.5;
-		font-size: 1.5em;
+		line-height: 2;
+		font-size: 1.2em;
 
 		li{
 			width: auto;
 		}
-		a{
-			padding: $margin*2 $margin*2 0 $margin*2;
-		}
+	}
+}
+
+.page-nav__link{
+	display: block;
+	color: $color-back;
+	padding-top: $margin/2;
+
+	box-shadow: 0 0 $color-back inset;
+
+	transition:  box-shadow .25s;
+
+	&:hover,
+	&:focus,
+	&:active{
+		transition: color .25s,  box-shadow 0.5s 0 cubic-bezier(.06,.94,.66,1.63);
+
+		box-shadow: 0 (-$font-size*3) $color-back inset;
+		color: $color-main;
+	}
+
+	@include bp(desktop-small) {
+		padding: $margin*3 $margin*2 $margin/2 $margin*2;
 	}
 }

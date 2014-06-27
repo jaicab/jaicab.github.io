@@ -1,4 +1,13 @@
-@mixin ch($path, $bold, $italic){
+@mixin centered($width: 60em){
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+// Creates the font-face for Cooper Hewitt
+@mixin ch($path, $bold: 500, $italic: false){
 
   @font-face {
     font-family: "Cooper Hewitt";
