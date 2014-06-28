@@ -3,9 +3,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale:1.0">
-    <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
 
     <!-- Fetch CDN DNS -->
     <link rel="dns-prefetch" href="//cdn.jaicab.com">
@@ -20,7 +18,9 @@
     <meta name="twitter:title" content="{{ page.title }} – Jaime Caballero">
     {% if page.meta %}
         <meta name="twitter:description" content="{{ page.meta }}">
+        <meta name="description" content="{{ page.meta }}">
     {% endif %}
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <!--<link rel="stylesheet" type="text/css" href="//cdn.jaicab.com/main.css">-->
 </head>
