@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The"
+title:  "The things so long that wouldn't fit where other titles did in the past"
 ---
 
 Tired of all those meaningless classes sprinkled all over your HTML? Well, don't worry, at the end of this post you will know how to write clean, object-oriented CSS. And if you combine it with Sass you get best of both worlds: modular, maintainable and scalable CSS. 

@@ -33,6 +33,7 @@
 %post-related__item{
 	@extend .h3;
 
+	margin-top: 0;
 	color: $color-back;	
 	padding: $margin;
 	transition: all 0.5s;
@@ -71,11 +72,13 @@
 		margin-bottom: $margin;
 		float: left;
 		transform: scale(0.9) translateX($margin*2);
+	}
 
+	@include bp(desktop-small) {
 		&:hover,
 		&:active,
 		&:focus{
-			transform: scale(0.9) translateX($margin*3);
+			transform: scale(0.9) translateX($margin*4);
 		}
 	}
 
@@ -105,12 +108,13 @@
 	@include bp(tablet-big) {
 		margin-bottom: $margin;
 		float: right;
-		transform: scale(1.1);
+	}
+	@include bp(desktop-small) {
 
 		&:hover,
 		&:active,
 		&:focus{
-			transform: scale(1.1) translateX(-$margin*2);
+			transform: scale(1.1) translateX(-$margin);
 		}
 	}
 }
