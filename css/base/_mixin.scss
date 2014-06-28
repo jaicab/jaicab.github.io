@@ -15,11 +15,11 @@
 
   @font-face {
     font-family: "Cooper Hewitt";
-    src: url('../cdn/font/CooperHewitt-' + $path + '.eot');
-    src: url('../cdn/font/CooperHewitt-' + $path + '.eot?#iefix') format('embedded-opentype'),
-         url('../cdn/font/CooperHewitt-' + $path + '.woff') format('woff'),
-         url('../cdn/font/CooperHewitt-' + $path + '.ttf') format('truetype'),
-         url('../cdn/font/CooperHewitt-' + $path + '.svg#' + $path) format('svg');
+    src: url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.eot');
+    src: url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.eot?#iefix') format('embedded-opentype'),
+         url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.woff') format('woff'),
+         url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.ttf') format('truetype'),
+         url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.svg#' + $path) format('svg');
 
     @if $bold{
       font-weight: $bold;
