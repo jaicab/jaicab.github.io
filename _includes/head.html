@@ -6,5 +6,18 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+
+    <!-- Prerender work page -->
+    <link rel="prerender" href="http://jaicab.com/work/">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jaicab_">
+    <meta name="twitter:domain" content="jaicab.com">
+    <meta name="twitter:creator" content="@jaicab">
+    <meta name="twitter:title" content="{{ page.title }} – Jaime Caballero">
+    {% if page.meta %}
+        <meta name="twitter:description" content="{{ page.meta }}">
+    {% endif %}
+
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 </head>

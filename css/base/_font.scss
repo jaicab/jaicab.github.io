@@ -1,8 +1,10 @@
 
 @include ch("Book");
-@include ch("BookItalic", 500, true);
 @include ch("Semibold", 700);
-@include ch("SemiboldItalic", 700, true);
-
 @include ch("Light", 300);
-@include ch("Heavy", 900);
+
+@include bp(mobile-big) {
+	@include ch("BookItalic", 500, true);
+	@include ch("Heavy", 900);
+	@include ch("SemiboldItalic", 700, true);
+}

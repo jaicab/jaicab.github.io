@@ -85,6 +85,19 @@ nav ul{
 	@extend %wrap;
 }
 
+.content,
+%content{
+	padding: 0 $margin;
+
+	@include bp(mobile-big) {
+		padding: $margin $margin*3;
+	}
+
+	@include bp(desktop-small) {
+		padding: $margin;
+	}
+}
+
 .header-dark header{
 	border-color: $color-main-2;
 }

@@ -15,28 +15,98 @@
 }
 
 .post-content{
-	padding: 0 $margin;
+	@extend %content;
 
 	h2, h3, h4, h5, h6{
 		margin-top: $margin;
 	}
-
-	@include bp(mobile-big) {
-		padding: $margin $margin*3;
-	}
-
-	@include bp(desktop-small) {
-		padding: $margin;
-	}
 }
 
 .post-related{
+
 	&:after{
 		content: '';
 		display: table;
 	}
 }
 
-.post-related__left{
-	@extend .post-header;
+%post-related__item{
+	@extend .h3;
+
+	margin: 0;
+	position: relative;
+	color: $color-back;	
+	padding: $margin;
+	transition: all 0.5s;
+
+	a{
+		color: inherit;
+		margin-left: $margin;
+		margin-right: $margin;
+
+		&:hover,
+		&:active,
+		&:focus{
+			text-decoration: underline;
+		}
+	}
 }
+
+.post-related__left{
+	@extend %post-related__item;
+
+	text-align: right;
+	background: $color-main-2;
+
+	&::before{
+		content: 'Previous';
+		display: block;
+		font-style: italic;
+		font-size: 0.5em;
+		padding-bottom: $margin*2;
+	}
+
+	&:hover,
+	&:active,
+	&:focus{
+		transform: scale(1.05) translateX($margin*2);
+	}
+
+	@include island();
+
+	@include bp(tablet-big) {
+		display: inline-block;
+		margin-bottom: $margin;
+		float: left;
+	}
+}
+
+.post-related__right{
+	@extend %post-related__item;
+
+	background: $color-main;
+
+	&::before{
+		content: 'Next';
+		display: block;
+		font-style: italic;
+		font-size: 0.5em;
+		padding-bottom: $margin*2;
+	}
+
+	&:hover,
+	&:active,
+	&:focus{
+		transform: scale(1.05) translateX(-$margin*2);
+	}
+
+	@include island("right");
+
+	@include bp(tablet-big) {
+		display: inline-block;
+		margin-bottom: $margin;
+		float: right;
+	}
+}
+
+
