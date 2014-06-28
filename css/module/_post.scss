@@ -52,7 +52,6 @@
 
 .post-related__left{
 	@extend %post-related__item;
-	@extend .h2;
 
 	text-align: right;
 	background: $color-main-2;
@@ -71,11 +70,12 @@
 	@include bp(tablet-big) {
 		margin-bottom: $margin;
 		float: left;
+		transform: scale(0.9) translateX($margin*2);
 
 		&:hover,
 		&:active,
 		&:focus{
-			transform: scale(1.05) translateX($margin*2);
+			transform: scale(0.9) translateX($margin*3);
 		}
 	}
 
@@ -83,13 +83,16 @@
 
 .post-related__right{
 	@extend %post-related__item;
-
 	background: $color-main;
+
+	//hacky way of doing the island on the right
 	box-shadow: 5em 0 0 $color-main,
 		10em 0 0 $color-main,
 		15em 0 0 $color-main,
 		20em 0 0 $color-main,
-		25em 0 0 $color-main;
+		25em 0 0 $color-main,
+		30em 0 0 $color-main,
+		35em 0 0 $color-main;
 
 	&::before{
 		content: 'Next';
@@ -102,11 +105,12 @@
 	@include bp(tablet-big) {
 		margin-bottom: $margin;
 		float: right;
+		transform: scale(1.1);
 
 		&:hover,
 		&:active,
 		&:focus{
-			transform: scale(1.05) translateX(-$margin*2);
+			transform: scale(1.1) translateX(-$margin*2);
 		}
 	}
 }
