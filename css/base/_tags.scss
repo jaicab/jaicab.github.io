@@ -35,6 +35,17 @@ ul{
 }
 
 
+blockquote{
+	border: 1px solid darken($color-back, 5%);
+	border-left: $margin/2 solid $color-main;
+	margin: $margin 0;
+	padding: $margin/2 $margin;
+	background: lighten($color-back, 20%);
+	font-style: italic;
+	font-weight: 500;
+}
+
+
 %header{
 	font-weight: 300;
 	margin: .75em 0 0 0;
@@ -44,7 +55,7 @@ ul{
 
 h1, .h1{
 	@extend %header;
-	font-size: 2em;
+	font-size: 2.4em;
 }
 
 h2, .h2{

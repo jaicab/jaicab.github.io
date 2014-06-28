@@ -1,8 +1,8 @@
 
-@include ch("Book", 500, false);
-@include ch("Bold", 700, false);
-@include ch("MediumItalic", 500, true);
+@include ch("Book");
+@include ch("BookItalic", 500, true);
+@include ch("Semibold", 700);
+@include ch("SemiboldItalic", 700, true);
 
-@include ch("Light", 300, false);
-@include ch("Heavy", 900, false);
-@include ch("BoldItalic", 700, true);
+@include ch("Light", 300);
+@include ch("Heavy", 900);

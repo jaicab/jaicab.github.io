@@ -1,16 +1,9 @@
 
 
-.page-nav{
+.site-nav{
 	font-weight: 900;
 	text-align: center;
 	line-height: 2;
-
-	@for $i from 1 to 4{
-		li:nth-child(#{$i}) a{
-			background: darken($color-main, 10% * $i);
-		}
-	}
-
 
 	@include bp(mobile-small) {
 		width: 70%;
@@ -35,7 +28,7 @@
 	}
 }
 
-.page-nav__link{
+%site-nav__link{
 	display: block;
 	color: $color-back;
 	padding-top: $margin/2;
@@ -47,7 +40,7 @@
 	&:hover,
 	&:focus,
 	&:active{
-		background-color: $color-back;
+		background-color: $color-back !important;
 		color: $color-main;
 	}
 
@@ -56,7 +49,7 @@
 		padding: $margin*2 $margin*2 $margin/2 $margin*2;
 		color: $color-main;
 		background: none !important;
-		transition: color .2s,  box-shadow 0.4s 0 ease-out;
+		transition: color .1s,  box-shadow 0.2s 0 ease-out;
 
 		&:hover,
 		&:focus,
@@ -64,5 +57,30 @@
 			box-shadow: 0 ($font-size*4) $color-main inset;
 			color: $color-back;
 		}
+	}
+}
+
+
+.site-nav__about{ 
+	@extend %site-nav__link;
+	background: $color-main-2;
+}
+.site-nav__work{
+	@extend %site-nav__link;
+	background: $color-main-3; 
+}
+
+
+@include bp(desktop-small) {
+	.header-dark .site-nav__about{
+		background: $color-main-2 !important;
+		color: $color-back;
+		box-shadow: 0 0 transparent !important;
+	}
+
+	.header-darker .site-nav__work{
+		background: $color-main-3 !important;
+		color: $color-back;
+		box-shadow: 0 0 transparent !important;
 	}
 }

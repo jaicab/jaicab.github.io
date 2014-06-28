@@ -1,0 +1,42 @@
+
+
+.post-header{
+	background: $color-main;
+	padding: $margin;
+	color: $color-back;
+
+	@include island();
+}
+
+.post-header__title{
+	color: inherit;
+	padding: 0;
+	margin: $margin/2 0 0 $margin/2;
+}
+
+.post-content{
+	padding: 0 $margin;
+
+	h2, h3, h4, h5, h6{
+		margin-top: $margin;
+	}
+
+	@include bp(mobile-big) {
+		padding: $margin $margin*3;
+	}
+
+	@include bp(desktop-small) {
+		padding: $margin;
+	}
+}
+
+.post-related{
+	&:after{
+		content: '';
+		display: table;
+	}
+}
+
+.post-related__left{
+	@extend .post-header;
+}

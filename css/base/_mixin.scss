@@ -4,6 +4,10 @@
   margin-right: auto;
 }
 
+@mixin island($dir: "left", $distance: 800px){
+  padding-#{$dir}: $distance;
+  margin-#{$dir}: (-$distance);
+}
 
 
 // Creates the font-face for Cooper Hewitt

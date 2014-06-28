@@ -1,16 +1,33 @@
 ---
 layout: default
 ---
+
 <div class="post">
 <section class="wrap">
 
   <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <time class="post__time" datetime="{{ page.date | date: %F }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+    <h1 class="post-header__title">{{ page.title }}</h1>
   </header>
 
   <article class="post-content">
   {{ content }}
   </article>
+
+  <div class="post-related"> 
+        <div class="post-related__left"> 
+        {% if page.previous.url %} 
+                <a href="{{page.previous.url}}" title="Previous Post: 
+{{page.previous.title}}">&laquo; {{page.previous.title}}</a> 
+        {% endif %} 
+        </div> 
+
+        <div class="post-related__right"> 
+        {% if page.next.url %} 
+                <a href="{{page.next.url}}" title="next Post: 
+{{page.next.title}}">{{page.next.title}} &raquo; </a> 
+        {% endif %} 
+        </div> 
+</div>
 </section>
 </div>

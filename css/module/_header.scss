@@ -1,6 +1,6 @@
 
 
-.page-header{
+.site-header{
 	background: $color-main;
 	color: $color-back;
 	position: relative;
@@ -18,7 +18,7 @@
 		}
 	}
 
-	.page-description{
+	.site-description{
 		display: none;
 		visibility: none;
 	}
@@ -47,12 +47,16 @@
 		color: $color-main;
 		background: none;
 
+		.wrap{
+			padding: 0 1em;
+		}
+
 		.logo{
 			font-size: 2em;
 			width: auto;
 			text-align: left;
 		}
-		.page-description{
+		.site-description{
 			display: block;
 			visibility: visible;
 			font-weight: 500;

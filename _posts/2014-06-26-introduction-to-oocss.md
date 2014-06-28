@@ -3,8 +3,6 @@ layout: post
 title:  "Introduction to OOCSS"
 ---
 
-#Introduction to OOCSS
-
 Tired of all those meaningless classes sprinkled all over your HTML? Well, don't worry, at the end of this post you will know how to write clean, object-oriented CSS. And if you combine it with Sass you get best of both worlds: modular, maintainable and scalable CSS. 
 
 <abbr title="Object Oriented CSS">OOCSS</abbr> is not that different from other CSS methodolgies like [SMACSS](http://smacss.com/) or [BEM](http://bem.info/). All of them aim to separate content from structure by placing CSS styles in reusable modular blocks of code. In fact, I usually mix SMACSS with OOCSS. You should already be using [a standard module definition for Sass](/intermediate/a-standard-module-definition-for-sass). But let's get to the point.
@@ -22,24 +20,24 @@ Abstraction is the very first thing you have to consider when buildin a CSS obje
 Applying these principles can be difficult at first. Let's see how this would apply in a real piece of code like this one:
 
 {% highlight css %}
-	/* The bad way */
-	.box-1 {
-		border: 1px solid #CCC;
-		width: 200px;
-		height: 200px;
-		border-radius: 10px;
-	}
-	.box-2 {
-		border: 1px solid #CCC;
-		width: 120px;
-		height: 120px
-		border-radius: 10px;
-	}
+/* The bad way */
+.box-1 {
+	border: 1px solid #CCC;
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+}
+.box-2 {
+	border: 1px solid #CCC;
+	width: 120px;
+	height: 120px
+	border-radius: 10px;
+}
 {% endhighlight %}
 
 As you can see, we're repeating code, so if we had to change the `border-radius` or the `background` it would mean to check all the places it's been set. How do we make it more scalable and easy to mantain? We can abstract the visual properties into another class.
 
-    :::scss
+{% highlight scss %}
 	/* The good way */
 	.box-1 {
 		width: 200px;
@@ -53,6 +51,7 @@ As you can see, we're repeating code, so if we had to change the `border-radius`
 		border: 1px solid #CCC;
 		border-radius: 10px;
 	}
+{% endhighlight %}
 
 Now we can apply these classes to all our HTML elements, combining them to create extended objects. Remember to keep you classes non-semantic so you can apply them everywhere.
 
@@ -97,32 +96,33 @@ We must use placeholders as objects, and define classes formed only by merging t
 
 Applying all we've seen and using `@extend` to mix base objects we can get clean object-oriented CSS which is very easy to mantain and we don't have to change the HTML all the time.
 
-    :::scss
-	/* The best way */
-	%button {
-		min-width: 100px;
-		padding: 1em;
-		border-radius: 1em;
-	}
-	%twitter-background {
-		color: #fff;
-		background: #55acee;
-	}
-	%facebook-background {
-		color: #fff;
-		background: #3b5998;
-	}
+{% highlight scss %}
+/* The best way */
+%button {
+	min-width: 100px;
+	padding: 1em;
+	border-radius: 1em;
+}
+%twitter-background {
+	color: #fff;
+	background: #55acee;
+}
+%facebook-background {
+	color: #fff;
+	background: #3b5998;
+}
 
-	.btn {
-		&--twitter {
-			@extend %button;
-			@extend %twitter-background;
-		}
-		&--facebook {
-			@extend %button;
-			@extend %facebook-background;
-		}
+.btn {
+	&--twitter {
+		@extend %button;
+		@extend %twitter-background;
 	}
+	&--facebook {
+		@extend %button;
+		@extend %facebook-background;
+	}
+}
+{% endhighlight %}
 
 This produces efficient code that we can use easily in our HTML:
 

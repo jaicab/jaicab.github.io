@@ -15,4 +15,4 @@ exclude: [README.md, css/*.scss]
 highlighter: pygments
 
 # Pagination
-paginate: 1
+paginate: 10
