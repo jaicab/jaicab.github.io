@@ -112,12 +112,23 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/_site\/cdn\/min\/core-ck-ck.js": {
+	"\/_site\/cdn\/js\/modernizr.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/cdn\/min\/core-ck-ck.js",
-		"outputAbbreviatedPath": "\/_site\/cdn\/min\/min\/core-ck-ck-ck.js",
+		"inputAbbreviatedPath": "\/_site\/cdn\/js\/modernizr.js",
+		"outputAbbreviatedPath": "\/_site\/cdn\/js\/min\/modernizr-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/cdn\/js\/webfonts.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cdn\/js\/webfonts.js",
+		"outputAbbreviatedPath": "\/_site\/cdn\/js\/min\/webfonts-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -224,6 +235,28 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
 		"useLibsass": 0
+		},
+	"\/cdn\/js\/modernizr.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/cdn\/js\/modernizr.js",
+		"outputAbbreviatedPath": "\/cdn\/js\/min\/modernizr-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/cdn\/js\/webfonts.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/cdn\/js\/webfonts.js",
+		"outputAbbreviatedPath": "\/cdn\/js\/min\/webfonts-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/css\/_default.scss": {
 		"createSourceMap": 0,
