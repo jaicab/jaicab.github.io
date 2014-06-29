@@ -10,6 +10,10 @@ html{
 	font: $font-size $font;
 	line-height: 1.5;
 	color: $color-text;
+
+	// Removes 300ms delay on MS devices
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
 }
 
 img{

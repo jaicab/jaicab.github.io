@@ -1,3 +1,6 @@
+
+// localStorage fonts caching by https://github.com/hdragomir
+
 (function () {
   "use strict";
   var css_href = './cdn/font.css';
@@ -20,7 +23,12 @@
    // if this is an older browser
     if (!window.localStorage || !window.XMLHttpRequest) {
       var stylesheet = document.createElement('link');
-      stylesheet.href = css_href;
+      
+      //stylesheet.href = css_href;
+      //We'll use the CDN file for the non-cached
+      
+      stylesheet.href = '//cdn.jaicab.com/font.css';
+      
       stylesheet.rel = 'stylesheet';
       stylesheet.type = 'text/css';
       document.getElementsByTagName('head')[0].appendChild(stylesheet);
