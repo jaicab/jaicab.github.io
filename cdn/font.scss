@@ -1,0 +1,32 @@
+
+// Creates the font-face for Cooper Hewitt
+@mixin ch($path, $bold: 500, $italic: false){
+
+  @font-face {
+    font-family: "Cooper Hewitt";
+    src: url('font/CooperHewitt-' + $path + '.eot'),
+         url('font/CooperHewitt-' + $path + '.svg#' + $path) format('svg');
+    //src: url('font/CooperHewitt-' + $path + '.eot?#iefix') format('embedded-opentype'),
+    //     url('font/CooperHewitt-' + $path + '.woff') format('woff'),
+
+    @if $bold{
+      font-weight: $bold;
+    }
+    @if $italic{
+      font-style: italic;
+    }
+  }
+
+}
+
+
+@include ch("Book");
+@include ch("Semibold", 700);
+
+@include ch("BookItalic", 500, true);
+@include ch("Heavy", 900);
+@include ch("SemiboldItalic", 700, true);
+
+@include ch("Light", 300);
+
+@import "base64";
