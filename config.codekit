@@ -114,7 +114,7 @@
 		},
 	"\/_site\/cdn\/js\/modernizr.js": {
 		"fileType": 64,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/cdn\/js\/modernizr.js",
 		"outputAbbreviatedPath": "\/_site\/cdn\/js\/min\/modernizr-ck.js",

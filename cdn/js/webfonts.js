@@ -24,10 +24,10 @@
     if (!window.localStorage || !window.XMLHttpRequest) {
       var stylesheet = document.createElement('link');
       
-      //stylesheet.href = css_href;
+      stylesheet.href = css_href;
       //We'll use the CDN file for the non-cached
       
-      stylesheet.href = '//cdn.jaicab.com/font.css';
+      //stylesheet.href = '//cdn.jaicab.com/font.css';
       
       stylesheet.rel = 'stylesheet';
       stylesheet.type = 'text/css';
