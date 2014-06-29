@@ -1,21 +1,20 @@
 ---
 layout: default
+meta: Jaime Caballero - Front-end architect based on Spain. Articles about Sass, OOCSS, BEM
 ---
 
 <div class="wrap grid home">
-  <section class="home__section g--two-thirds">
-  <div class="">
+  <section class="home__section g--two-thirds" itemscope itemtype="http://schema.org/Blog">
 
     <ul class="posts">
       {% for post in site.posts %}
-        <li class="post__link">
+        <li class="post__link" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
           <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
           <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
         </li>
       {% endfor %}
     </ul>
 
-  </div>
   <ol class="pagination">
     <li class="pagination__prev">
         {% if paginator.previous_page %}
