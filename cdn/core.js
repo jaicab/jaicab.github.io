@@ -1,6 +1,6 @@
 (function () {
   "use strict";
-  var css_href = '//cdn.jaicab.com/font.css';
+  var css_href = './cdn/font.css';
   // a simple event handler wrapper
   function on(el, ev, callback) {
     if (el.addEventListener) {
@@ -9,16 +9,7 @@
       el.attachEvent("on" + ev, callback);
     }
   }
-  
-  // if we have the fonts in localStorage or if we've cached them using the native browser cache
-  if ((window.localStorage && localStorage.font_css_cache) || document.cookie.indexOf('font_css_cache') > -1){
-    // just use the cached version
-    injectFontsStylesheet();
-  } else {
-   // otherwise, don't block the loading of the page; wait until it's done.
-    on(window, "load", injectFontsStylesheet);
-  }
-  
+ 
   // quick way to determine whether a css file has been cached locally
   function fileIsCached(href) {
     return window.localStorage && localStorage.font_css_cache && (localStorage.font_css_cache_file === href);
@@ -66,5 +57,16 @@
     style.innerHTML = text;
     document.getElementsByTagName('head')[0].appendChild(style);
   }
+
+
+  // if we have the fonts in localStorage or if we've cached them using the native browser cache
+  if ((window.localStorage && localStorage.font_css_cache) || document.cookie.indexOf('font_css_cache') > -1){
+    // just use the cached version
+    injectFontsStylesheet();
+  } else {
+   // otherwise, don't block the loading of the page; wait until it's done.
+    on(window, "load", injectFontsStylesheet);
+  }
+  
 
 }());

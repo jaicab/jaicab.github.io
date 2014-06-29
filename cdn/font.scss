@@ -4,10 +4,10 @@
 
   @font-face {
     font-family: "Cooper Hewitt";
-    src: url('font/CooperHewitt-' + $path + '.eot'),
-         url('font/CooperHewitt-' + $path + '.svg#' + $path) format('svg');
-    //src: url('font/CooperHewitt-' + $path + '.eot?#iefix') format('embedded-opentype'),
-    //     url('font/CooperHewitt-' + $path + '.woff') format('woff'),
+    src: url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.eot');
+    src: url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.eot?#iefix') format('embedded-opentype'),
+         url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.woff') format('woff'),
+         url('//cdn.jaicab.com/font/CooperHewitt-' + $path + '.svg#' + $path) format('svg');
 
     @if $bold{
       font-weight: $bold;
@@ -19,7 +19,7 @@
 
 }
 
-
+/*
 @include ch("Book");
 @include ch("Semibold", 700);
 
@@ -28,5 +28,6 @@
 @include ch("SemiboldItalic", 700, true);
 
 @include ch("Light", 300);
+*/
 
 @import "base64";
