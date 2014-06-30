@@ -1,8 +1,8 @@
 
 // Colors
 $color-main: #069;
-$color-main-2: darken($color-main, 10%);
-$color-main-3: darken($color-main, 20%);
+$color-main-2: darken($color-main, 7.5%);
+$color-main-3: darken($color-main, 15%);
 $color-alt: #333;
 $color-boom: #fc0;
 $color-back: #f6f6f6;
@@ -24,12 +24,12 @@ $font-size-big: 1/0.85em;
 
 
 // Breakpoints
-$bp-mobile-small: "(min-width: "+(320/16/1.2)+"em)";
-$bp-mobile-big: "(min-width: "+(480/16/1.2)+"em)";
-$bp-tablet-small: "(min-width: "+(640/16/1.2)+"em)";
-$bp-tablet-big: "(min-width: "+(720/16/1.2)+"em)";
-$bp-desktop-small: "(min-width: "+(960/16/1.2)+"em)";
-$bp-desktop-big: "(min-width: "+(1360/16/1.2)+"em)";
+$bp-mobile-small: "(min-width: "+(320/16)+"em)";
+$bp-mobile-big: "(min-width: "+(480/16)+"em)";
+$bp-tablet-small: "(min-width: "+(640/16)+"em)";
+$bp-tablet-big: "(min-width: "+(720/16)+"em)";
+$bp-desktop-small: "(min-width: "+(960/16)+"em)";
+$bp-desktop-big: "(min-width: "+(1360/16)+"em)";
 
 $bp-retina: "only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-resolution: 192dpi)";

@@ -29,6 +29,11 @@
 		width: 50%;
 	}
 
+	.g--third{
+		float: left;
+		width: 33.33%;
+	}
+
 }
 
 @include bp(desktop-small) {

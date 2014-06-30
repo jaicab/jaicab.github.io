@@ -49,6 +49,7 @@
 		padding: $margin*2 $margin*2 $margin/2 $margin*2;
 		color: $color-main;
 		background: none !important;
+		box-shadow: 0 0 $color-main inset;
 		transition: color .1s,  box-shadow 0.2s 0 ease-out;
 
 		&:hover,

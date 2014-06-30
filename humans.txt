@@ -1,0 +1,23 @@
+/* DEVELOPED BY */
+
+Jaime Caballero
+Email: contact@jaicab.com                            
+Twitter: @jaicab_           
+Location: Spain
+
+    						
+/* THANKS */
+
+The Jekyll guys for such a great product
+http://jekyllrb.com/
+
+Parker Bennet for the social icons
+http://stackicons.com/
+
+Vitaly Friedman for his help with caching font files in localStorage.
+http://smashingmagazine.com
+	                  
+
+/* SITE */        
+Standards: HTML5, CSS3, vanilla JS.
+Software: Sublime Text 3, CodeKit, Jekyll.
