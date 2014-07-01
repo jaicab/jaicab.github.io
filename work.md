@@ -1,7 +1,7 @@
 ---
 layout: page
 header: header-darker
-title: Work
+title: I built this stuff.
 permalink: /work/
 ---
 

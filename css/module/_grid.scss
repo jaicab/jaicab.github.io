@@ -1,9 +1,14 @@
 
 
 .grid{
-	&::after{
-		content: '';
-		display: table;
+	&:before,
+	&:after {
+	    content: " ";
+	    display: table;
+	}
+
+	&:after {
+	    clear: both;
 	}
 }
 
@@ -32,6 +37,11 @@
 	.g--third{
 		float: left;
 		width: 33.33%;
+		padding-right: $margin;
+	}
+
+	.grid .g--third:nth-child(3n){
+		padding-right: 0;
 	}
 
 }

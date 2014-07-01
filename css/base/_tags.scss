@@ -63,7 +63,7 @@ blockquote{
 
 %header{
 	font-weight: 300;
-	margin: .75em 0 0 0;
+	margin: $margin 0 0 0;
 	line-height: 1.2;
 	color: $color-main;
 }
@@ -75,12 +75,27 @@ h1, .h1{
 
 h2, .h2{
 	@extend %header;
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 h3, .h3{
 	@extend %header;
+	font-size: 1.4em;
+}
+
+h4, .h4{
+	@extend %header;
 	font-size: 1.2em;
+}
+
+h5, .h5{
+	@extend %header;
+	font-size: 1em;
+}
+
+h6, .h6{
+	@extend %header;
+	font-size: 0.8em;
 }
 
 nav ul{

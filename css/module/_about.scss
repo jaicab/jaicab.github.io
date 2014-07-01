@@ -5,3 +5,29 @@
 		color: inherit;
 	}
 }
+
+.skills__title{
+	margin: 0;
+}
+
+.skills__level{
+	@extend .h5;
+	color: $color-text;
+	margin: 0;
+}
+
+.skills__quote{
+	display: none;
+	margin: 0;
+
+	@include bp(mobile-big) {
+		font-style: italic;
+		margin-top: $margin/2;
+		display: block;
+	}
+}
+
+.skills__list{
+	padding-top: 0;
+	margin-top: $margin/2;
+}
