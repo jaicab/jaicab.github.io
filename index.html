@@ -1,19 +1,18 @@
 ---
-layout: default
+layout: aside
 meta: Jaime Caballero - Front-end architect based on Spain. Articles about Sass, OOCSS, BEM
 ---
 
-<div class="wrap grid home">
-  <section class="home__section g--two-thirds" itemscope itemtype="http://schema.org/Blog">
+<div itemscope itemtype="http://schema.org/Blog">
 
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li class="post__link" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-          <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-          <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        </li>
-      {% endfor %}
-    </ul>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li class="post__link" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      </li>
+    {% endfor %}
+  </ul>
 
   <ol class="pagination">
     <li class="pagination__prev">
@@ -34,17 +33,4 @@ meta: Jaime Caballero - Front-end architect based on Spain. Articles about Sass,
         {% endif %}
     </li>
   </ol>
-  </section>
-
-  <aside class="home__aside g--one-third g-padding-left">
-
-    <div class="ad">
-      
-    </div>
-
-    <p>I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.</p>
-
-    <p>I created <a title="Paraxify - Progressive enhancement parallax" href="/Paraxify.js/">Paraxify.js</a>, the <b>lightest</b> parallax plugin that <b>enhances progressively</b> from basic background images to a nice parallax effect.</p>
-
-  </aside>
 </div>

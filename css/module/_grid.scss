@@ -24,16 +24,6 @@
 
 @include bp(tablet-big) {
 
-	.g--two-thirds{
-		float: left;
-		width: 50%;
-	}
-
-	.g--one-third{
-		float: left;
-		width: 50%;
-	}
-
 	.g--third{
 		float: left;
 		width: 33.33%;
@@ -49,11 +39,12 @@
 @include bp(desktop-small) {
 
 	.g--two-thirds{
-		width: 65%;
+		float: left;
+		width: 70%;
 	}
 
 	.g--one-third{
-		width: 35%;
+		float: left;
+		width: 30%;
 	}
-
 }

@@ -73,6 +73,10 @@
 
 
 @include bp(desktop-small) {
+	.site-nav__about{ 
+		margin-right: 1em;
+	}
+
 	.header-dark .site-nav__about{
 		background: $color-main-2 !important;
 		color: $color-back;

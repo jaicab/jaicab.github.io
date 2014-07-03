@@ -7,7 +7,7 @@
 }
 
 .skills__title{
-	margin: 0;
+	margin: $margin/2 0 0 0;
 }
 
 .skills__level{
@@ -17,13 +17,26 @@
 }
 
 .skills__quote{
+	position: relative;
 	display: none;
 	margin: 0;
+	background: white;
+	padding: $margin;
 
 	@include bp(mobile-big) {
 		font-style: italic;
 		margin-top: $margin/2;
 		display: block;
+
+		&::before{
+			content: '';
+			position: absolute;
+			bottom: 100%;
+			right: 0;
+			border-left: $margin*2 solid transparent;
+			border-bottom: $margin*2 solid white;
+		}
+
 	}
 }
 

@@ -1,17 +1,26 @@
 ---
 layout: page
-header: header-dark
+class: header-dark
 
 title: I am a front-end architect.
 permalink: /about/
 ---
 
-Hi, I'm Jaime. I am a **front-end architect** from Spain. That means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first responsive designs. 
+<picture>
+	<!--[if IE 9]><video style="display: none;"><![endif]-->
+	<source srcset="http://devimg.com/1200x350/dogs" media="(min-width: 1000px)">
+	<source srcset="http://devimg.com/900x350/comics" media="(min-width: 800px)">
+	<source srcset="http://devimg.com/500x550/movies">
+	<!--[if IE 9]></video><![endif]-->
+	<img srcset="http://devimg.com/800x850/space" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+</picture>
+
+Hi, I'm Jaime. I am a **front-end architect** from Spain. That means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** designs. 
 
 I'm into **progressive enhancement**, so content and performance go always first for me.
-I enjoy creating pixel-perfect, scalable and maintainable CSS code. I follow **OOCSS**, **SMACSS**, **BEM** and **DRY CSS** techniques.
+I enjoy creating pixel-perfect, scalable and maintainable CSS code. I apply **OOCSS**, **SMACSS**, **BEM** and **DRY CSS** techniques.
 
-I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">experiment</a> about CSS and the latest, cutting edge technologies for the web.
+I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
 
 ##Language skills
 
@@ -50,58 +59,42 @@ I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also be
 
 ##Technical skills
 
-I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also because **one sixth of world population** speak it and that's a lot of people I can't talk with if they don't know English.
+I write code with [Sublime Text](http://www.sublimetext.com/3), commit wia **git** and deploy using [Transit](http://panic.com/transmit/).
+I play with the design in [Sketch](http://bohemiancoding.com/sketch/) and iPad's app [Paper by 53](https://www.fiftythree.com/paper).
+I have a forgetful mind but an agile heart, so I organize my work on [Redbooth](https://redbooth.com/) (previously Teambox).
 
-<div class="grid skills">
-	
-	<div class="g--third">
-		<h3 class="skills__title">Front-end</h3>
-		<h4 class="skills__level">It's all about content first.</h4>
-		<ul class="skills__list">
-			<li>HTML5, CSS3</li>
-			<li>Preprocessors
-				<ul>
-					<li>Sass</li>
-					<li>CoffeeScript</li>
-				</ul>
-			</li>
-			<li>JavaScript
-				<ul>
-					<li>Core JS</li>
-					<li>AngularJS</li>
-					<li>jQuery</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+###Sass
+I save time and power up CSS and JavaScript by using **Sass** and sometimes **CoffeScript**. I can't stop till everything is an object with perfect, proportional margins and ratios and also the lightest possible.
+I'm driven by the **80/20 rule**, which says that 80% of the design can be accomplished by 20% of the code.
 
-	<div class="g--third">
-		<h3 class="skills__title">Back-end</h3>
-		<h4 class="skills__level">Performance as design.</h4>
-		<ul class="skills__list">
-			<li>Jekyll</li>
-			<li>PHP</li>
-			<li>MySQL</li>
-			<li>Java</li>
-			<li>Caching, gzip</li>
-		</ul>
-	</div>
+That means **no frameworks**! They add up wheight, unwanted styles and unnecesary dependecies that you have to spend time fixing for the project. I believe that what makes a good front-end is not getting good results with frameworks but getting even better ones without them.
 
-	<div class="g--third">
-		<h3 class="skills__title">Tools</h3>
-		<h4 class="skills__level">Boost up your work.</h4>
-		<ul class="skills__list">
-			<li>CodeKit</li>
-			<li>Git</li>
-			<li>Sketch</li>
-			<li>Photoshop</li>
-		</ul>
-	</div>
+###MVC frameworks
+> "MVC. Maybe Viewable Content." - Scott Jehl
 
-</div>
+Even though I've developed some applications and [open source experiments](https://github.com/jaicab/ciego.es) in AngularJS, **I don't like MVC JavaScript frameworks** because they don't work with **progressive enhancement**. If the framework fails, you get no content at all.
 
+I prefer light core JavaScript that you can apply so it enhances the experience but not depends on it, like I did with [Paraxify.js](https://github.com/jaicab/Paraxify.js).
 
+##UI/UX design skills
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+>"When information is cheap, attention becomes expensive." - James Gleick
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+When you focus on content, you get the inherent UI. In a world where information is cheap, content must be first. A clean, straight-forward markup makes you website SEO friendly and also designer friendly.
+
+I like to say that __if you get the essence of the experience, then the interface comes by itself__.
+
+I've set up a **workflow** that works like CSS, in cascade. The information grows exponentially:
+
+1. Sketch up the info given.
+2. Break it down to pieces.
+3. Do a simple HTML (no CSS, no JS) mock-up spreading the content.
+4. List the separate user experiences you have come up with.
+5. Get them working on a black and white mock-up.
+6. List all the UI objects and design them mobile-first.
+7. Back-end time. Keep JS dependencies to a minimum.
+8. Enhance the experience with JavaScript, if needed.
+9. Re-check dependecies, merge, gzip'em and get them into versioned cache.
+10. Test, test, test and deploy.
+
+It's also important that these experiences work beautifully across as many devices as possible. I love my device lab and mocking up on all of my devices at the same time using **CodeKit**'s live reload and style injection.
