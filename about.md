@@ -6,15 +6,6 @@ title: I am a front-end architect.
 permalink: /about/
 ---
 
-<picture>
-	<!--[if IE 9]><video style="display: none;"><![endif]-->
-	<source srcset="http://devimg.com/1200x350/dogs" media="(min-width: 1000px)">
-	<source srcset="http://devimg.com/900x350/comics" media="(min-width: 800px)">
-	<source srcset="http://devimg.com/500x550/movies">
-	<!--[if IE 9]></video><![endif]-->
-	<img srcset="http://devimg.com/800x850/space" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
-</picture>
-
 Hi, I'm Jaime. I am a **front-end architect** from Spain. That means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** designs. 
 
 I'm into **progressive enhancement**, so content and performance go always first for me.
