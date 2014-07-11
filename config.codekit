@@ -182,7 +182,7 @@
 		},
 	"\/_site\/cdn\/js\/modernizr.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_site\/cdn\/js\/modernizr.js",
 		"outputAbbreviatedPath": "\/_site\/cdn\/js\/min\/modernizr-ck.js",
@@ -213,14 +213,148 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/_site\/css\/main.css": {
-		"fileType": 16,
+	"\/_site\/images\/booksandparty\/desktop.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/css\/main.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"initialSize": 1.38582e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/booksandparty\/desktop.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/booksandparty\/desktop.jpg",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/booksandparty\/mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 293709,
+		"inputAbbreviatedPath": "\/_site\/images\/booksandparty\/mobile.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/booksandparty\/mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/booksandparty\/tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 461156,
+		"inputAbbreviatedPath": "\/_site\/images\/booksandparty\/tablet.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/booksandparty\/tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/copycentro\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.24385e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/copycentro\/desktop.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/copycentro\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/copycentro\/mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 502952,
+		"inputAbbreviatedPath": "\/_site\/images\/copycentro\/mobile.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/copycentro\/mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/copycentro\/tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.0058e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/copycentro\/tablet.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/copycentro\/tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07554e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.09332e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.7473e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/ganor.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/ganor\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.39861e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/ganor\/desktop.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/ganor\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/movilcrash\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 860110,
+		"inputAbbreviatedPath": "\/_site\/images\/movilcrash\/desktop.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/movilcrash\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/movilcrash\/mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 631068,
+		"inputAbbreviatedPath": "\/_site\/images\/movilcrash\/mobile.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/movilcrash\/mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/movilcrash\/tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 810513,
+		"inputAbbreviatedPath": "\/_site\/images\/movilcrash\/tablet.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/movilcrash\/tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/_site\/index.html": {
 		"fileType": 8192,
@@ -241,15 +375,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/_site\/work\/booksandparty.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/work\/booksandparty.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/_site\/work\/booksandparty\/index.html": {
 		"fileType": 8192,
@@ -717,6 +842,149 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/images\/booksandparty\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.38582e+06,
+		"inputAbbreviatedPath": "\/images\/booksandparty\/desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/booksandparty\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/booksandparty\/mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 293709,
+		"inputAbbreviatedPath": "\/images\/booksandparty\/mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/booksandparty\/mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/booksandparty\/tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 461156,
+		"inputAbbreviatedPath": "\/images\/booksandparty\/tablet.jpg",
+		"outputAbbreviatedPath": "\/images\/booksandparty\/tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/copycentro\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.24385e+06,
+		"inputAbbreviatedPath": "\/images\/copycentro\/desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/copycentro\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/copycentro\/mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 502952,
+		"inputAbbreviatedPath": "\/images\/copycentro\/mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/copycentro\/mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/copycentro\/tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.0058e+06,
+		"inputAbbreviatedPath": "\/images\/copycentro\/tablet.jpg",
+		"outputAbbreviatedPath": "\/images\/copycentro\/tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07554e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.09332e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.7473e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/ganor.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/ganor\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.39861e+06,
+		"inputAbbreviatedPath": "\/images\/ganor\/desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/ganor\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/movilcrash\/desktop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 860110,
+		"inputAbbreviatedPath": "\/images\/movilcrash\/desktop.jpg",
+		"outputAbbreviatedPath": "\/images\/movilcrash\/desktop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/movilcrash\/mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 631068,
+		"inputAbbreviatedPath": "\/images\/movilcrash\/mobile.jpg",
+		"outputAbbreviatedPath": "\/images\/movilcrash\/mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/movilcrash\/tablet.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 810513,
+		"inputAbbreviatedPath": "\/images\/movilcrash\/tablet.jpg",
+		"outputAbbreviatedPath": "\/images\/movilcrash\/tablet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -746,15 +1014,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/work\/booksandparty.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/work\/booksandparty.html",
-		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -792,7 +1051,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "jaicab.github.io",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "globe_darkGray"
+	"iconImageName": "meme-grumpy"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 1,

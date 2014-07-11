@@ -5,3 +5,67 @@
 		color: inherit;
 	}
 }
+
+.project{
+	margin-bottom: $margin;
+	overflow: auto;
+	background: white;
+}
+.project__info{
+	padding: $margin;
+}
+
+.project__cover{
+	margin: 1em;
+	position: relative;
+	overflow: hidden;
+
+	a{		
+		&::before{
+			content: 'See the case study';
+			vertical-align: middle;
+   			text-align: center;
+			margin: auto;
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			
+			padding-top: $margin*6.5;
+
+			transition: color .25s, box-shadow .25s .25s, background 0.5s;
+
+			box-shadow: 0 0 0 $color-main-3 inset,
+			 0 0 0 $color-main-2 inset,
+			 0 0 0 $color-main inset;
+			z-index: 100;
+			color: transparent;
+		}
+		&:hover::before{
+			box-shadow: 0 0 0 $margin*2.5 $color-main-3 inset,
+				0 0 0 $margin*5 $color-main-2 inset,
+				0 0 0 $margin*7.5 $color-main inset;
+			color: $color-back;
+			background: darken($color-main, 10%);
+			transition: box-shadow .5s, color .25s .25s, background 0.5s;
+		}
+	}
+}
+
+.project__title{
+	@extend .h3;
+	margin: 0;
+}
+
+.project__done{
+	@extend .h5;
+	margin: 0;
+}
+
+
+@include bp(desktop-small) {
+	.project{
+		margin-bottom: $margin*2;
+	}
+	.project__cover{
+		margin: 1px;
+	}
+}

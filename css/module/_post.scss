@@ -4,8 +4,6 @@
 	background: $color-main;
 	padding: $margin;
 	color: $color-back;
-
-	@include island();
 }
 
 .post-header__title{

@@ -5,8 +5,8 @@
 }
 
 @mixin island($dir: "left", $distance: 800px){
-  padding-#{$dir}: $distance;
-  margin-#{$dir}: (-$distance);
+  padding-#{$dir}: $distance !important;
+  margin-#{$dir}: (-$distance) !important;
 }
 
 

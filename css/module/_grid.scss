@@ -16,11 +16,6 @@
 	float:left;
 }
 
-.g--half{
-	@extend %g;
-	width: 50%;
-}
-
 
 @include bp(tablet-big) {
 
@@ -38,6 +33,18 @@
 
 @include bp(desktop-small) {
 
+	.g--half{
+		float:left;
+		width: 50%;
+
+		&:nth-child(2n){
+			padding-left: $margin;
+		}
+		&:nth-child(2n+1){
+			padding-right: $margin;
+		}
+	}
+	
 	.g--two-thirds{
 		float: left;
 		width: 70%;

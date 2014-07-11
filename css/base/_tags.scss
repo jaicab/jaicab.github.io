@@ -20,6 +20,11 @@ img{
 	max-width: 100%;
 }
 
+a img{
+	display: block;
+	border: none;
+}
+
 p{
 	margin: 1em 0;
 	a{
@@ -125,6 +130,13 @@ nav ul{
 
 	@include bp(desktop-big) {
 		padding: $margin;
+	}
+}
+
+.island{
+	@include island();
+	@include bp(desktop-big) {
+		margin-right: $margin;
 	}
 }
 

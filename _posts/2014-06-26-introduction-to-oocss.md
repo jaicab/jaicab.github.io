@@ -7,7 +7,7 @@ Tired of all those meaningless classes sprinkled all over your HTML? Well, don't
 
 <abbr title="Object Oriented CSS">OOCSS</abbr> is not that different from other CSS methodolgies like [SMACSS](http://smacss.com/) or [BEM](http://bem.info/). All of them aim to separate content from structure by placing CSS styles in reusable modular blocks of code. In fact, I usually mix SMACSS with OOCSS. You should already be using [a standard module definition for Sass](/intermediate/a-standard-module-definition-for-sass). But let's get to the point.
 
-##What is a CSS object?
+## What is a CSS object?
 
 > &ldquo;It's a repeating visual pattern, that can be abstracted into an independent snippet of HTML, CSS and possibly JavaScript.&rdquo; -  Nicole Sullivan
 
@@ -16,7 +16,7 @@ Abstraction is the very first thing you have to consider when buildin a CSS obje
 - **Separate structure and skin**: You should keep the structure and positioning in a base object and the visual features (like `background` or `border`) in extender clases. This way you'd never have to overwrite visual properties.
 - **Separate container and content**: Never rely on HTML structure to write your CSS. So don't use tags or IDs for your objects. Instead, try to create and apply a class that describes the use of the tag in question. This also assures you that any unclassed tags will look the same.
 
-##Let's do a quick example
+## Let's do a quick example
 Applying these principles can be difficult at first. Let's see how this would apply in a real piece of code like this one:
 
 {% highlight css %}
@@ -71,7 +71,7 @@ Besides the unmaintainable HTML, everything else about OOCSS is just great. Our 
 
 So we code the parts in CSS and **extend** them in HTML. Could it get any better?
 
-##Sass comes into play
+## Sass comes into play
 I'm sure you've heard about Sass' `@extend` directive and of course you know [how it works](/intermediate/understanding-placeholder-selectors).
 So, thanks to placeholder selectors we can extend in Sass, creating semantic classes in CSS, solving our problem for HTML.
 
