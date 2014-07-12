@@ -5,7 +5,9 @@
 		color: inherit;
 	}
 }
-
+.portfolio{
+	padding: $margin;
+}
 .project{
 	margin-bottom: $margin;
 	overflow: auto;
@@ -16,36 +18,36 @@
 }
 
 .project__cover{
-	margin: 1em;
+	margin: $margin $margin 0 $margin;
 	position: relative;
 	overflow: hidden;
 
 	a{		
 		&::before{
-			content: 'See the case study';
+			content: 'Case study';
 			vertical-align: middle;
    			text-align: center;
 			margin: auto;
 			position: absolute;
 			top: 0; right: 0; bottom: 0; left: 0;
 			
-			padding-top: $margin*6.5;
+			padding-top: 25%;
 
-			transition: color .25s, box-shadow .25s .25s, background 0.5s;
+			transition: color .1s, box-shadow .1s .1s, background 0.2s;
 
-			box-shadow: 0 0 0 $color-main-3 inset,
+			box-shadow: 0 0 0 $color-main inset,
 			 0 0 0 $color-main-2 inset,
-			 0 0 0 $color-main inset;
+			 0 0 0 $color-main-3 inset;
 			z-index: 100;
 			color: transparent;
 		}
 		&:hover::before{
-			box-shadow: 0 0 0 $margin*2.5 $color-main-3 inset,
-				0 0 0 $margin*5 $color-main-2 inset,
-				0 0 0 $margin*7.5 $color-main inset;
+			box-shadow: 0 0 0 $margin*1.5 $color-main inset,
+				0 0 0 $margin*3 $color-main-2 inset,
+				0 0 0 $margin*4.5 $color-main-3 inset;
 			color: $color-back;
-			background: darken($color-main, 10%);
-			transition: box-shadow .5s, color .25s .25s, background 0.5s;
+			background: darken($color-main-3, 10%);
+			transition: box-shadow .4s, color .2s .1s, background .4s .1s;
 		}
 	}
 }

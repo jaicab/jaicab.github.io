@@ -77,6 +77,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_layouts\/work.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_layouts\/work.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_site\/2014\/06\/25\/welcome-to-jekyll\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -312,6 +321,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/_site\/images\/cover\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33275e+06,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/_site\/images\/ganor\/desktop.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -375,6 +395,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/_site\/work\/booksandparty.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/work\/booksandparty.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/_site\/work\/booksandparty\/index.html": {
 		"fileType": 8192,
@@ -941,6 +970,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/cover\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33474e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/ganor\/desktop.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1022,8 +1062,8 @@
 		"enableSmartyPants": 1,
 		"expandTabs": 1,
 		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/work\/booksandparty.md",
 		"outputAbbreviatedPath": "\/work\/booksandparty.html",
 		"outputPathIsOutsideProject": 0,
