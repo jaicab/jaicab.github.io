@@ -3,7 +3,7 @@
 
 (function () {
   "use strict";
-  var css_href = './cdn/font.css';
+  var css_href = '/cdn/font.css';
   // a simple event handler wrapper
   function on(el, ev, callback) {
     if (el.addEventListener) {
