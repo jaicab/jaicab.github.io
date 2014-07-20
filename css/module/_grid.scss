@@ -55,6 +55,9 @@
 		float: left;
 		width: 30%;
 	}
+}
+
+@include bp(desktop-big) {
 
 	.g--third{
 		width: (100%*1/3);

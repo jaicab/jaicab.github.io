@@ -23,7 +23,7 @@ I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also be
 		<h3 class="skills__title">English</h3>
 		<h4 class="skills__level">Near native</h4>
 		<p class="skills__quote">
-			Hello! I'm Jaime and I'm spanish.
+			Hello! My name is Jaime and I'm spanish.
 			I speak Spanish, English and a little bit of Chinese.
 		</p>
 	</div>
@@ -32,7 +32,7 @@ I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also be
 		<h3 class="skills__title">Spanish</h3>
 		<h4 class="skills__level">Native</h4>
 		<p class="skills__quote">
-			¡Hola! Soy Jaime y soy español.
+			¡Hola! Mi nombre es Jaime y soy español.
 			Hablo español, inglés y un poco de chino.
 		</p>
 	</div>
