@@ -142,14 +142,27 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/cdn\/font.css": {
-		"fileType": 16,
+	"\/_site\/cdn\/core-ck.js": {
+		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/cdn\/font.css",
-		"outputAbbreviatedPath": "No Output Path",
+		"inputAbbreviatedPath": "\/_site\/cdn\/core-ck.js",
+		"outputAbbreviatedPath": "\/_site\/cdn\/min\/core-ck-min.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/cdn\/core.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cdn\/core.js",
+		"outputAbbreviatedPath": "\/_site\/cdn\/min\/core-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_site\/cdn\/font.scss": {
 		"createSourceMap": 0,
