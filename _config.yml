@@ -1,8 +1,7 @@
 # Site settings
-title: Jaime Caballero
+title: "Jaime Caballero, front-end architect from Spain - OOCSS, Sass, BEM, "
 email: contact@jaicab.com
 description: "Freelance front-end architect based in Spain"
-intro: "Jaime Caballero is a front-end architect, designer and developer from Spain."
 baseurl: ""
 url: "http://jaicab.com"
 username: "jaicab"

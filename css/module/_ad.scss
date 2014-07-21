@@ -1,6 +1,17 @@
 
 
 .ad{
-	background: $color-alt;
-	height: 200px;
+	color: mix(red, white, 70%);
+	padding: $margin*2 $margin;
+	padding: 7.5vh $margin;
+	text-align: center;
+	border: $margin/2 solid currentColor;
+}
+
+.ad--good{
+	color: mix(green, white, 70%);
+}
+
+.ad--sortof{
+	color: mix(orange, white, 70%);
 }

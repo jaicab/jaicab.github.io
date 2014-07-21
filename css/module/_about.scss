@@ -7,13 +7,15 @@
 }
 
 .skills__title{
-	margin: $margin/2 0 0 0;
+	margin: $margin/2 $margin/2 0 0;
+	display: inline-block;
 }
 
 .skills__level{
 	@extend .h5;
 	color: $color-text;
 	margin: 0;
+	display: inline-block;
 }
 
 .skills__quote{
@@ -22,8 +24,16 @@
 	margin: 0;
 	background: white;
 	padding: $margin;
+}
 
-	@include bp(mobile-big) {
+.skills__list{
+	padding-top: 0;
+	margin-top: $margin/2;
+}
+
+
+@include bp(mobile-big) {
+	.skills__quote{
 		font-style: italic;
 		margin-top: $margin/2;
 		display: block;
@@ -36,11 +46,12 @@
 			border-left: $margin*2 solid transparent;
 			border-bottom: $margin*2 solid white;
 		}
-
 	}
+	
 }
 
-.skills__list{
-	padding-top: 0;
-	margin-top: $margin/2;
+@include bp(mobile-big) {
+	.skills__title{
+		display: block;
+	}
 }

@@ -16,7 +16,11 @@
 	@extend %content;
 
 	h2, h3, h4, h5, h6{
-		margin-top: $margin;
+		margin: $margin 0 $margin/2;
+	}
+
+	.codepen{
+		margin-top: $margin*2;
 	}
 }
 

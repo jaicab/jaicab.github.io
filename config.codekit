@@ -77,38 +77,20 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/_layouts\/project.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_layouts\/project.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/_layouts\/work.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/_layouts\/work.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/2014\/06\/25\/welcome-to-jekyll\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/2014\/06\/25\/welcome-to-jekyll\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/2014\/06\/26\/introduction-to-ooaa\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/2014\/06\/26\/introduction-to-ooaa\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/2014\/06\/26\/introduction-to-oocss\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/2014\/06\/26\/introduction-to-oocss\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -141,6 +123,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/_site\/cdn\/core-ck.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cdn\/core-ck.js",
+		"outputAbbreviatedPath": "\/_site\/cdn\/min\/core-ck-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/_site\/cdn\/core.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/_site\/cdn\/core.js",
+		"outputAbbreviatedPath": "\/_site\/cdn\/min\/core-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/_site\/cdn\/font.css": {
 		"fileType": 16,
@@ -275,46 +279,222 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/images\/cover\/booksandparty.jpg": {
+	"\/_site\/images\/cover\/big\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 269022,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/big\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/big\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/big\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 254054,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/big\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/big\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/big\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196429,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/big\/ganor.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/big\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/big\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179419,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/big\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/big\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/enormous\/booksandparty.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.07554e+06,
-		"inputAbbreviatedPath": "\/_site\/images\/cover\/booksandparty.jpg",
-		"outputAbbreviatedPath": "\/_site\/images\/cover\/booksandparty.jpg",
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/booksandparty.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/images\/cover\/copycentro.jpg": {
+	"\/_site\/images\/cover\/enormous\/copycentro.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.09332e+06,
-		"inputAbbreviatedPath": "\/_site\/images\/cover\/copycentro.jpg",
-		"outputAbbreviatedPath": "\/_site\/images\/cover\/copycentro.jpg",
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/copycentro.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/images\/cover\/ganor.jpg": {
+	"\/_site\/images\/cover\/enormous\/ganor.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.7473e+06,
-		"inputAbbreviatedPath": "\/_site\/images\/cover\/ganor.jpg",
-		"outputAbbreviatedPath": "\/_site\/images\/cover\/ganor.jpg",
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/ganor.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/ganor.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/_site\/images\/cover\/movilcrash.jpg": {
+	"\/_site\/images\/cover\/enormous\/movilcrash.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.33275e+06,
-		"inputAbbreviatedPath": "\/_site\/images\/cover\/movilcrash.jpg",
-		"outputAbbreviatedPath": "\/_site\/images\/cover\/movilcrash.jpg",
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/enormous\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/large\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 463895,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/large\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/large\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/large\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 450818,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/large\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/large\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/large\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 343835,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/large\/ganor.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/large\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/large\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 298241,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/large\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/large\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/medium\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154736,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/medium\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/medium\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/medium\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 138245,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/medium\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/medium\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/medium\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104730,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/medium\/ganor.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/medium\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/medium\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 101210,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/medium\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/medium\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/small\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 78638,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/small\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/small\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/small\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 67249,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/small\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/small\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/small\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50738,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/small\/ganor.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/small\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/_site\/images\/cover\/small\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 52693,
+		"inputAbbreviatedPath": "\/_site\/images\/cover\/small\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/_site\/images\/cover\/small\/movilcrash.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -382,24 +562,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
-		},
-	"\/_site\/work\/booksandparty\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/work\/booksandparty\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/_site\/work\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_site\/work\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
 		},
 	"\/about.md": {
 		"enableFootnoteSupport": 0,
@@ -915,46 +1077,222 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cover\/booksandparty.jpg": {
+	"\/images\/cover\/big\/booksandparty.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.07554e+06,
-		"inputAbbreviatedPath": "\/images\/cover\/booksandparty.jpg",
-		"outputAbbreviatedPath": "\/images\/cover\/booksandparty.jpg",
+		"inputAbbreviatedPath": "\/images\/cover\/big\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/big\/booksandparty.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cover\/copycentro.jpg": {
+	"\/images\/cover\/big\/copycentro.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.09332e+06,
-		"inputAbbreviatedPath": "\/images\/cover\/copycentro.jpg",
-		"outputAbbreviatedPath": "\/images\/cover\/copycentro.jpg",
+		"inputAbbreviatedPath": "\/images\/cover\/big\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/big\/copycentro.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cover\/ganor.jpg": {
+	"\/images\/cover\/big\/ganor.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.7473e+06,
-		"inputAbbreviatedPath": "\/images\/cover\/ganor.jpg",
-		"outputAbbreviatedPath": "\/images\/cover\/ganor.jpg",
+		"inputAbbreviatedPath": "\/images\/cover\/big\/ganor.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/big\/ganor.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/cover\/movilcrash.jpg": {
+	"\/images\/cover\/big\/movilcrash.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.33474e+06,
-		"inputAbbreviatedPath": "\/images\/cover\/movilcrash.jpg",
-		"outputAbbreviatedPath": "\/images\/cover\/movilcrash.jpg",
+		"initialSize": 1.33275e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/big\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/big\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/enormous\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07554e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/enormous\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/enormous\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/enormous\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.09332e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/enormous\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/enormous\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/enormous\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.7473e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/enormous\/ganor.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/enormous\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/enormous\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33275e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/enormous\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/enormous\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/large\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07554e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/large\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/large\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/large\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.09332e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/large\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/large\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/large\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.7473e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/large\/ganor.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/large\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/large\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33275e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/large\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/large\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/medium\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07554e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/medium\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/medium\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/medium\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.09332e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/medium\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/medium\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/medium\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.7473e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/medium\/ganor.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/medium\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/medium\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33275e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/medium\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/medium\/movilcrash.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/small\/booksandparty.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.07554e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/small\/booksandparty.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/small\/booksandparty.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/small\/copycentro.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.09332e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/small\/copycentro.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/small\/copycentro.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/small\/ganor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.7473e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/small\/ganor.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/small\/ganor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/cover\/small\/movilcrash.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.33275e+06,
+		"inputAbbreviatedPath": "\/images\/cover\/small\/movilcrash.jpg",
+		"outputAbbreviatedPath": "\/images\/cover\/small\/movilcrash.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1032,30 +1370,6 @@
 		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/README.md",
 		"outputAbbreviatedPath": "\/README.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/work\/booksandparty.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/work\/booksandparty.md",
-		"outputAbbreviatedPath": "\/work\/booksandparty.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/work\/index.md": {
-		"enableFootnoteSupport": 0,
-		"enableSmartyPants": 1,
-		"expandTabs": 1,
-		"fileType": 4096,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
-		"inputAbbreviatedPath": "\/work\/index.md",
-		"outputAbbreviatedPath": "\/work\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		}
@@ -1652,7 +1966,7 @@
 	"sassUseLibsass": 0,
 	"shouldRunAutoprefixer": 0,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, .md, _posts",
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, .md, _posts, _drafts, work",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",

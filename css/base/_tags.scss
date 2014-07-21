@@ -25,6 +25,21 @@ a img{
 	border: none;
 }
 
+.wrap figure{
+  margin: 0;
+  padding: $margin $margin 0 $margin;
+  background: white;
+
+  img{
+  	display: block;
+  	width: 100%;
+  }
+}
+figcaption{
+	background: white;
+	padding: $margin/2 $margin;
+}
+
 p{
 	margin: 1em 0;
 	a{
@@ -36,6 +51,11 @@ b, strong{
 	font-size: 700;
 }
 
+hr{
+	border-top: none;
+	border-bottom: 1px solid $color-main-2;
+	margin: $margin*2;
+}
 
 a{
 	color: $color-main;
@@ -113,7 +133,7 @@ nav ul{
 // Classes
 
 %wrap{
-	max-width: 1100px;
+	max-width: 1060px;
 	margin: 0 auto;
 }
 .wrap{
@@ -129,15 +149,12 @@ nav ul{
 	}
 
 	@include bp(desktop-big) {
-		padding: $margin;
+		padding: $margin $margin;
 	}
 }
 
 .island{
 	@include island();
-	@include bp(desktop-big) {
-		margin-right: $margin;
-	}
 }
 
 .header-dark header{

@@ -6,12 +6,20 @@ title: I am a front-end architect.
 permalink: /about/
 ---
 
-Hi, I'm Jaime. I am a **front-end architect** from Spain. That means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** designs. 
+Hi, I'm Jaime. I am a **front-end architect** from Spain. This means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** designs. 
 
 I'm into **progressive enhancement**, so content and performance go always first for me.
 I enjoy creating pixel-perfect, scalable and maintainable CSS code. I apply **OOCSS**, **SMACSS**, **BEM** and **DRY CSS** techniques.
 
 I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
+
+<dl>
+    <dt>Twitter: <a href="https://twitter.com/csswizardry">@{{ site.twitter }}</a></dt>
+    <dd>For quick contact, feel free to send me a tweet!</dd>
+
+    <dt>Email: <a href="mailto:contact@jaicab.com">contact@jaicab.com</a></dt>
+    <dd>Email me if it doesn't fit in a tweet or it's going to be a large conversation.</dd>
+</dl>
 
 ##Language skills
 
@@ -24,7 +32,7 @@ I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also be
 		<h4 class="skills__level">Near native</h4>
 		<p class="skills__quote">
 			Hello! My name is Jaime and I'm spanish.
-			I speak Spanish, English and a little bit of Chinese.
+			I speak Spanish, English and very little Chinese.
 		</p>
 	</div>
 
@@ -38,10 +46,10 @@ I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also be
 	</div>
 
 	<div class="g--third">
-		<h3 class="skills__title">Chinese</h3>
+		<h3 class="skills__title">Mandarin</h3>
 		<h4 class="skills__level">Basic spoken - Learning</h4>
 		<p class="skills__quote">
-			ni hao. wo jiao Jaime haiyou wo shi Xibanya ren.
+			ni hao! wo jiao Jaime haiyou wo shi Xibanya ren.
 			wo hui shuo xiyu, yingu haiyou yi dian hanyu.
 		</p>
 	</div>
@@ -54,11 +62,11 @@ I write code with [Sublime Text](http://www.sublimetext.com/3), commit wia **git
 I play with the design in [Sketch](http://bohemiancoding.com/sketch/) and iPad's app [Paper by 53](https://www.fiftythree.com/paper).
 I have a forgetful mind but an agile heart, so I organize my work on [Redbooth](https://redbooth.com/) (previously Teambox).
 
-###Sass
-I save time and power up CSS and JavaScript by using **Sass** and sometimes **CoffeScript**. I can't stop till everything is an object with perfect, proportional margins and ratios and also the lightest possible.
+###Preprocessors
+I save time and power up CSS and JavaScript by using **Sass** and sometimes **CoffeScript**. I can't stop coding till everything is an object with perfect, proportional margins and ratios and also the lightest possible.
 I'm driven by the **80/20 rule**, which says that 80% of the design can be accomplished by 20% of the code.
 
-That means **no frameworks**! They add up wheight, unwanted styles and unnecesary dependecies that you have to spend time fixing for the project. I believe that what makes a good front-end is not getting good results with frameworks but getting even better ones without them.
+That means **no CSS frameworks**! They add up wheight, unwanted styles and dependecies which take tons of wasted time to fix. I believe that what makes a good front-end is not getting good results with frameworks but getting even better ones without them.
 
 ###MVC frameworks
 > "MVC. Maybe Viewable Content." - Scott Jehl

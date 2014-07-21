@@ -1,7 +1,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
@@ -17,14 +16,23 @@
     <meta property="og:url" content="http://jaicab.com" />
 
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@jaicab_">
+    <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:domain" content="jaicab.com">
-    <meta name="twitter:creator" content="@jaicab">
+    <meta name="twitter:creator" content="@{{ site.twitter }}">
     <meta name="twitter:title" content="{{ page.title }} – Jaime Caballero">
     {% if page.meta %}
         <meta name="twitter:description" content="{{ page.meta }}">
         <meta name="description" content="{{ page.meta }}">
     {% endif %}
+
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+
 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="favicon.ico">

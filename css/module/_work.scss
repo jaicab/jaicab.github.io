@@ -22,6 +22,10 @@
 	position: relative;
 	overflow: hidden;
 
+	img{
+		width: 100%;
+	}
+
 	a{		
 		&::before{
 			content: 'Case study';
