@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding box-shadow
+title: box-shadow out of the box
 ---
 
 First, let's do a brief introduction to `box-shadow`'s syntax. I'm sure you're already familiar with some part of it.  
