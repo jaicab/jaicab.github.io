@@ -15,7 +15,7 @@ As you can see, any point in the inner circumference is following a perfect line
 <p data-height="350" data-theme-id="7008" data-slug-hash="zHtxb" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/zHtxb/'>Article: Crazy illusion with Tusi motion #2</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-But we'll do the opposite, get a circular movement illusion from linear movements. I have created a `.content` box which will act as the outer circumference. Inside of it, we'll place **tracks**, the boundaries where the balls will move.
+But we'll do the opposite, get a circular movement illusion from linear movements. I have created a `.content` box which will act as the outer circumference. Inside of it, we'll place **tracks**, the boundaries whithin the balls will move.
 
 ##Placing the tracks
 We'll picture each `.ball` element as a track where its `before` pseudoelement will act as a ball. Since the balls are going to move all over the diameter, we only need to divide half the circumference (180deg). Each track will have its own **angle** and **animation delay**, so we'll use the `nth-child` selector combined with Sass to assign these properties:
@@ -81,7 +81,7 @@ If you had follow the steps, you must be facing a problem here. The balls take s
 {% endhighlight %}
 
 
-First, I show the balls by setting the opacity to 1. After a while (from 5% to 40% of the time) the track gets a background, so make clear how does the illusion work. It stays like that from 60% to 95% of the time and finally removes the background color from the track.
+First, I show the balls by setting the opacity to 1. After a while (from 5% to 40% of the time) the track gets a background, to make clear how the illusion works. It stays like that from 60% to 95% of the time and finally removes the background color from the track.
 
 Then I set the animation for each track on the same code as before. It must last as long as the last track takes to finish its animation, that's why it'll always be `$speed*($num - 1)`.
 
@@ -101,6 +101,7 @@ Then I set the animation for each track on the same code as before. It must last
 }
 
 {% endhighlight %}
+
 
 
 There's also a Not Tusi motion which would be formed by spheres in motion creating a still figure. You can check it out [here](http://illusionoftheyear.com/cat/author/alex-rose-henig/).
