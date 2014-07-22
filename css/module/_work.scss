@@ -45,7 +45,9 @@
 			z-index: 100;
 			color: transparent;
 		}
-		&:hover::before{
+		&:hover::before,
+		&:active::before,
+		&:focus::before{
 			box-shadow: 0 0 0 $margin*1.5 $color-main inset,
 				0 0 0 $margin*3 $color-main-2 inset,
 				0 0 0 $margin*4.5 $color-main-3 inset;
