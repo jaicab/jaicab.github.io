@@ -45,6 +45,7 @@
 	}
 
 	@include bp(desktop-small) {
+		font-weight: 700;
 		text-transform: lowercase;
 		padding: $margin*2 $margin*2 $margin/2 $margin*2;
 		color: $color-main;

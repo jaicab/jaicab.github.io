@@ -5,7 +5,7 @@ title: "New life, new site"
 
 It's been a while since my last portfolio update. The last design was terrible, a fixed 960px layout which changed up and down with media queries, an chaos to organize. I cared more about OldIE so the design look pretty good, but all the fixing and patching resulted into spaghetti code.
 
-I also had developed a WordPress theme for my blog, where I wanted to publish up to 3 articles a week which of course, I didn't. If you add up the tiring moderating SPAM on the comments, well, I ended up turning it off. But this will be different. 
+I also had developed a WordPress theme for my blog, where I wanted to publish up to 3 articles a week which of course, I didn't. If you add up the tiring moderating SPAM on the comments, well, I ended up turning it off. But this time will be different. 
 
 ## Welcome to Jekyll
 I'm officialy moved to [Jekyll](http://jekyllrb.com), where I can write in markdown, making of this writing experience a way more pleasant thing. It's incredible how quickly you can set up a site on GitHub Pages, commit and inmediately see the changes. Just amazing. And of course, it's HTML so it's blazing fast.
@@ -23,7 +23,7 @@ The thing is, I worked in a little project in London during the last summer and 
 
 So instead of moving to Madrid or Barcelona, why not London? It can't be better **connected**, it's a lovely place to live, has lots of develpment and design communities and tons of conferences to attend, without forgetting that traveling from London is always cheaper.
 
-I'll be speaking about this some more in the next few days, but if you know of anybody looking for a front-end architect, please [tweet me](http://twitter.com/{{ site.twitter }}). You can know more about me in the [about section](/about).
+I'll be speaking more about this some over the next few days, but if you know of anybody looking for a front-end architect, please [tweet me](http://twitter.com/{{ site.twitter }}). You can know more about me in the [about section](/about).
 
 ## Content-first and progressive enhancement
 For those who don't know, I love **content-first** and **progressive enhancement** methodologies. That's why this site adapts beautifully across every device imaginable. It's a work in progress, though. But I think a bird in hand is worth two in the bush so, better publish now.
