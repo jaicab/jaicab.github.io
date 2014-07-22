@@ -14,10 +14,6 @@
 	.home__aside{
 		padding-top: $margin;
 	}
-
-	.home__aside{
-		padding-left: $margin*2;
-	}
 }
 
 @include bp(desktop-small) {
