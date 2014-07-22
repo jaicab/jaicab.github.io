@@ -17,7 +17,7 @@ I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>
     <dt>Twitter: <a href="https://twitter.com/csswizardry">@{{ site.twitter }}</a></dt>
     <dd>For quick contact, feel free to send me a tweet!</dd>
 
-    <dt>Email: <a href="mailto:contact@jaicab.com">contact@jaicab.com</a></dt>
+    <dt>Email: <a href="mailto:me@jaicab.com">me@jaicab.com</a></dt>
     <dd>Email me if it doesn't fit in a tweet or it's going to be a large conversation.</dd>
 </dl>
 
