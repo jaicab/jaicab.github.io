@@ -6,7 +6,7 @@ title: Circle illusion with Tusi motion
 <p data-height="500" data-theme-id="7008" data-slug-hash="EKfCw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/EKfCw/'>Article: Circle illusion with Tusi Motion #1</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-I made this illusion based on the **Tusi motion** method, which takes his name from Nair al-Din Tusi, a Persian astronomer from the 13th century. The principle stablished by Tusi is: 
+I made this illusion based on the **Tusi motion** method, which takes his name from Nair al-Din Tusi, a Persian astronomer from the 13th century. The principle established by Tusi states that: 
 
 > If a circle with diameter A rotates on the inner boundary of a circle with diameter 2A, then a point on the circumference of the inner circle traces a **straight line**.
 
