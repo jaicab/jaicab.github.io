@@ -55,7 +55,7 @@ We have to animate the `before` pseudoelement of every ball, but again all of th
 {% endhighlight %}
 
 
-And that's the key. The **delay between balls must be always the same as the speed** of the animation. An ~~`ease-in-out`~~ `cubic-bezier(.5,.1,.5,.9)` animation is required to get the circular shape. Otherwise it'd be deformed. If you're wondering why I am substracting 1 from the `$num`, it's just because I added 1 to it so it worked directly in the `@for` directive.
+And that's the key. The **delay between balls must be always the same as the speed** of the animation. An <s><code>ease-in-out</code></s> `cubic-bezier(.5,.1,.5,.9)` animation is required to get the circular shape. Otherwise it'd be deformed. If you're wondering why I am substracting 1 from the `$num`, it's just because I added 1 to it so it worked directly in the `@for` directive.
 
 ##Patching and fixing
 If you had follow the steps, you must be facing a problem here. The balls take some time to form that circular shape and you don't like that. Well, I solved that by animating the whole track with the ball within it:
