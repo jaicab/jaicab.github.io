@@ -12,9 +12,15 @@
     <link rel="prerender" href="{{ site.url }}/work/">
 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://jaicab.com" />
-
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    
+    {% if page.path contains '_posts' %}
+        <meta property="og:type" content="article" />
+        <meta property="og:published_time" content="{{ page.date | date_to_xmlschema }}" />
+    {% else %}
+        <meta property="og:type" content="website" />
+    {% endif%}
+    
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:domain" content="jaicab.com">
