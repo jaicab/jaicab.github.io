@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Circle illusion with Tusi motion
+meta: An explanation of the Tusi motion method applied to CSS
 ---
 
 <p data-height="500" data-theme-id="7008" data-slug-hash="EKfCw" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/EKfCw/'>Article: Circle illusion with Tusi Motion #1</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>

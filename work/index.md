@@ -2,6 +2,7 @@
 layout: work
 class: header-darker
 title: I built this stuff.
+meta: My portfolio, with the most worth mentionable projects
 ---
 
 <div class="portfolio grid">

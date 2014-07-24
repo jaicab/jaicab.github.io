@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Books and Party
+meta: Case study of Books and Party, a social network for college students
 ---
 
 I have to say, when the guys at Books and Party approached me to do their site, they had a completely different idea. They wanted a site where college students and teenagers could trade, buy or sell stuff related with their studies.

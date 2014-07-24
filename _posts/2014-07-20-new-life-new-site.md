@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New life, new site"
+meta: I'll be finishing all my freelance projects by September to look for a full-time position in London.
 ---
 
 It's been a while since my last portfolio update. The last design was terrible, a fixed 960px layout which changed up and down with media queries, an chaos to organize. I cared more about OldIE so the design look pretty good, but all the fixing and patching resulted into spaghetti code.

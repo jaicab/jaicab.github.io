@@ -1,6 +1,7 @@
 ---
 layout: project
 title: GANOR
+meta: Case study for GANOR, an engineering company with project all over the world
 ---
 
 While in college, I had the opportunity to work as a web developer for <abbr title="Grupo Alianza Norte">GANOR</abbr> (which means North Alliance Group), a company who managed up to 20 engineering companies, like construction, architecture, design and material manufacturers, making them work together.

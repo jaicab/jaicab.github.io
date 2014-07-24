@@ -1,6 +1,7 @@
 ---
 layout: post
 title: box-shadow out of the box
+meta: Understand the possibilities of box-shadow besides creating shadows
 ---
 
 First, let's do a brief introduction to `box-shadow`'s syntax. I'm sure you're already familiar with some part of it.  

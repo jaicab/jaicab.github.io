@@ -3,6 +3,7 @@ layout: page
 class: header-dark
 
 title: I am a front-end architect.
+meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 permalink: /about/
 ---
 

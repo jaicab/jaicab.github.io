@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Movilcrash
+meta: Case study for Movilcrash, a repairers chain for smartphones
 ---
 
 Some time ago, my iPhone home button broke. Since I needed to have it fixed quickly, I took it to Movilcrash instead of sending it to Apple Support.
