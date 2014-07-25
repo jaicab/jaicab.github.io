@@ -100,7 +100,7 @@ Then I set the animation for each track on the same code as before. It must last
       transform: rotate((180deg*$i)/(($num - 1)));
       
       &::before{
-        animation: ball $speed (($speed*$i)/(($num - 1))) ease-in-out alternate infinite;
+        animation: ball $speed (($speed*$i)/(($num - 1))) cubic-bezier(.4, 0, .6, 1) alternate infinite;
       }
     }
 }
@@ -108,5 +108,4 @@ Then I set the animation for each track on the same code as before. It must last
 {% endhighlight %}
 
 
-
-There's also a Not Tusi motion which would be formed by spheres in motion creating a still figure. You can check it out [here](http://illusionoftheyear.com/cat/author/alex-rose-henig/).
+There's also a Not Tusi motion which would be formed by spheres in motion creating a still figure. You can check it out [here](http://illusionoftheyear.com/cat/author/alex-rose-henig/). I hope you enjoyed this explanation, if you have any questions please feel free to [tweet me](http://twitter.com/{{ site.twitter }}).
