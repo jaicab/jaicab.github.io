@@ -24,7 +24,7 @@ I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>
 
 ##Language skills
 
-I enjoy learning about new cultures. That's why I'm studing **Chinese**. Also because **one sixth of world population** speak it and that's a lot of people I can't talk with if they don't speak English.
+I enjoy learning about new cultures. That's why I'm studying **Mandarin**. Also because **one sixth of world population** speak it and that's a lot of people I can't talk with if they don't speak English.
 
 <div class="grid skills">
 	
