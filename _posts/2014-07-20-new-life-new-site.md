@@ -35,6 +35,6 @@ Some interesting things about the site are:
 - Hosting on GitHub and caching some resources results in a weight of ~350B for every pageload. That's fast!
 - The font files are cached via localStorage, so the first load could be a little bit slow, but after that it's just blazing fast.
 
-I have to thank [Vitaly Friedman](http:/twitter.com/smashingmag) for his help with localStorage caching, like they're doing on [Smashing Magazine](http://smashingmagazine.com).
+I have to thank [Vitaly Friedman](http://twitter.com/smashingmag) for his help with localStorage caching, like they're doing on [Smashing Magazine](http://smashingmagazine.com).
 
 So do you like it? Are you moving to Jekyll too? Please criticize the site on Twitter, I'd love to hear what you think about it.
