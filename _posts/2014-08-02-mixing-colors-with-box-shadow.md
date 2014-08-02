@@ -97,7 +97,7 @@ Nice, isn't it? The colors are mixed properly, the shape of the ring is right, a
 ##Animation to the rescue
 An animation or transition always (if properly executed) improves the experience. Since we're mixing colors, the idea of the primary colors came to mind.
 
-Going from 3 to `$colour-tones` shadows would have been to abrupt, so I'd spread all the shadows in these 3 positions and colors, and then animate them to their final color and positon. By doing it this way, the shadows actually seem like they're splitting the colors into a gradient rather than going from transparent to the final color.
+Going from 3 to `$colour-tones` shadows would have been to abrupt, so I've spread **all the shadows in these 3 positions and colors**, and then animate them to their final color and positon. By doing it this way, the shadows actually seem like they're splitting the colors into a gradient rather than going from transparent to the final color.
 
 
 {% highlight sass %}
