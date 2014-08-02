@@ -6,7 +6,7 @@ meta: An explanation about the color-spectrum mixing effect we can get with shad
 
 I may have said this before, but I love when CSS is used in ways it isn't intended and results in beautiful things that couldn't have been done without thinking out of the box. **This is an explanation of a [codepen demo](http://codepen.io/jaicab/pen/xicaj/)** I did some time ago where shadows got mixed creating a nice color spectrum effect.
 
-First, if you never have work with `box-shadow` for anything but actual shadows, you have to change you point of view and see [what you can with it](/2014/07/21/box-shadow-out-of-the-box/). It'll help you understand the basics for this demo.
+First of all, if you never have used `box-shadow` for anything but actual shadows, you have to change you point of view and see [what you can with it](/2014/07/21/box-shadow-out-of-the-box/). It'll help you understand the basics for this demo.
 
 ##The idea
 When this idea hit me, it was just about mixing all the colors in the color spectrum with shadows in order to keep the number of elements to a minimum. But during the process other ideas came up. Let's see what we need this far.
