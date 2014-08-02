@@ -11,7 +11,7 @@ First, if you never have work with `box-shadow` for anything but actual shadows,
 ##The idea
 When this idea hit me, it was just about mixing all the colors in the color spectrum with shadows in order to keep the number of elements to a minimum. But during the process other ideas came up. Let's see what we need this far.
 
-- An element: Since everything is going to be happening in the shadows a single HTML element is required. I used `.colours`, but it could be done with the body element too.
+- An element: Since everything is going to be happening in the shadows a single HTML element is required. I used a `div`, but it could be done with the body element too.
 - Rounded element: I wanted the shadows to be rounded so the element they're casted from must be also rounded. It also needed to be at least `0.5em` in size to get a rounded border.
 - Spread the shadows in a circular form: Using the circle formula we can spread the shadows evenly around the element.
 - Variable number of shadows, each of one color: I needed to set a color per shadow and also mantain it in a variable so you could change the number any time.
