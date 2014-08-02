@@ -9,7 +9,7 @@ I may have said this before, but I love when CSS is used in ways it isn't intend
 First, if you never have work with `box-shadow` for anything but actual shadows, you have to change you point of view and see [what you can with it](/2014/07/21/box-shadow-out-of-the-box/). It'll help you understand the basics for this demo.
 
 ##The idea
-When this idea hit me, it was just about mixing all the colors in the color spectrum with shadows in order to keep the number of elements to a minimum. But during the process other ideas came up. Let's see what I needed this far.
+When this idea hit me, it was just about mixing all the colors in the color spectrum with shadows in order to keep the number of elements to a minimum. But during the process other ideas came up. Let's see what we need this far.
 
 - An element: Since everything is going to be happening in the shadows a single HTML element is required. I used `.colours`, but it could be done with the body element too.
 - Rounded element: I wanted the shadows to be rounded so the element they're casted from must be also rounded. It also needed to be at least `0.5em` in size to get a rounded border.
@@ -42,9 +42,9 @@ As you can see on the graph, any point on the circle is based on two distances t
 >x = r * cos(t)    
 y = r * sin(t)
 
-Where **r** is the radius, **t** the angle, **x** the horizontal coordinate and **y** the vertical one. Now we have to apply this equation to box-shadow. However, **Sass can't handle trigonometric** functions out of the box so you must include [Compass](http://compass-style.org/reference/compass/helpers/trig/) to make them work. Of course you can also create your own functions if you like Vanilla Sass more.
+Where **r** is the radius, **t** the angle, **x** the horizontal coordinate and **y** the vertical one. Now we have to apply this equation to `box-shadow`. However, **Sass can't handle trigonometric** functions out of the box so you must include [Compass](http://compass-style.org/reference/compass/helpers/trig/) to make them work. Of course you can also create your own functions if you like Vanilla Sass more.
 
-Applying it to this demo, we need to control how many points we want on the circle and split the circle (360deg) between them. Usign Sass lists we can get this done with a function:
+But for this demo first we need to control how many points we want on the circle and split the circle (360deg) between them. Usign Sass lists we can get this done with a function:
 
 
 {% highlight sass %}
@@ -95,9 +95,9 @@ Nice, isn't it? The colors are mixed properly, the shape of the ring is right, a
 
 
 ##Animation to the rescue
-An animation or transition always (if properly executed) improves the experience. Since we're mixing colors, the idea of the primary colors came to mind.
+An animation or transition always (if properly executed) improves the experience. Since we're mixing colors, it occurred to me to used primary colors as a initial state.
 
-Going from 3 to `$colour-tones` shadows would have been to abrupt, so I've spread **all the shadows in these 3 positions and colors**, and then animate them to their final color and positon. By doing it this way, the shadows actually seem like they're splitting the colors into a gradient rather than going from transparent to the final color.
+Going from 3 to `$colour-tones` shadows would have been too abrupt, so we'll spread **all the shadows in these 3 positions and colors**, and then animate them to their final color and positon. By doing it this way, the shadows actually seem like they're splitting into multiple colors rather than going from transparent to the final color.
 
 
 {% highlight sass %}
@@ -144,9 +144,9 @@ Going from 3 to `$colour-tones` shadows would have been to abrupt, so I've sprea
 }
 {% endhighlight %}
 
-Using the `$alt` parameter in the functions, I created the initial disposition of the shadows and then applied everything on a function. I also made it rotate a bit to make it look a bit more realistic.
+Using the `$alt` parameter in the functions, I created the initial disposition of the shadows and then applied everything on an animation. This initial disposition also is closer to the center to create a centrifugal force effect combined with the rotate transform, making it look a bit more realistic.
 
-The last thing was to set the animation. I used a `cubic-bezier()` function to create a little bounce, which applies to the transform and box-shadow creating a nice effect
+The last thing was to setting the animation. I used a `cubic-bezier()` function to create a little bounce, which applies to the transform and box-shadow creating a nice effect
 
 {% highlight sass %}
 animation: spectrum $colours-speed 1s cubic-bezier(.33,-0.46,.22,1.09) infinite alternate;
