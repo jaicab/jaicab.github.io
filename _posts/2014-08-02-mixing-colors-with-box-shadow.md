@@ -144,7 +144,7 @@ Going from 3 to `$colour-tones` shadows would have been too abrupt, so we'll spr
 }
 {% endhighlight %}
 
-Using the `$alt` parameter in the functions, I created the initial disposition of the shadows and then applied everything on an animation. This initial disposition also is closer to the center to create a centrifugal force effect combined with the rotate transform, making it look a bit more realistic.
+Using the `$alt` parameter in the functions, I created the initial disposition of the shadows and then applied everything on an animation. This initial disposition is also closer to the center, which combined with the rotate transformation, creates a centrifugal force effect that makes it look a little bit more realistic.
 
 The last thing was to setting the animation. I used a `cubic-bezier()` function to create a little bounce, which applies to the transform and box-shadow creating a nice effect
 
