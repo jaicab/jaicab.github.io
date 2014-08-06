@@ -67,7 +67,7 @@ I have a forgetful mind but an agile heart, so I organize my work on [Redbooth](
 I save time and power up CSS and JavaScript by using **Sass** and sometimes **CoffeScript**. I can't stop coding till everything is an object with perfect, proportional margins and ratios and also the lightest possible.
 I'm driven by the **80/20 rule**, which says that 80% of the design can be accomplished by 20% of the code.
 
-That means **no CSS frameworks**! They add up wheight, unwanted styles and dependecies which take tons of wasted time to fix. I believe that what makes a good front-end is not getting good results with frameworks but getting even better ones without them.
+That means **no CSS frameworks**! They add up weight, unwanted styles and dependecies which take tons of wasted time to remove. I believe that what makes a good front-end is not getting good results with frameworks but getting even better ones without them.
 
 ###MVC frameworks
 > "MVC. Maybe Viewable Content." - Scott Jehl
