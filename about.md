@@ -15,7 +15,7 @@ I enjoy creating pixel-perfect, scalable and maintainable CSS code. I apply **OO
 I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
 
 <dl>
-    <dt>Twitter: <a href="https://twitter.com/csswizardry">@{{ site.twitter }}</a></dt>
+    <dt>Twitter: <a href="https://twitter.com/{{site.twitter}}">@{{ site.twitter }}</a></dt>
     <dd>For quick contact, feel free to send me a tweet!</dd>
 
     <dt>Email: <a href="mailto:me@jaicab.com">me@jaicab.com</a></dt>
