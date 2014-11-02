@@ -5,6 +5,10 @@
 	text-align: center;
 	line-height: 2;
 
+	li{
+		margin-top: 0;
+	}
+
 	@include bp(mobile-small) {
 		width: 70%;
 		float: right;

@@ -77,6 +77,11 @@ ul{
 	list-style: square;
 	padding: 0 0 0 $margin;
 }
+li{
+	& + &{
+		margin-top: .5em;
+	}
+}
 
 
 blockquote{
