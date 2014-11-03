@@ -2,7 +2,7 @@
 layout: page
 class: header-dark
 
-title: Super important legal license
+title: Super important legal notice
 meta: Don't be an asshole. Share what you know.
 ---
 
