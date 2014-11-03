@@ -1,5 +1,10 @@
-jaicab.github.io
-================
+---
+layout: page
+class: header-dark
+
+title: License
+meta: Don't be an asshole. Share what you know.
+---
 
 >"Work hard. Don't be an asshole. Share what you know." - Brad Frost
 
