@@ -4,9 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <style>
+    {% include style.css %}
+    </style>
+
     <!-- Fetch DNS -->
     <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <!--<link rel="dns-prefetch" href="//cdn.jaicab.com">-->
     <link rel="dns-prefetch" href="//codepen.io">
 
     <!-- Prerender work page -->
@@ -45,11 +48,4 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#069">
     <meta name="msapplication-TileImage" contet="/mstile.png">
-
-    <!--<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">-->
-
-
-    <style>
-    {% include style.css %}
-    </style>
 </head>
