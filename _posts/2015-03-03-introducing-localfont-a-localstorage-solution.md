@@ -11,10 +11,10 @@ All that networking made me realise how much people was doing for they websites 
 ## The localStorage solution
 There are tons of approaches to web font loading but this is the one I like the most. You may know that this site has been using the localStorage caching solution since its last redesign, as being used on [Smashing Magazine](http://smashingmagazine.com) and [theguardian](http://theguardian.com). This approach uses localStorage to store the CSS code of the <code>@font-face</code> declarations where every file is encoded as a string using the base64 algorithm.
 
-With this amazing combination we get fast access to the CSS with localStorage (which is way faster than regular HTTP caching) and all the requests we save by providing the font files as part of the CSS file. 
-The only downside to this approach is **the first load**, which could take a bit but after that everything goes smoothly. Also if localStorage is not available (you can provide a cookie support) you have to load it every page load. Otherwise, it is almost instantaneous. And browser support is as good as IE8+, so that's more than enough for these days.
+With this amazing combination we get fast access to the CSS with localStorage (which is way faster than regular HTTP caching) and save all the font file requests by providing the font files as part of the CSS file. 
+The only downside to this approach is **the first load**, which could take a bit but after that everything goes smoothly. Also if localStorage is not available (you can provide a cookie fallback) you have to load it every page load. Otherwise, it is almost instantaneous. And browser support is as good as IE8+, so that's more than enough for these days.
 
-Once you got your CSS file sorted, you place a block of JavaScript that launches that file. This script should go inlined in the HTML in order to get executed as soon as possible.
+Once you got your CSS file sorted, you place a block of JavaScript that checks if the CSS is in localStorage. If it is, it injects the CSS straight into the page. If not, it looks for the file and does the same with its content, storing it on localStorage for future page loads. This script should go inlined in the HTML in order to get executed as soon as possible.
 
 Now every time I explain this approach to somebody I sense how the loose all the interest in it with the encoding, just because they don't know how to do that or the experiences they have had with it in the past haven't turned out great. The thing is, base64 encoding may affect your files and you could end up with a different output over the original font file. 
 
@@ -23,7 +23,7 @@ Currently people using this approach have tried generating the encoded fonts by 
 ##localFont and the need for a side project
 While discussing the process to keep a performance budget at work, I realised that if we wanted to use the localStorage caching approach on a project, it would take ages to get it working, and more if we wanted to use it on every project.
 
-This need of a tool and my need to play more with Vanilla JS pushed me into a new side project I have called [localFont](http://jaicab.com/localFont/). This tiny little online tool will generate the final CSS file for you and five you the piece of JavaScript you need to launch it. 
+This need of a tool and my need to play more with Vanilla JS pushed me into a new side project I have called [localFont, implement localStorage caching for web fonts in seconds](http://jaicab.com/localFont/). This tiny little online tool will generate the final CSS file for you and five you the piece of JavaScript you need to launch it. 
 
 Just drop the font files, set up each font's style and weight and then use the code that will be automatically generated. By default it uses <code>/font.css</code> as the default path of the CSS, but it can be changed. It's important that it's an absolute path so it can be accessed from any directory.
 
