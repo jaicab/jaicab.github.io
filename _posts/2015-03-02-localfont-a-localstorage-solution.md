@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "localFont, localStorage caching for web fonts in seconds"
+title: "Introducing localFont"
 meta: localFont allows you to implement localStorage caching for web font loading in seconds
 ---
 
