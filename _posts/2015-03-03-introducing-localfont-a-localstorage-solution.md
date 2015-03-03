@@ -23,10 +23,10 @@ Currently people using this approach have tried generating the encoded fonts by 
 ##localFont and the need for a side project
 While discussing the process to keep a performance budget at work, I realised that if we wanted to use the localStorage caching approach on a project, it would take ages to get it working, and more if we wanted to use it on every project.
 
-This need of a tool and my need to play more with Vanilla JS pushed me into a new side project I have called [localFont, implement localStorage caching for web fonts in seconds](http://jaicab.com/localFont/). This tiny little online tool will generate the final CSS file for you and five you the piece of JavaScript you need to launch it. 
+This need of a tool and my need to play more with Vanilla JS pushed me into a new side project I have called [localFont, implement localStorage web font caching in seconds](http://jaicab.com/localFont/). This tiny little online tool will generate the final CSS file for you and give you the piece of JavaScript you need to launch it. 
 
 Just drop the font files, set up each font's style and weight and then use the code that will be automatically generated. By default it uses <code>/font.css</code> as the default path of the CSS, but it can be changed. It's important that it's an absolute path so it can be accessed from any directory.
 
-Right now it just works with woff, woff2 and ttf and it can handle one font family at a time. If you want to add more font families, feel free to clear all up and generate the CSS again with the other family and put them in the same CSS file.  
+Right now it just works with woff, woff2 and ttf formats and it can handle one font family at a time. If you want to add more font families, feel free to clear all up and generate the CSS again with the other family and put them in the same CSS file.  
 
 All the source code is available [on github](https://github.com/jaicab/localFont) so feel free to open an issue, send me a pull request or [fire me a tweet](https://twitter.com/jaicab_).
