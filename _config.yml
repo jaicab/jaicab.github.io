@@ -15,3 +15,7 @@ highlighter: pygments
 
 # Pagination
 paginate: 10
+
+#Gems
+gems:
+  - jekyll-redirect-from
