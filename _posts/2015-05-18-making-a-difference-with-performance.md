@@ -114,7 +114,7 @@ The combination of all of these requirements resulted in a highly polished websi
 
 Something I want to encourage all you to do is **attend local meetup and/or conferences**. Sharing and networking helped me expand my knowledge on all these areas, and I'm sure that without them this wouldn't have been as good as it is now.
 
-I love competitivity, so if you know of any other highly curated sites to test against Base's new site, please [fire me a tweet](https://twitter.com/jaicab_). To make it fair the site must be responsive and have at least one image besides the logo.
+I love competition, so if you know of any other highly curated sites to test against Base's new site, please [fire me a tweet](https://twitter.com/jaicab_). To make it fair the site must be responsive and have at least one image besides the logo.
 
 I hope you learned something today. If you are worried about performance now, mission accomplished. If you're using WordPress, chances are you can get a <3000 SpeedIndex in no time with these tips. We can make the web faster, so we should. Go do your bit. It'll be better for everybody's roaming bill.
 
