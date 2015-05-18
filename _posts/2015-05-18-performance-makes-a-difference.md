@@ -33,10 +33,10 @@ What's really important it's not how long your site takes to load, but how fast 
 
 [Akamai's study](http://www.akamai.com/dl/reports/Site_Abandonment_Final_Report.pdf) shows us some very strong facts about percieved performance, like:
 
-- 47% of people expect a web page to load in **two seconds or less**.
-- 40% will abandon a web page if it takes more than three seconds to load.
+- 47% of people expect a web page to load in **2 seconds or less**.
+- 40% will abandon a web page if it takes more than 3 seconds to load.
 - 52% of online shoppers claim that quick page loads are important for their loyalty to a site.
-- 14% will start shopping at a different site if page loads are slow, 23% will stop shopping or even walk away from their computer.
+- 14% will start shopping at a different site if page loads are slow, 23% will simply stop shopping.
 - 64% of shoppers who are dissatisfied with their site visit will go somewhere else to shop next time.
 
 In addition, it's been proven there is a direct relationship between performance and conversion rates. No matter what your site is offering, users won't get there if they have a slow experience. 
