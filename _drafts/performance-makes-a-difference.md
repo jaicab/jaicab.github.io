@@ -4,9 +4,11 @@ title: "Making a difference with performance"
 meta: I want to share the experience of building a responsive, performant website like Base Creative's one
 ---
 
-I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've built entirely myself. Now I want to share that experience with you and tell you what I have learned. 
+I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've built entirely myself. And it's fast. Blazing fast. Now I want to share that experience with you and tell you what I learned on the way.
 
-![Filmstrip New Base vs Competitors](/assets/perfmatters_competitors.png)
+<a href="/assets/perfmatters_competitors.png" title="See aumented image">
+	<img src="/assets/perfmatters_competitors.png" alt="Filmstrip New Base vs Competitors" />
+</a>
 
 As you can see on the image of the [WebPageTest comparison](http://www.webpagetest.org/video/view.php?id=150518_77c607d0a4f6d269d7426ac2cdd9fe1b4ede6ebe&data=1)  with some other well known websites on mobile over 3G, the best thing about the new site is its **SpeedIndex**: [~660 on Chrome over WiFi][base-desktop-wifi] and [~2350 on mobile over 3G][base-mobile-3g] even getting an outstanding [456 on the best scenario][base-desktop-london].
 
