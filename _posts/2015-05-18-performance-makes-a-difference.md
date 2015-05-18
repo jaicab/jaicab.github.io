@@ -89,7 +89,7 @@ In the end, the best performance optimizations depend on your product. Ask yours
 - Unify font files: Do you really need all those font files? Are you using every font weight? Even if you do, do you use them that often? Try changing isolated font weight declarations to the closest one.
 - Remove unnecesary beautifiers: About that hero image slider, do your users really click on the "next" button of the slider? Studies show they don't. Track it and make sure you need all those super big hero images, if any at all.
 - Load when necessary: Are you hiding stuff on mobile? If so and it has images, have you made sure they're not loading on mobile? If they're not shown, they're not needed. Use Chrome Dev Tools' emulator and check the Network panel.
-- Bear in mind third party content dependencies: If using any third party content, are they requesting other libraries that affect your site's performance? Contact them and get to a middle ground or try lazy load them when possible.
+- Bear in mind third party content dependencies: If using any third party content, are they requesting other libraries that affect your site's performance? Contact them and get to a middle ground or try to lazy load them when possible.
 
 Use free tools like [WebPageTest](http://www.webpagetest.org/) or [ShowSlow](http://www.showslow.com/) to keep track of how your site is doing. Compare the before and after, see if it works for you.
 
