@@ -4,7 +4,7 @@ title: "Making a difference with performance"
 meta: I want to share the experience of building a responsive, performant website like Base Creative's one
 ---
 
-I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've built entirely myself. And it's fast. Blazing fast. Now I want to share that experience with you and tell you what I learned on the way.
+I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've been asked to build from scratch. And it's fast. Blazing fast. Now I want to share that experience with you and tell you what I learned on the way.
 
 <a href="/assets/perfmatters_competitors.png" title="See aumented image">
 	<img src="/assets/perfmatters_competitors.png" alt="Filmstrip New Base vs Competitors" />
@@ -31,11 +31,24 @@ This is given probably because the handheld devices are closer and may seem "sim
 
 What's really important it's not how long your site takes to load, but how fast it _feels_. This is what's called **perceived performance**. Getting the above-the-fold content to a visualy complete, usable state as fast as possible matters way more than performance across the page.
 
+[Akamai's study](http://www.akamai.com/dl/reports/Site_Abandonment_Final_Report.pdf) shows us some very strong facts about percieved performance, like:
+
+- 47% of people expect a web page to load in **two seconds or less**.
+- 40% will abandon a web page if it takes more than three seconds to load.
+- 52% of online shoppers claim that quick page loads are important for their loyalty to a site.
+- 14% will start shopping at a different site if page loads are slow, 23% will stop shopping or even walk away from their computer.
+- 64% of shoppers who are dissatisfied with their site visit will go somewhere else to shop next time.
+
+In addition, it's been proven there is a direct relationship between performance and conversion rates. No matter what your site is offering, users won't get there if they have a slow experience. 
+For example, [Walkmart.com found](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/) that for every 1 second of improvement, they experienced up to a 2% conversion increase.
+
+Nowadays, we're getting more and more impatient and we expect faster responses. Here's how I tried to meet these expectations without compromising design.
+
 ## The case study
 ![Filmstrip New Base vs Competitors](/assets/perfmatters_oldvsnew.png)
 
 
-Let's get to the specifics. The new site has been built with the intention to set an example for new projects in the company. A fresh start, I would say. In order to do so, the frontend has gone for the highest standards I could meet.
+Let's get to the specifics. The new site has been built with the intention to set an example for new projects in the company. A fresh start, I would say. In order to do so, the frontend has gone for the highest standards I could meet. Here's how it's been done:
 
 ### Scalable and reusable CSS
 It's important to keep scalable and reusable CSS. Any frontend developer realises that when he gets enough experience. Once you _see the world in markup_, tools like **Sass** become really useful. Something that really helped and I have always recommended is [Harry Robert's inuit-like folder structure](https://github.com/csswizardry/inuit.css/), too keep all these modules organised. Once you see it, you can't unsee it, just like [how ducks are wearing little dog masks](http://ubersuper.com/uploads/2010/08/tumblr_l7lw6navKd1qzpwi0o1_500.jpg). I would also recommend some Sass mixins:
@@ -64,7 +77,7 @@ As a performance measure and since we were dropping support for IE under version
 
 
 ### A <1000 SpeedIndex
-Now this is a [golden rule stablished by Paul Irish](http://timkadlec.com/2014/01/fast-enough/#comment-1200946500) I really wanted to meet. This involves a series of factors, besides an optimal frontend development:
+Now this is a [golden rule established by Paul Irish](http://timkadlec.com/2014/01/fast-enough/#comment-1200946500) I really wanted to meet. This involves a series of factors, besides an optimal frontend development:
 
 - Use a CDN: A content delivery network gets your users your content faster by placing copies of it closer to them. A very good, free solution is [CloudFlare](https://www.cloudflare.com/).
 - Serve HTML cached files when possible: If you're using WordPress, you'll be sorted by using [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/). Remember to check the `mod_rewrite` redirection as it's the fastest option.
