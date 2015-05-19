@@ -40,7 +40,7 @@ What's really important it's not how long your site takes to load, but how fast 
 - 64% of shoppers who are dissatisfied with their site visit will go somewhere else to shop next time.
 
 In addition, it's been proven there is a direct relationship between performance and conversion rates. No matter what your site is offering, users won't get there if they have a slow experience. 
-For example, [Walkmart.com found](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/) that for every 1 second of improvement, they experienced up to a 2% conversion increase.
+For example, [Walmart.com found](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/) that for every 1 second of improvement, they experienced up to a 2% conversion increase.
 
 Nowadays, we're getting more and more impatient and we expect faster responses. Here's how I tried to meet these expectations without compromising design.
 
