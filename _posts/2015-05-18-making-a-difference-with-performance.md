@@ -107,16 +107,16 @@ In the end, the best performance optimizations depend on your product. Ask yours
 Use free tools like [WebPageTest](http://www.webpagetest.org/) or [ShowSlow](http://www.showslow.com/) to keep track of how your site is doing. Compare the before and after, see if it works for you.
 
 ## To sum up
-The combination of all of these requirements resulted in a highly polished website that performs really well and is a good competitor against some globally well-known companies. It is definetly makes a difference with how it was before.
+The combination of all of these requirements resulted in a highly polished website that performs really well and is a good competitor against some globally well-known companies. Base may not be the most famous agency in the world, but it's making a difference with performance.
 
 - [Comparison Base old vs new on mobile over 3G][old-vs-new-mobile]
 - [Comparison Base old vs new on desktop over WiFi][old-vs-new-desktop]
 
-Something I want to encourage all you to do is **attend local meetup and/or conferences**. Sharing and networking helped me expand my knowledge on all these areas, and I'm sure that without them this wouldn't have been as good as it is now.
+Something I want to encourage all you to do is **attend local meetup and/or conferences**. Sharing and networking helped me expand my knowledge on all these areas, and I'm sure that without them the result wouldn't have been as good as it is now.
 
 I love competition, so if you know of any other highly curated sites to test against Base's new site, please [fire me a tweet](https://twitter.com/jaicab_). To make it fair the site must be responsive and have at least one image besides the logo.
 
-I hope you learned something today. If you are worried about performance now, mission accomplished. If you're using WordPress, chances are you can get a <3000 SpeedIndex in no time with these tips. We can make the web faster, so we should. Go do your bit. It'll be better for everybody's roaming bill.
+I hope you learned something today. If only you are worried about performance now, mission accomplished. If you're using WordPress, chances are you can get a <3000 SpeedIndex in no time with these tips. We can make the web faster, so we should. Go do your bit. It'll be better for everybody's roaming bill.
 
 [base-mobile-3g]: http://www.webpagetest.org/result/150514_XD_5bfb63d23712e49332b9400c02768b2b/
 [base-desktop-wifi]: http://www.webpagetest.org/result/150517_R6_20109e842c060552a2cfc5bc8e28ce34/
