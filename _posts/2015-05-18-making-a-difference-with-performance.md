@@ -76,6 +76,13 @@ Now this wasn't easy, but there's no way around it. Take a look at some talks li
 As a performance measure and since we were dropping support for IE under version 9 it seemed like a good time to make an example and just not use jQuery, not to mention [it is considered harmful](http://lea.verou.me/2015/04/jquery-considered-harmful/). A very helpful site that will help you get rid of it is [You Might Not Need jQuery](http://youmightnotneedjquery.com/).
 
 
+### Progressive enhancement
+Everybody but the MVC framework lovers loves progressive enhancement. My passion for _access first_ really made me push for a very well thought, progressively enhanced experience. A library that helps a lot with that is [Modernizr](http://modernizr.com/), which will let you use features when available. Basically, it's a matter of asking _if_ a lot.
+
+As a result, the site has been built **mobile first**, loading assets and executing JavaScript only when it is necessary. It works beautifully without any JS at all, and then as features become available the experience gets enhanced with CSS transitions, better navigation or in some cases an interactive, JS dependant experience was added (like a slider for example).
+
+One of my favourite talks on progressive enhancement (and ever) is [The Long Web by Jeremy Keith](https://vimeo.com/118146193).
+
 ### A <1000 SpeedIndex
 Now this is a [golden rule established by Paul Irish](http://timkadlec.com/2014/01/fast-enough/#comment-1200946500) I really wanted to meet. This involves a series of factors, besides an optimal frontend development:
 
@@ -88,13 +95,6 @@ Now this is a [golden rule established by Paul Irish](http://timkadlec.com/2014/
 
 If you want to have a better understanding of how browsers and servers work I would really encourage you to watch [Paul Irish's talk on Smashing Whistler](https://vimeo.com/125657469) about how TCP protocol is like 7th grade.
 
-
-### Progressive enhancement
-Everybody but the MVC framework lovers loves progressive enhancement. My passion for _access first_ really made me push for a very well though, progressively enhanced experience. A library that helped a lot with that was [Modernizr](http://modernizr.com/), which will let you use features when available. Basically, it's a matter of asking _if_ a lot.
-
-As a result, the site has been built **mobile first**, loading assets and executing JavaScript only when it is necessary. It works beautifully without any JS at all, and then as features become available the experience gets enhanced with CSS transitions and better navigation.
-
-One of my favourite talks on progressive enhancement (and ever) is [The Long Web by Jeremy Keith](https://vimeo.com/118146193).
 
 ### Get to know your product
 In the end, the best performance optimizations depend on your product. Ask yourself the following questions. If there's no reasonable answer, you probably don't need it:
