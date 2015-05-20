@@ -59,7 +59,7 @@ I enjoy learning about new cultures. That's why I'm studying **Mandarin**. Also 
 
 ##Technical skills
 
-I write code with [Sublime Text](http://www.sublimetext.com/3), commit wia **git** and deploy using [Transit](http://panic.com/transmit/).
+I write code with [Sublime Text](http://www.sublimetext.com/3), commit via **git** and deploy using [Transit](http://panic.com/transmit/).
 I play with the design in [Sketch](http://bohemiancoding.com/sketch/) and iPad's app [Paper by 53](https://www.fiftythree.com/paper).
 I have a forgetful mind but an agile heart, so I organize my work on [Redbooth](https://redbooth.com/) (previously Teambox).
 
