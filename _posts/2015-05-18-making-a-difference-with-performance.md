@@ -6,7 +6,7 @@ meta: I want to share the experience of building a responsive, performant websit
 
 I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've been asked to build from scratch. And it's fast. Blazing fast. Now I want to share that experience with you and tell you what I learned on the way.
 
-<a href="/assets/perfmatters_competitors.png" title="See aumented image">
+<a href="/assets/perfmatters_competitors.png" title="See augmented image">
 	<img src="/assets/perfmatters_competitors.png" alt="Filmstrip New Base vs Competitors" />
 </a>
 
