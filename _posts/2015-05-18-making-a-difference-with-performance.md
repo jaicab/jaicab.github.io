@@ -51,7 +51,7 @@ Nowadays, we're getting more and more impatient and we expect faster responses. 
 Let's get to the specifics. The new site has been built with the intention to set an example for new projects in the company. A fresh start, I would say. In order to do so, the frontend has gone for the highest standards I could meet. Here's how it's been done:
 
 ### Scalable and reusable CSS
-It's important to keep scalable and reusable CSS. Any frontend developer realises that when he gets enough experience. Once you _see the world in markup_, tools like **Sass** become really useful. Something that really helped and I have always recommended is [Harry Robert's inuit-like folder structure](https://github.com/csswizardry/inuit.css/), too keep all these modules organised. Once you see it, you can't unsee it, just like [how ducks are wearing little dog masks](http://ubersuper.com/uploads/2010/08/tumblr_l7lw6navKd1qzpwi0o1_500.jpg). I would also recommend some Sass mixins:
+It's important to keep scalable and reusable CSS. Enough experience will teach you that. Once you _see the world in markup_, tools like **Sass** become really useful. Something that really helped and I have always recommended is [Harry Robert's inuit-like folder structure](https://github.com/csswizardry/inuit.css/), too keep all these modules organised. Once you see it, you can't unsee it, just like [how ducks are wearing little dog masks](http://ubersuper.com/uploads/2010/08/tumblr_l7lw6navKd1qzpwi0o1_500.jpg). I would also recommend some Sass mixins:
 
 - [theguardian's mq](https://github.com/sass-mq/sass-mq): Media queries couldn't get easier or more consistent.
 - [ext()](http://jaicab.com/sass-ext/): This mixin lets you set a selector budget and control how you use the extend directive.
