@@ -36,7 +36,7 @@ And so began the build of one of the most interesting mixins I've ever built.
 
 ## Introducing vary
 You can check out [vary's website](http://jaicab.com/sass-vary/) or its [repo on GitHub](https://github.com/jaicab/sass-vary).
-This mixins solves all the issues presented above and achieves all the needed functionalities. It's supported on **Sass 3.2+** and **libsass 3.2+**. 
+This mixins solves all the issues presented above and achieves all the needed functionalities. It's supported on **Sass 3.4+** and **libsass 3.2+**. 
 
 The most common theming pattern is using a <code>.is-foo</code> body class, where <i>foo</i> is the entity for which the CSS variations are destinated to (e.g. user, admin). Let me show you how that would be done using vary:
 
