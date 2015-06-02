@@ -6,7 +6,7 @@ meta: Sass theming made easy using vary
 
 There is no _one way_ to do one thing in Sass. In the end, Sass is nothing more than supercharged CSS. And people love doing CSS their way. This is not a ruleset to follow, but an opinionated set of standards that we use at [Base Creative](http://basecreative.co.uk).
 
-Theming properly is hard. It usually gets messy, unconsistent and difficult to mantain. Over the past few months we've built a couple of websites that required theming.
+Theming properly is hard. It usually gets messy, inconsistent and difficult to mantain. Over the past few months we've built a couple of websites that required theming.
 
 - [Crafted People](https://craftedpeople.com/): The default color styling for this website is purple. But when a section is dedicated for a homeowner, the purple must change to pink. And when a section is for tradesmen, it must change to green. At the same time, some sections must have elements in pink and green on the same page.
 - [Devonshire House Dental](http://www.devonshirehousedental.co.uk/): This site changes the color scheme depending on the target user. If it's for dentists, it has to be a light purple whereas patient pages will have a dark purple.
@@ -15,7 +15,7 @@ Theming properly is hard. It usually gets messy, unconsistent and difficult to m
 ## Problems on CSS theming
 When approaching theming for these websites we found some issues, like:
 
-- **Inconsistent classes**: Crafted People home owners styling was represented as `homeowner`, `home-owner`, `owner` and `owners`. This inconsistency slowed down the development process as you need to double check which of those representations was used.
+- **Inconsistent classes**: Crafted People home owners' styling was represented as `homeowner`, `home-owner`, `owner` and `owners`. This inconsistency slowed down the development process as you need to double check which of those representations was used.
 - **Slightly different colors on same theme**: Even if we had every color on a variable, we ended up using some hardcoded colors that may differ from the consistent color scheme we wanted.
 - **Manteinance**: One of the websites needed a new theme when the project was almost done. Creating all these new selectors in the codebase took a tremendous amount of time.
 
@@ -27,8 +27,8 @@ Two months ago we got a new project with **4 different themes** and I knew I had
 
 - A centralised map where all the themes and properties of each theme where set.
 - A way of generating all the styles looping through this map, so when we update the map, the CSS gets automatically updated.
-- The ability to create body classes as well as BEM modifiers, so we can have template related styling and element one too.
-- Perform different actions on some of the themes and a different action on the rest. Some themes may use a color (e.g. color secondary) for a specific element when the rest use another (e.g. color primary).
+- The ability to create body classes as well as BEM modifiers, so we can have template related styling and element-specific ones too.
+- Perform different actions for some of the themes and a different action for the rest of them. Some themes may use a color (e.g. color secondary) for a specific element when the rest use another (e.g. color primary).
 - A way of playing with all these without being limited. For instance, we may need to create a class that is not a BEM modifier but just a class with the name of the theme.
 
 And so began the build of one of the most interesting mixins I've ever built.
@@ -36,7 +36,7 @@ And so began the build of one of the most interesting mixins I've ever built.
 
 ## Introducing vary
 You can check out [vary's website](http://jaicab.com/sass-vary/) or its [repo on GitHub](https://github.com/jaicab/sass-vary).
-This mixins solves all the issues presented above and achieves all the needed functionalities. It's supported on **Sass 3.4+** and **libsass 3.2+**. 
+This mixin solves all the issues presented above and achieves all the needed functionalities. It's supported on **Sass 3.4+** and **libsass 3.2+**. 
 
 The most common theming pattern is using a <code>.is-foo</code> body class, where <i>foo</i> is the entity for which the CSS variations are destinated to (e.g. user, admin). Let me show you how that would be done using vary:
 
