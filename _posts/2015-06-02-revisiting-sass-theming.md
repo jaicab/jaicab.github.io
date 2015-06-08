@@ -55,7 +55,7 @@ $vary-map: (
 .foo{
 	background: red;
 
-	@include vary($create: body) {
+	@include vary($create: parent) {
 		background: vary-get('color-primary');
 		border: vary-get('border');
 	}
@@ -81,11 +81,12 @@ And here's the compiled result:
 {% endhighlight %}
 
 
-And this is just the beggining. vary currently has **4 creation modes**, which have been more than enough for us.
+And this is just the beggining. vary currently has **5 creation modes**, which have been more than enough for us.
 
-- Body/parent class: The most common way to approach theming is using a body/parent class.
-- Body + HTML class: If you need to apply the body class on a selector that contains an HTML class (e.g. if using Modernizr).
-- BEM modifier: When differently styled modules need to be present on the same page, the most common approach is to create a modifier.
+- Parent - Body/parent class: The most common way to approach theming is using a body/parent class.
+- Insert - Body + HTML class: If you need to apply the body class on a selector that contains an HTML class (e.g. if using Modernizr).
+- Modifier (BEM): When differently styled modules need to be present on the same page, the most common approach is to create a modifier.
+- Append: Appends a class to the element. Same scenario that BEM but for people that don't want to use BEM.
 - Custom: A vary playground. You can create any kind of construction.
 		
 There are also some very nice features available on every creation mode, that add a lot of **flexibility**:
