@@ -50,6 +50,7 @@ Another of my strong skills is web performance, some examples are:
 - [Making a difference with performance](http://jaicab.com/2015/05/18/making-a-difference-with-performance/): This is a case study on how I tried to achieve absolute perfection in web performance for Base Creative's website, comparing it against its competitors.
 
 But essentially, what I'm proud of is making robust experiences, so all my skills and even my mindset could be summarised by Postel's law:
+
 > "Be conservative in what you do, be liberal on what you accept from others" - [Jon Postel](https://tools.ietf.org/html/rfc1122#page-12)
 
 In terms of tools, I use a grunt-based engine that I developed at Base Creative called [barebase](https://github.com/basecreative/barebase). It's so powerful it allows the development of a flat build as well as production build using the same codebase for common elements.
