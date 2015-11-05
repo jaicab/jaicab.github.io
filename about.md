@@ -26,6 +26,7 @@ I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>
 ##Technical skills
 
 I have been working in London over a year, during which I have perfected many of my skills. This is what I'm good at.
+
 - Deep understanding of OOCSS.
 - Strong experience with responsive design, grid systems, and media queries.
 - Experience with building styleguides.
@@ -38,7 +39,7 @@ I have been working in London over a year, during which I have perfected many of
 - Able to work extremely close with the design team.
 - Passionate for learning new technologies and collaborating with a team.
 
- I have vast experience using Sass, having built some cool libraries now used by some big companies, like:
+I have vast experience using Sass, having built some cool libraries now used by some big companies, like:
 
 - [sass-vary](https://github.com/jaicab/sass-vary): vary is the most powerful theming solution for Sass available. Simple as that. Also, easy to use.
 - [sass-ext](https://github.com/jaicab/sass-ext): ext gives you control over the @extend directive in Sass, allowing you to set selector budgets.
