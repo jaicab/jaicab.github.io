@@ -5,92 +5,17 @@ title: I built this stuff.
 meta: My portfolio, with the most worth mentionable projects
 ---
 
-<div class="portfolio grid">
+I only build responsive (read: responsible responsive), mobile first, performant websites using progressive enhancement. The code must always be scalable, reusable and easy to refactor. The sites below all meet these requirements.
+I've been working in London for over a year, and this are some of the nicest websites I've built:
 
-<div class="g--half">
-	<div class="project">
-		<figure class="project__cover">
-			<a href="/work/booksandparty/" class="project__link">
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="/images/cover/big/booksandparty.jpg, /images/cover/enormous/booksandparty.jpg 2x" media="(min-width: 1100px)">
-					<source srcset="/images/cover/medium/booksandparty.jpg, /images/cover/big/booksandparty.jpg 2x" media="(min-width: 400px)">
-					<source srcset="/images/cover/small/booksandparty.jpg, /images/cover/medium/booksandparty.jpg 2x">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="/images/cover/small/booksandparty.jpg, /images/cover/medium/booksandparty.jpg 2x" alt="Books and Party cover">
-				</picture>
-			</a>
-		</figure>
-		<figcaption class="project__info">
-			<h2 class="project__title">Books and Party</h2>
-			<i class="project__done">Social network for college students focused on content</i>
-		</figcaption>
-	</div>
-</div>
+- [Base Creative](http://www.basecreative.co.uk/): Base Creative's site was shot for perfection in terms of web development, and it was very close to get there. I used the best standards and very interesting new stuff like art direction with picture and localStorage web font caching. I even wrote [an article](http://jaicab.com/2015/05/18/making-a-difference-with-performance/) about it. I also built a patter library for it, it's available [on GitHub](http://basecreative.github.io/styleguide/).
+- [Eurosport's Programme Guide](http://programmeguide.eurosport.com/): This site is used by reporters to get access to what events are taking place and are transmitted by Eurosport.
+- [Crafted People](https://craftedpeople.com/): A site for a startup, where home owners and tradesmen get in touch, being the home owner the one that post the ad and the tradesmen the one who contacts instead of the other way around.
 
+Before coming to London, I freelanced in Spain, my home country. I did not have the resources or time I have today, so these sites would not meet all my current requirements.
 
-<div class="g--half">
-	<div class="project">
-		<figure class="project__cover">
-			<a href="/work/movilcrash/" class="project__link">
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="/images/cover/big/movilcrash.jpg, /images/cover/enormous/movilcrash.jpg 2x" media="(min-width: 1100px)">
-					<source srcset="/images/cover/medium/movilcrash.jpg, /images/cover/big/movilcrash.jpg 2x" media="(min-width: 400px)">
-					<source srcset="/images/cover/small/movilcrash.jpg, /images/cover/medium/movilcrash.jpg 2x">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="/images/cover/small/movilcrash.jpg, /images/cover/medium/movilcrash.jpg 2x" alt="Movilcrash cover">
-				</picture>
-			</a>
-		</figure>
-		<figcaption class="project__info">
-			<h2 class="project__title">Movilcrash</h2>
-			<i class="project__done">Complete management system for a smartphones' repair chain</i>
-		</figcaption>
-	</div>
-</div>
+- [Copy Centro](http://copycentro.es): Site for a graphic design agency with in-store printers. I built a QR code builder for the users so when you sign up, you get a stack of cards with a QR code on the back delivered to you. This was when having a QR code on the back of your card was cool.
 
+- [Books & Party](http://booksandparty.com): This startup is a community for university students where they can share notes and perform other interesting activities like talk about parties.
 
-<div class="g--half">
-	<div class="project">
-		<figure class="project__cover">
-			<a href="/work/copycentro/" class="project__link">
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="/images/cover/big/copycentro.jpg, /images/cover/enormous/copycentro.jpg 2x" media="(min-width: 1100px)">
-					<source srcset="/images/cover/medium/copycentro.jpg, /images/cover/big/copycentro.jpg 2x" media="(min-width: 400px)">
-					<source srcset="/images/cover/small/copycentro.jpg, /images/cover/medium/copycentro.jpg 2x">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="/images/cover/small/copycentro.jpg, /images/cover/medium/copycentro.jpg 2x" alt="Books and Party cover">
-				</picture>
-			</a>
-		</figure>
-		<figcaption class="project__info">
-			<h2 class="project__title">Copycentro</h2>
-			<i class="project__done">QR code integration, showcase and management system</i>
-		</figcaption>
-	</div>
-</div>
-
-<div class="g--half">
-	<div class="project">
-		<figure class="project__cover">
-			<a href="/work/ganor/" class="project__link">
-				<picture>
-					<!--[if IE 9]><video style="display: none;"><![endif]-->
-					<source srcset="/images/cover/big/ganor.jpg, /images/cover/enormous/ganor.jpg 2x" media="(min-width: 1100px)">
-					<source srcset="/images/cover/medium/ganor.jpg, /images/cover/big/ganor.jpg 2x" media="(min-width: 400px)">
-					<source srcset="/images/cover/small/ganor.jpg, /images/cover/medium/ganor.jpg 2x">
-					<!--[if IE 9]></video><![endif]-->
-					<img srcset="/images/cover/small/ganor.jpg, /images/cover/medium/ganor.jpg 2x" alt="GANOR cover">
-				</picture>			</a>
-		</figure>
-		<figcaption class="project__info">
-			<h2 class="project__title">GANOR</h2>
-			<i class="project__done">Project showcase and site for big international engineering company</i>
-		</figcaption>
-	</div>
-</div>
-
-
-</div>
+I have to say, my most interesting pieces of work are my side projects. So I'd recommend checking them out on my [GitHub profile](https://github.com/jaicab).
