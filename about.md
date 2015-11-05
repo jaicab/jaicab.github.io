@@ -45,6 +45,7 @@ I have vast experience using Sass, having built some cool libraries now used by 
 - [sass-ext](https://github.com/jaicab/sass-ext): ext gives you control over the @extend directive in Sass, allowing you to set selector budgets.
 
 Another of my strong skills is web performance, some examples are:
+
 - [localFont](https://github.com/jaicab/localFont): localFont is an online tool to implement localStorage web font caching in seconds. Using pure JS, this tool encodes your font files on base64 strings and puts them on a font face declaration. Then this CSS will be saved in a file that will be loaded asynchronously into localStorage. This solution is currently used by Smashing Magazine.
 - [Making a difference with performance](http://jaicab.com/2015/05/18/making-a-difference-with-performance/): This is a case study on how I tried to achieve absolute perfection in web performance for Base Creative's website, comparing it against its competitors.
 
