@@ -7,10 +7,10 @@ meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 permalink: /about/
 ---
 
-Hi, I'm Jaime. I am a **front-end architect** from Spain. This means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** designs. 
+Hi, I'm Jaime. I am a **front-end architect** from Spain. This means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** (read: responsible responsive) designs. 
 
-I'm into **progressive enhancement**, so content and performance go always first for me.
-I enjoy creating pixel-perfect, scalable and maintainable CSS code. I apply **OOCSS**, **SMACSS**, **BEM** and **DRY CSS** techniques.
+I'm love **progressive enhancement**, so content and web performance go always first for me.
+I enjoy creating scalable and maintainable Sass. I use a mixture of **BEM** and **OOCSS**, always trying to keep it as **DRY** as possible.
 
 I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
 
@@ -21,6 +21,53 @@ I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>
     <dt>Email: <a href="mailto:me@jaicab.com">me@jaicab.com</a></dt>
     <dd>Email me if it doesn't fit in a tweet or it's going to be a large conversation.</dd>
 </dl>
+
+
+##Technical skills
+
+I have been working in London over a year, during which I have perfected many of my skills. This is what I'm good at.
+- Deep understanding of OOCSS.
+- Strong experience with responsive design, grid systems, and media queries.
+- Experience with building styleguides.
+- Attention to detail, and appreciation for clean, pragmatic, and reusable code.
+- Deep understanding of Web Standards.
+- Deep understanding of performance when it comes to your code.
+- Strong knowledge of cross-browser and cross-device quirks along with knowing how to debug each browser and device.
+- Experience with building large scale websites.
+- Able to work in an agile and fast paces environment.
+- Able to work extremely close with the design team.
+- Passionate for learning new technologies and collaborating with a team.
+
+ I have vast experience using Sass, having built some cool libraries now used by some big companies, like:
+
+- [sass-vary](https://github.com/jaicab/sass-vary): vary is the most powerful theming solution for Sass available. Simple as that. Also, easy to use.
+- [sass-ext](https://github.com/jaicab/sass-ext): ext gives you control over the @extend directive in Sass, allowing you to set selector budgets.
+
+Another of my strong skills is web performance, some examples are:
+- [localFont](https://github.com/jaicab/localFont): localFont is an online tool to implement localStorage web font caching in seconds. Using pure JS, this tool encodes your font files on base64 strings and puts them on a font face declaration. Then this CSS will be saved in a file that will be loaded asynchronously into localStorage. This solution is currently used by Smashing Magazine.
+- [Making a difference with performance](http://jaicab.com/2015/05/18/making-a-difference-with-performance/): This is a case study on how I tried to achieve absolute perfection in web performance for Base Creative's website, comparing it against its competitors.
+
+But essentially, what I'm proud of is making robust experiences, so all my skills and even my mindset could be summarised by Postel's law:
+> "Be conservative in what you do, be liberal on what you accept from others" - [Jon Postel](https://tools.ietf.org/html/rfc1122#page-12)
+
+In terms of tools, I use a grunt-based engine that I developed at Base Creative called [barebase](https://github.com/basecreative/barebase). It's so powerful it allows the development of a flat build as well as production build using the same codebase for common elements.
+
+###MVC frameworks
+> "MVC. Maybe Viewable Content." - Scott Jehl
+
+Even though I've developed some applications and [open source experiments](https://github.com/jaicab/ciego.es) in AngularJS, **I don't like MVC JavaScript frameworks** because they don't work with **progressive enhancement**. If the framework fails, you get no content at all.
+
+I prefer light core JavaScript that you can apply so it enhances the experience but not depends on it, like I did with [Paraxify.js](https://github.com/jaicab/Paraxify.js).
+
+
+##UI/UX design skills
+
+>"When information is cheap, attention becomes expensive." - James Gleick
+
+When you focus on content, you get the inherent UI. In a world where information is cheap, content must be first. A clean, straight-forward markup makes you website SEO friendly and also designer friendly.
+
+I have a very good understanding of the designer's worries and can establish a continous conversation so we make each other's lifes easier. There's no need for a compromise when we can all be happy. I'm very good at finding that solution.
+
 
 ##Language skills
 
@@ -56,45 +103,3 @@ I enjoy learning about new cultures. That's why I'm studying **Mandarin**. Also 
 	</div>
 
 </div>
-
-##Technical skills
-
-I write code with [Sublime Text](http://www.sublimetext.com/3), commit via **git** and deploy using [Transit](http://panic.com/transmit/).
-I play with the design in [Sketch](http://bohemiancoding.com/sketch/) and iPad's app [Paper by 53](https://www.fiftythree.com/paper).
-I have a forgetful mind but an agile heart, so I organize my work on [Redbooth](https://redbooth.com/) (previously Teambox).
-
-###Preprocessors
-I save time and power up CSS and JavaScript by using **Sass** and sometimes **CoffeScript**. I can't stop coding till everything is an object with perfect, proportional margins and ratios and also the lightest possible.
-I'm driven by the **80/20 rule**, which says that 80% of the design can be accomplished by 20% of the code.
-
-That means **no CSS frameworks**! They add up weight, unwanted styles and dependecies which take tons of wasted time to remove. I believe that what makes a good front-end is not getting good results with frameworks but getting even better ones without them.
-
-###MVC frameworks
-> "MVC. Maybe Viewable Content." - Scott Jehl
-
-Even though I've developed some applications and [open source experiments](https://github.com/jaicab/ciego.es) in AngularJS, **I don't like MVC JavaScript frameworks** because they don't work with **progressive enhancement**. If the framework fails, you get no content at all.
-
-I prefer light core JavaScript that you can apply so it enhances the experience but not depends on it, like I did with [Paraxify.js](https://github.com/jaicab/Paraxify.js).
-
-##UI/UX design skills
-
->"When information is cheap, attention becomes expensive." - James Gleick
-
-When you focus on content, you get the inherent UI. In a world where information is cheap, content must be first. A clean, straight-forward markup makes you website SEO friendly and also designer friendly.
-
-I like to say that __if you get the essence of the experience, then the interface comes by itself__.
-
-I've set up a **workflow** that works like CSS, in cascade. The information grows exponentially:
-
-1. Sketch up the info given.
-2. Break it down to pieces.
-3. Do a simple HTML (no CSS, no JS) mock-up spreading the content.
-4. List the separate user experiences you have come up with.
-5. Get them working on a black and white mock-up.
-6. List all the UI objects and design them mobile-first.
-7. Back-end time. Keep JS dependencies to a minimum.
-8. Enhance the experience with JavaScript, if needed.
-9. Re-check dependecies, merge, gzip'em and get them into versioned cache.
-10. Test, test, test and deploy.
-
-It's also important that these experiences work beautifully across as many devices as possible. I love my device lab and mocking up on all of my devices at the same time using **CodeKit**'s live reload and style injection.
