@@ -7,10 +7,10 @@ meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 permalink: /about/
 ---
 
-Hi, I'm Jaime. I am a **front-end architect** from Spain. This means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** (read: responsible responsive) designs. 
+Hi, I'm Jaime. I am a **front-end architect**. This means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** (read: responsible responsive) designs. 
 
-I'm love **progressive enhancement**, so content and web performance go always first for me.
-I enjoy creating scalable and maintainable Sass. I use a mixture of **BEM** and **OOCSS**, always trying to keep it as **DRY** as possible.
+I love **progressive enhancement**, so content and web performance go always first for me.
+I write scalable, reusable and easily refactorable code. In terms of CSS architecture, I use a mixture of **BEM** and **OOCSS**, always trying to keep it as **DRY** as possible.
 
 I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
 
