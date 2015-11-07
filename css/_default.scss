@@ -31,8 +31,7 @@ $bp-tablet-big: "(min-width: "+(720/16)+"em)";
 $bp-desktop-small: "(min-width: "+(960/16)+"em)";
 $bp-desktop-big: "(min-width: "+(1360/16)+"em)";
 
-$bp-retina: "only screen and (-webkit-min-device-pixel-ratio: 2), 
-only screen and (min-resolution: 192dpi)";
+$bp-retina: "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi)";
 
 $bp-print: "print";
 

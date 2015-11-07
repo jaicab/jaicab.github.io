@@ -142,11 +142,20 @@ nav ul{
 // Classes
 
 %wrap{
-	max-width: 1060px;
+	max-width: 66em;
 	margin: 0 auto;
 }
 .wrap{
 	@extend %wrap;
+
+
+	@include bp(desktop-small) {
+		max-width: 40em;
+	}
+
+	&.home {
+		max-width: 66em;
+	}
 }
 
 .content,
