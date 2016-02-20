@@ -3,7 +3,8 @@ title: "Frontend architect based in London | Jaime Caballero"
 email: me@jaicab.com
 description: "Frontend architect based in London"
 baseurl: ""
-url: "http://jaicab.com"
+url: "https://jaicab.com"
+enforce_ssl: "http://jaicab.com"
 username: "jaicab"
 twitter: "jaicab_"
 
@@ -11,7 +12,6 @@ twitter: "jaicab_"
 markdown: kramdown
 permalink: pretty
 exclude: [README.md, css/*.scss]
-highlighter: pygments
 
 # Pagination
 paginate: 5
@@ -19,3 +19,9 @@ paginate: 5
 #Gems
 gems:
   - jekyll-redirect-from
+  - jekyll-paginate
+
+#Include
+include: [
+  '.well-known'
+]
