@@ -6,7 +6,7 @@ meta: Frontend architect based in London | Jaime Caballero - Articles about Sass
 <div itemscope itemtype="http://schema.org/Blog">
 
   <ul class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li class="post__link" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
         <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -17,17 +17,13 @@ meta: Frontend architect based in London | Jaime Caballero - Articles about Sass
   <ol class="pagination">
     <li class="pagination__prev">
         {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-            <a href="/">Previous</a>
-        {% else %}
-            <a href="/page{{paginator.previous_page}}">Previous</a>
-        {% endif %}
+            <a href="{{ paginator.previous_page_path }}">Previous</a>
         {% else %}
             Previous
         {% endif %}
     </li><li class="pagination__next">
         {% if paginator.next_page %}
-            <a href="/page{{paginator.next_page}}">Next</a>
+            <a href="{{ paginator.next_page_path }}">Next</a>
         {% else %}
             Next
         {% endif %}

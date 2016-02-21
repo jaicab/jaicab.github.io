@@ -16,10 +16,14 @@ exclude: [README.md, css/*.scss]
 # Pagination
 paginate: 5
 
+
 #Gems
 gems:
   - jekyll-redirect-from
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+
 
 #Include
 include: [
