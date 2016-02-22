@@ -11,7 +11,7 @@ twitter: "jaicab_"
 # Build settings
 markdown: kramdown
 permalink: pretty
-exclude: [README.md, css/*.scss]
+exclude: [README.md]
 
 # Pagination
 paginate: 5
@@ -23,9 +23,3 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-
-
-#Include
-include: [
-  '.well-known'
-]

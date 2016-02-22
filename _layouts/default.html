@@ -1,15 +1,33 @@
-<!DOCTYPE html>
-<html lang="en" class="{{page.class}}">
+{% include head.html %}
 
-  {% include head.html %}
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
 
-    <body itemscope itemtype="http://schema.org/WebPage">
+  <header class="header header--main">
+    <div class="header__top">
+      <div class="wrap">
+        <a href="/" id="logo" class="logo">
+          <object data="/images/logo.svg"  type="image/svg+xml">JC</object>
+        </a>
+        
+        <nav class="nav nav--main">
+          <a class="current" href="/articles">Articles</a>
+          <a href="/projects">Projects</a>
+          <a href="/work">Work</a>
+          <a href="/about">About</a>      
+        </nav>
+      </div>
+    </div>
+    
+    <div class="demo">
+    </div>
+    <div class="line"></div>
+  </header>
+  
+  {{ content }}
+  
+  <footer class="footer">
+    &copy; 2016 Jaime Caballero
+  </footer>
 
-    {% include header.html %}
-
-      {{ content }}
-
-    {% include footer.html %}
-
-    </body>
-</html>
+{% include footer.html %}

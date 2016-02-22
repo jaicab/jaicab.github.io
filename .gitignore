@@ -1,4 +1,6 @@
 _site
 .css.map
-.sass-cache
 .scssc
+.sass-cache/
+node_modules/
+.jekyll-metadata

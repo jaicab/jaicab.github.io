@@ -2,33 +2,18 @@
 layout: default
 ---
 
-<div class="post">
-<section class="wrap">
+  <main class="main">
+    <div class="wrap">
+      <div class="text">
+        <header class="article__header">
+          <h1>{{ page.title }}</h1>
+          <div class="article__details">
+            
+          </div>
+        </header>
+        
+        {{ content }}
 
-  <article itemscope itemtype="http://schema.org/BlogPosting">
-     <header class="post-header island">
-      <time class="post__time" datetime="{{ page.date | date: %F }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      <h1 class="post-header__title" itemprop="headline">{{ page.title }}</h1>
-    </header>
-    <div class="post-content" itemprop="articleBody">
-      {{ content }}
+      </div>
     </div>
-  </article>
-
-  <div class="post-related"> 
-        {% if page.next.url %} 
-        <div class="post-related__right"> 
-            <a href="{{page.next.url}}" title="next Post: 
-{{page.next.title}}">{{page.next.title}}</a> 
-        </div> 
-        {% endif %} 
-
-        {% if page.previous.url %} 
-        <div class="post-related__left"> 
-            <a href="{{page.previous.url}}" title="Previous Post: 
-{{page.previous.title}}">{{page.previous.title}}</a> 
-        </div> 
-        {% endif %} 
-</div>
-</section>
-</div>
+  </main>

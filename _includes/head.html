@@ -1,27 +1,39 @@
+<!DOCTYPE html>
+<html>
 <head>
+    <script>
+        {% include js/critical.js %}
+    </script>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="/css/full.css">
+    </noscript>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+
+
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>
 
-    <style>
-    {% include style.css %}
-    </style>
-
-    <!-- Fetch DNS -->
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
-    <link rel="dns-prefetch" href="//codepen.io">
 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    
+
     {% if page.path contains '_posts' %}
         <meta property="og:type" content="article" />
         <meta property="og:published_time" content="{{ page.date | date_to_xmlschema }}" />
     {% else %}
         <meta property="og:type" content="website" />
     {% endif%}
-    
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:domain" content="jaicab.com">
@@ -32,20 +44,6 @@
         <meta name="description" content="{{ page.meta }}">
     {% endif %}
 
-    <title>
-        {% if page.title %}
-            {{ page.title }} | {{ site.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
-    </title>
-
-
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <meta name="msapplication-TileColor" content="#069">
-</head>
-
-<script>
-    !function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(c(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var a=document.createElement("link");a.href=o,a.rel="stylesheet",a.type="text/css",document.getElementsByTagName("head")[0].appendChild(a),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="/cdn/font.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();
-</script>
