@@ -1,0 +1,22 @@
+
+.wrap {
+  padding: 0 1em;
+}
+
+@media all and (min-width: 40em) {
+  .wrap {
+    margin: 0 1em;
+  }
+}
+
+
+@media all and (min-width: 55em) {
+
+  
+  .wrap {
+    margin: 0 auto;
+    width: 44.5em;
+    width: calc(43.25em + 2vw);
+  }
+
+}

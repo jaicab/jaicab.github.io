@@ -357,7 +357,7 @@ th {
 body {
   font-family: Garamond, Adobe Garamond Pro, Georgia, serif; }
   .font-primary-loaded body {
-    font-family: "Crimson Text", Garamond, Adobe Garamond Pro, Georgia, serif; }
+    font-family: "Crimson Text", Adobe Garamond Pro, Garamond, Georgia, serif; }
 
 h1, h2, h3, h4, h5, h6, .nav--main {
   font-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; }

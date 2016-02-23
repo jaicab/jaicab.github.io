@@ -39,12 +39,6 @@ function loadFonts() {
 	!( "keys" in Object )) {
 	return;
   }
-  if(sessionStorage.fontPrimaryLoaded && sessionStorage.fontSecondaryLoaded) {
-    doc.documentElement.className += " font-primary-loaded";
-    if(sessionStorage.fontSecondaryLoaded) {
-      doc.documentElement.className += " font-secondary-loaded";
-    }
-  } else {
-    onloadCSS(font_css, loadFonts);
-  }
+  
+  onloadCSS(font_css, loadFonts);
 })( document );

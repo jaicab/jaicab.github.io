@@ -1,0 +1,32 @@
+
+.nav--main {
+  @extend %font-secondary;
+  text-align: center;
+  text-transform: uppercase;
+  
+  a {
+    color: $color-text;
+    font-weight: 400;
+    display: inline-block;
+    padding: .25em 0;
+    letter-spacing: -0.002em;
+    
+    transition: .25s all;
+    
+    &.current {
+      font-weight: bold;
+    }
+    
+    &:hover, &:focus {
+      color: lighten($color-brand, 10%);
+    }
+    
+    &:not(:last-child) {
+      &::after {
+        content: '/';
+        display: inline-block;
+        margin-left: .2em;
+      }
+    }
+  }
+}

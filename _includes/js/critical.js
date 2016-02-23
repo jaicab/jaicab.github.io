@@ -1,4 +1,5 @@
 {% include js/components/loadCSS.js %}
+loadCSS("/css/full.css");
 
 ;(function( doc ) {  
   // IE9+
@@ -7,12 +8,14 @@
 	return;
   }
 
+  window.fontsLoaded = false;
+
   if(sessionStorage.fontPrimaryLoaded && sessionStorage.fontSecondaryLoaded) {
     doc.documentElement.className += " font-primary-loaded";
     if(sessionStorage.fontSecondaryLoaded) {
       doc.documentElement.className += " font-secondary-loaded";
     }
-  }
 
-  var full_css = loadCSS("/css/full.css");
+    window.fontsLoaded = true;
+  }
 })( document );

@@ -1,0 +1,56 @@
+
+.header {
+  position: relative;
+}
+
+.header__top {
+  //position: absolute;
+  //left: 0;
+  //right: 0;
+  overflow: hidden;
+}
+
+.header--main {
+  .header__top {
+    margin: 1.5em 2em 1.75em;
+  }
+  @media all and (min-width: 40em) {
+    .header__top {
+      margin: 3em 1em 4.5em;
+    }
+    .logo {
+      width: 50px;
+      height: 50px;
+    }
+    .nav--main {        
+ 
+      a:not(:last-child) {
+        &::after {
+          margin-left: .75em;
+          margin-right: .5em;
+        }
+      }
+    }
+  }
+  @media all and (min-width: 55em) {
+    .logo {
+      float: left;
+      margin: 0 0 0 .5em;
+    }
+    .nav--main {
+      float: right;
+      
+      a{
+        padding: .85em 0;
+        
+        &:not(:last-child) {
+          &::after {
+            margin-left: 1.5em;
+            margin-right: 1.25em;
+          }
+        }
+      }
+      
+    }
+  }
+}

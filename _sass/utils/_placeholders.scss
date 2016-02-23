@@ -1,0 +1,16 @@
+
+
+%font-primary {
+  font-family: $font-primary-initial;
+  
+  .font-primary-loaded & {
+    font-family: $font-primary;
+  }
+}
+%font-secondary {
+  font-family: $font-secondary-initial;
+  
+  .font-secondary-loaded & {
+    font-family: $font-secondary;
+  }
+}
