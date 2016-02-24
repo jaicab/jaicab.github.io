@@ -1,5 +1,14 @@
 module.exports = function(grunt) {
 
+  var the_tasks = [
+    'uglify', 
+    'sass',
+    'cssmin',
+  ];
+
+  var the_tasks_watch = Array.prototype.slice.call(the_tasks, 0);
+  the_tasks_watch.push('watch');
+
   grunt.initConfig({
     uglify: {
       options: {
@@ -50,18 +59,22 @@ module.exports = function(grunt) {
           'css/nojs.css': ['css/nojs.css']
         }
       }
-    }
+    },
+
+    watch: {
+      files: ['_src/**.js', '**/*.scss'],
+      tasks: the_tasks,
+    },
   });
+
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
-  
-  grunt.registerTask('default', [
-    'uglify', 
-    'sass',
-    'cssmin'
-  ]);
+
+  grunt.registerTask('default', the_tasks);
+  grunt.registerTask('dev', the_tasks_watch);
 
 };

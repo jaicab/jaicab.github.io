@@ -1,6 +1,10 @@
+# Jekyll stuff
 _site
 .css.map
+.jekyll-metadata
+Gemfile.lock
+
+# Build stuff
 .scssc
 .sass-cache/
 node_modules/
-.jekyll-metadata
