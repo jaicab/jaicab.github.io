@@ -14,12 +14,12 @@ function loadFonts() {
   Promise.all([CrimsonText.check(null,0), MontserratBold.check(null,0)]).then(function () {
     console.log('Main fonts available');
     sessionStorage.fontPrimaryLoaded = true;
-    document.documentElement.className += " font-primary-loaded";
+    document.documentElement.className += " f1";
  
     Promise.all([CrimsonTextItalic.check(null,0), CrimsonTextBold.check(null,0), Montserrat.check(null,0)]).then(function() {
       console.log('Rest are available');
       sessionStorage.fontSecondaryLoaded = true;
-      document.documentElement.className += " font-secondary-loaded";
+      document.documentElement.className += " f2";
     });
   }, function () {
     console.log('Man fonts not available');

@@ -2,6 +2,9 @@
   <script>
     {% include js/async.critical.min.js %}
   </script>
+  {% if page.syntax %}
+  <link rel="stylesheet" type="text/css" href="/css/syntax.css">
+  {% endif %}
   
 </body>
 </html>

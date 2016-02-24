@@ -3,14 +3,14 @@
 %font-primary {
   font-family: $font-primary-initial;
   
-  .font-primary-loaded & {
+  .f1 & {
     font-family: $font-primary;
   }
 }
 %font-secondary {
   font-family: $font-secondary-initial;
   
-  .font-secondary-loaded & {
+  .f2 & {
     font-family: $font-secondary;
   }
 }

@@ -20,3 +20,14 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: -0.025em;
   //text-transform: uppercase;
 }
+
+pre,
+code {
+  font-size: 1em;
+  color: lighten($color-text, 10%);
+}
+
+pre code {
+  line-height: 1;
+  font-size: .8em;
+}

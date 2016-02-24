@@ -73,6 +73,13 @@
     margin: 0 0 .25em 0;
   }
 
+
+  pre {
+    padding: 1em;
+    margin: 1.2em -1em;
+    background: #fff;
+  }
+
   @media all and (min-width: 40em) {
     line-height: 1.4;
       
@@ -83,6 +90,12 @@
       &.embed-container {
         padding-bottom: 56.25%;
       }
+    }
+
+    pre {
+      margin-left: 0;
+      margin-right: 0;
+      box-shadow: 0 1px darken($color-bg, 10%);
     }
     
     ol, ul {
@@ -107,6 +120,13 @@
     h1 {
       font-size: 2em;
       letter-spacing: -0.05em;
+    }
+
+    pre {
+      border-radius: .2em;
+      margin-left: -2em;
+      margin-right: -2em;
+      padding: 2em;
     }
     
     .media {

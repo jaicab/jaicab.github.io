@@ -20,7 +20,7 @@ Now every time I explain this approach to somebody I sense how the loose all the
 
 Currently people using this approach have tried generating the encoded fonts by themselves or using [Font Squirrel's webfont generator](http://www.fontsquirrel.com/tools/webfont-generator), which actually has a "base64 encode files" option but also produces all the different formats of every single font, resulting in a mess of CSS code that you have to work your way through.
 
-##localFont and the need for a side project
+## localFont and the need for a side project
 While discussing the process to keep a performance budget at work, I realised that if we wanted to use the localStorage caching approach on a project, it would take ages to get it working, and more if we wanted to use it on every project.
 
 This need of a tool and my need to play more with Vanilla JS pushed me into a new side project I have called [localFont, implement localStorage web font caching in seconds](http://jaicab.com/localFont/). This tiny little online tool will generate the final CSS file for you and give you the piece of JavaScript you need to launch it. 
