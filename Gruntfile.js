@@ -4,40 +4,50 @@ module.exports = function(grunt) {
     uglify: {
       options: {
       },
-      async: {
+      dist: {
         files: {
+          // ASYNC JS: Fonts
           'js/async.min.js': [
-            'js/components/onloadCSS.js',
-            'js/components/FontFaceObserver.js', 
-            'js/async.js'
-          ]
-        }
-      },
-
-      async_critical: {
-        files: {
+            '_src/js/components/onloadCSS.js',
+            '_src/js/components/FontFaceObserver.js', 
+            '_src/js/async.js'
+          ],
+          // ASYNC JS launcher
           '_includes/js/async.critical.min.js': [
-            'js/async.critical.js'
+            '_src/js/async.critical.js'
+          ],
+          // Critical JS: Font loaded check and loadCSS
+          '_includes/js/critical.min.js': [
+            '_src/js/components/loadCSS.js',
+            '_src/js/critical.js'
           ]
         }
       },
 
-      critical: {
+    },
+
+    sass: {
+      dist: {
+        options: {
+          style: 'expanded',
+          sourcemap: 'none'
+        },
         files: {
-          '_includes/js/critical.min.js': [
-            'js/components/loadCSS.js',
-            'js/critical.js'
-          ]
+          '_includes/css/critical.min.css': '_src/scss/critical.scss',
+          'css/full.css': '_src/scss/full.scss',
+          'css/nojs.css': '_src/scss/nojs.scss'
         }
-      },
+      }
     },
 
     cssmin: {
       options: {
       },
-      target: {
+      dist: {
         files: {
-          '_includes/css/critical.min.css': ['_site/css/critical.css']
+          '_includes/css/critical.min.css': ['_includes/css/critical.min.css'],
+          'css/full.css': ['css/full.css'],
+          'css/nojs.css': ['css/nojs.css']
         }
       }
     }
@@ -45,12 +55,12 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   
   grunt.registerTask('default', [
-    'uglify:async', 
-    'uglify:async_critical', 
-    'uglify:critical',
+    'uglify', 
+    'sass',
     'cssmin'
   ]);
 
