@@ -11,7 +11,12 @@ twitter: "jaicab_"
 # Build settings
 markdown: kramdown
 permalink: pretty
-exclude: [README.md, _src/]
+exclude:
+  - README.md
+  - _src/
+  - node_modules/
+  - Gruntfile.js
+  - package.json
 
 # Pagination
 paginate: 5
