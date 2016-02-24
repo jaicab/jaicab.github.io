@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
-        {% include js/critical.js %}
-    </script>
+    <script>{% include js/critical.min.js %}</script>
     <noscript>
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,400italic,600">
         <link rel="stylesheet" type="text/css" href="/css/full.css">
+        <link rel="stylesheet" type="text/css" href="/css/nojs.css">
     </noscript>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
     <title>
-        {% if page.title %}
-            {{ page.title }} | {{ site.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}
+    {% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}
     </title>
 
-    <style>
-    </style>
-
-    <link rel="stylesheet" type="text/css" href="/css/full.css">
+    <style>{% include css/critical.min.css %}</style>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href='https://fonts.gstatic.com' rel='preconnect' crossorigin>

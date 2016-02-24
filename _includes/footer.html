@@ -1,20 +1,7 @@
 
-    <!--TODO: Load this only if fonts not loaded-->
   <script>
-    ;(function( doc ) {
-        if(!window.fontsLoaded) {
-            var s = document.createElement('script');
-            s.setAttribute('src', '/js/async.js');
-            doc.body.appendChild(s);
-        } else {
-            loadCSS("https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,400italic,600");
-        }
-    })( document );
+    {% include js/async.critical.min.js %}
   </script>
-  <noscript>
-      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,400italic,600">
-      <link rel="stylesheet" type="text/css" href="/css/nojs.css">
-  </noscript>
   
 </body>
 </html>

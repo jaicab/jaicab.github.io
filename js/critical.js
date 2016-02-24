@@ -1,4 +1,3 @@
-{% include js/components/loadCSS.js %}
 loadCSS("/css/full.css");
 
 ;(function( doc ) {  
@@ -11,11 +10,12 @@ loadCSS("/css/full.css");
   window.fontsLoaded = false;
 
   if(sessionStorage.fontPrimaryLoaded && sessionStorage.fontSecondaryLoaded) {
+    window.fontsLoaded = true;
+    loadCSS("https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,400italic,600");
     doc.documentElement.className += " font-primary-loaded";
     if(sessionStorage.fontSecondaryLoaded) {
       doc.documentElement.className += " font-secondary-loaded";
     }
 
-    window.fontsLoaded = true;
   }
 })( document );
