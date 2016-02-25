@@ -9,7 +9,6 @@ username: "jaicab"
 twitter: "jaicab_"
 
 # Build settings
-markdown: kramdown
 permalink: pretty
 exclude:
   - README.md

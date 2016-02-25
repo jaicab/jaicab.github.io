@@ -1,39 +1,54 @@
-function loadFonts() {
-  var CrimsonText = new FontFaceObserver('Crimson Text');
-  var CrimsonTextBold = new FontFaceObserver('Crimson Text', {
+;(function( doc ) {
+  // IE9+
+  if( !( 'geolocation' in navigator ) ||
+	  !( "keys" in Object )) {
+	  return;
+  }
+
+  // Unless fonts already loaded...
+  if((doc.documentElement.className.indexOf("f1") > -1)) {
+    return;
+  }
+
+  var font_primary = 'Crimson Text';
+  var font_secondary = 'Montserrat';
+  var font_enhanced = 'Circular';
+
+  // Primary fonts
+  var CrimsonText = new FontFaceObserver(font_primary);
+  var CrimsonTextBold = new FontFaceObserver(font_primary, {
     weight: 600
   });
-  var CrimsonTextItalic = new FontFaceObserver('Crimson Text', {
+  var CrimsonTextItalic = new FontFaceObserver(font_primary, {
     style: 'italic'
   });
-  var Montserrat = new FontFaceObserver('Montserrat');
-  var MontserratBold = new FontFaceObserver('Montserrat',{
+
+  // Enhanced premium fonts (locally if available)
+  var Circular = new FontFaceObserver(font_enhanced);
+  var CircularBold = new FontFaceObserver(font_enhanced,{
+    weight: 600
+  });
+
+  // Fallback font
+  var Montserrat = new FontFaceObserver(font_secondary);
+  var MontserratBold = new FontFaceObserver(font_secondary,{
     weight: 700
   });
 
-  Promise.all([CrimsonText.check(null,0), MontserratBold.check(null,0)]).then(function () {
-    console.log('Main fonts available');
-    sessionStorage.fontPrimaryLoaded = true;
-    document.documentElement.className += " f1";
- 
-    Promise.all([CrimsonTextItalic.check(null,0), CrimsonTextBold.check(null,0), Montserrat.check(null,0)]).then(function() {
-      console.log('Rest are available');
-      sessionStorage.fontSecondaryLoaded = true;
-      document.documentElement.className += " f2";
-    });
-  }, function () {
-    console.log('Man fonts not available');
-  });
-}
-
-;(function( doc ) {
-  var font_css = loadCSS("https://fonts.googleapis.com/css?family=Montserrat:400,700|Crimson+Text:400,400italic,600");
-
-  // IE9+
-  if( !( 'geolocation' in navigator ) ||
-	!( "keys" in Object )) {
-	return;
+  function secondLoaded(){
+    console.log('Loading second font');
+    sessionStorage.fontSecondaryLoaded = true;
+    doc.documentElement.className += " f2";
   }
+
+  Promise.all([CrimsonText.check(null,0), CrimsonTextBold.check(null,0), CrimsonTextItalic.check(null,0)]).then(function () {
+    sessionStorage.fontPrimaryLoaded = true;
+    doc.documentElement.className += " f1";
+ 
+    Promise.all([Circular.check(null,0), CircularBold.check(null,0)]).then(secondLoaded, function(e){
+      console.log('Loading ' + font_secondary);
+      Promise.all([Montserrat.check(null,0), MontserratBold.check(null,0)]).then(secondLoaded);  
+    });
+  });
   
-  onloadCSS(font_css, loadFonts);
 })( document );

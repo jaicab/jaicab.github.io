@@ -9,9 +9,14 @@
   }
 }
 
+@media all and (min-width: 45em) {
+  .wrap {
+    margin: 0 3em;
+  }
+}
+
 
 @media all and (min-width: 55em) {
-
   
   .wrap {
     margin: 0 auto;

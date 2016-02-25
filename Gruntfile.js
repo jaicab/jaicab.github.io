@@ -15,19 +15,13 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          // ASYNC JS: Fonts
-          'js/async.min.js': [
-            '_src/js/components/onloadCSS.js',
+          // Fonts
+          '_includes/js/async.critical.min.js': [
             '_src/js/components/FontFaceObserver.js', 
             '_src/js/async.js'
           ],
-          // ASYNC JS launcher
-          '_includes/js/async.critical.min.js': [
-            '_src/js/async.critical.js'
-          ],
-          // Critical JS: Font loaded check and loadCSS
+          // Critical JS: Enhance.js
           '_includes/js/critical.min.js': [
-            '_src/js/components/loadCSS.js',
             '_src/js/critical.js'
           ]
         }
