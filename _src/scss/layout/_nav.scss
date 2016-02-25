@@ -2,7 +2,7 @@
 .nav--main {
   @extend %font-secondary;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: lowercase;
   
   a {
     color: $color-text;

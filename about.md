@@ -12,6 +12,8 @@ Hi, I'm Jaime. I am a **front-end architect**. This means I care about quality o
 I love **progressive enhancement**, so content and web performance go always first for me.
 I write scalable, reusable and easily refactorable code. In terms of CSS architecture, I use a mixture of **BEM** and **OOCSS**, always trying to keep it as **DRY** as possible.
 
+---
+
 I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
 
 <dl>
@@ -23,7 +25,7 @@ I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>
 </dl>
 
 
-##Technical skills
+## Technical skills
 
 I have been working in London over a year, during which I have perfected many of my skills. This is what I'm good at.
 
@@ -55,7 +57,7 @@ But essentially, what I'm proud of is making robust experiences, so all my skill
 
 In terms of tools, I use a grunt-based engine that I developed at Base Creative called [barebase](https://github.com/basecreative/barebase). It's so powerful it allows the development of a flat build as well as production build using the same codebase for common elements.
 
-###MVC frameworks
+### MVC frameworks
 > "MVC. Maybe Viewable Content." - Scott Jehl
 
 Even though I've developed some applications and [open source experiments](https://github.com/jaicab/ciego.es) in AngularJS, **I don't like MVC JavaScript frameworks** because they don't work with **progressive enhancement**. If the framework fails, you get no content at all.
@@ -63,7 +65,7 @@ Even though I've developed some applications and [open source experiments](https
 I prefer light core JavaScript that you can apply so it enhances the experience but not depends on it, like I did with [Paraxify.js](https://github.com/jaicab/Paraxify.js).
 
 
-##UI/UX design skills
+## UI/UX design skills
 
 >"When information is cheap, attention becomes expensive." - James Gleick
 
@@ -72,7 +74,7 @@ When you focus on content, you get the inherent UI. In a world where information
 I have a very good understanding of the designer's worries and can establish a continous conversation so we make each other's lifes easier. There's no need for a compromise when we can all be happy. I'm very good at finding that solution.
 
 
-##Language skills
+## Language skills
 
 I enjoy learning about new cultures. That's why I'm studying **Mandarin**. Also because **one sixth of world population** speak it and that's a lot of people I can't talk with if they don't speak English.
 
