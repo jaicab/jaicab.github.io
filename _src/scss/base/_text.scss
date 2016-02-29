@@ -4,16 +4,7 @@
   line-height: 1.3;
   text-rendering: optimizeLegibility;
   -webkit-font-variant-ligatures: common-ligatures;
-  /* for iOS and Safari 6 */
-  font-variant-ligatures: common-ligatures; /* for up-to-date browsers, including IE10 and Opera 21 */
-  
-  .media {
-    margin: 1em -1rem;
-    
-    &.embed-container {
-      padding-bottom: 60.25%;
-    }
-  }
+  font-variant-ligatures: common-ligatures;   
   
   a {
     color: mix($color-brand, $color-text, 80%);
@@ -48,15 +39,7 @@
   p, ol, ul {
     margin: 0 0 1em 0;
   }
-  blockquote {
-    margin: 1.5em 0 1.5em 1.5em;
-    font-size: .9em;
-    line-height: 1.5;
-    
-    p:first-child {
-      margin-bottom: .5em;
-    }
-  }
+
   ol, ul {
     padding-left: 1em;
     
@@ -65,6 +48,7 @@
       margin-top: .66em;
     }
   }
+
   ul {
     list-style: square;
   }
@@ -74,13 +58,35 @@
   }
 
 
+  blockquote {
+    margin: 1.5em 0 1.5em 1.5em;
+    font-size: .9em;
+    line-height: 1.5;
+    
+    p:first-child {
+      margin-bottom: .5em;
+    }
+  }
+
+
   pre {
     padding: 1em;
     margin: 1.2em -1em;
     background: #fff;
   }
 
-  @media all and (min-width: 40em) {
+  .media {
+    margin: 1em -1rem;
+    
+    &.embed-container {
+      padding-bottom: 60.25%;
+    }
+  }
+
+}
+
+@include mq($from: medium) {
+  .text {
     line-height: 1.4;
       
     .media {
@@ -104,7 +110,8 @@
   }
 }
 
-@media all and (min-width: 45em) {
+
+@include mq($from: mediumx) {
   .text {
     font-size: 1.5em;
     line-height: 1.35;
@@ -112,7 +119,7 @@
 }
 
 
-@media all and (min-width: 55em) {
+@include mq($from: big) {
   .text {
     font-size: 1.43em;
     line-height: 1.35;
@@ -138,3 +145,5 @@
     }
   }
 }
+
+

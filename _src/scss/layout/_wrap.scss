@@ -3,25 +3,23 @@
   padding: 0 1em;
 }
 
-@media all and (min-width: 40em) {
+@include mq($from: medium) {
   .wrap {
     margin: 0 1em;
   }
 }
 
-@media all and (min-width: 45em) {
+@include mq($from: mediumx) {
   .wrap {
     margin: 0 3em;
   }
 }
 
 
-@media all and (min-width: 55em) {
-  
+@include mq($from: big) {
   .wrap {
     margin: 0 auto;
     width: 44.5em;
     width: calc(43.25em + 2vw);
   }
-
 }

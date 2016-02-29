@@ -1,7 +1,12 @@
 
+// COLOURS
+
 $color-bg: mix(#fafafa, #FBF7E5, 90%);
 $color-text: #111;
 $color-brand: #006699;
+
+
+// FONTS
 
 $font-primary:  'Crimson Text',
   Adobe Garamond Pro, Georgia, serif;
@@ -20,3 +25,18 @@ $font-secondary-initial:
     "Segoe UI", "Roboto", "Oxygen", 
     "Ubuntu", "Cantarell", "Fira Sans", 
     "Droid Sans", "Helvetica Neue", sans-serif;
+
+
+// MQ
+
+$mq-static-breakpoint: big;
+
+$mq-breakpoints: (
+    smalls:     240px,
+    small:      20em,
+    medium:     40em,
+    mediumx:    45em,
+    big:        55em,
+    wide:       1200px
+);
+

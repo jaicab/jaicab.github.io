@@ -1,15 +1,4 @@
 ;(function( doc ) {
-  // IE9+
-  if( !( 'geolocation' in navigator ) ||
-	  !( "keys" in Object )) {
-	  return;
-  }
-
-  // Unless fonts already loaded...
-  if((doc.documentElement.className.indexOf("f1") > -1)) {
-    return;
-  }
-
   var font_primary = 'Crimson Text';
   var font_secondary = 'Montserrat';
   var font_enhanced = 'Circular';
@@ -36,7 +25,6 @@
   });
 
   function secondLoaded(){
-    console.log('Loading second font');
     sessionStorage.fontSecondaryLoaded = true;
     doc.documentElement.className += " f2";
   }
@@ -46,7 +34,6 @@
     doc.documentElement.className += " f1";
  
     Promise.all([Circular.check(null,0), CircularBold.check(null,0)]).then(secondLoaded, function(e){
-      console.log('Loading ' + font_secondary);
       Promise.all([Montserrat.check(null,0), MontserratBold.check(null,0)]).then(secondLoaded);  
     });
   });

@@ -14,7 +14,8 @@
   .header__top {
     margin: 1.5em 2em 1.75em;
   }
-  @media all and (min-width: 40em) {
+
+  @include mq($from: medium) {
     .header__top {
       margin: 3em 1em 4.5em;
     }
@@ -32,7 +33,7 @@
       }
     }
   }
-  @media all and (min-width: 55em) {
+  @include mq($from: big) {
     .logo {
       float: left;
       margin: 0 0 0 .5em;
