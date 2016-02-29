@@ -1,12 +1,25 @@
-# Site settings
+
+# Site data
 title: "Frontend architect based in London | Jaime Caballero"
 email: me@jaicab.com
+fullname: "Jaime Caballero"
 description: "Frontend architect based in London"
 baseurl: ""
 url: "https://jaicab.com"
 enforce_ssl: "http://jaicab.com"
 username: "jaicab"
 twitter: "jaicab_"
+
+navigation:
+ - title: Articles
+   url: /articles/
+ - title: Projects
+   url: /projects/
+ - title: Work
+   url: /work/
+ - title: About
+   url: /about/
+
 
 # Build settings
 permalink: pretty
@@ -19,7 +32,6 @@ exclude:
 
 # Pagination
 paginate: 5
-
 
 #Gems
 gems:
