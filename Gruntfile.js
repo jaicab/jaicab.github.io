@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       dist: {
         files: {
           // Fonts
-          '_includes/js/async.critical.min.js': [
+          'js/async.min.js': [
             '_src/js/components/FontFaceObserver.js', 
             '_src/js/async.js'
           ],
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['_src/**.js', '**/*.scss'],
+      files: ['_src/**.js', '_src/**/*.scss'],
       tasks: the_tasks,
     },
   });

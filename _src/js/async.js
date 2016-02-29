@@ -33,7 +33,7 @@
     sessionStorage.fontPrimaryLoaded = true;
     doc.documentElement.className += " f1";
  
-    Promise.all([Circular.check(null,0), CircularBold.check(null,0)]).then(secondLoaded, function(e){
+    Promise.all([Circular.check(null,0,true), CircularBold.check(null,0,true)]).then(secondLoaded, function(e){
       Promise.all([Montserrat.check(null,0), MontserratBold.check(null,0)]).then(secondLoaded);  
     });
   });

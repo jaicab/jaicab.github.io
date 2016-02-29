@@ -12,11 +12,8 @@
   var doc = window.document,
     docElem = doc.documentElement,
     head = doc.head || doc.getElementsByTagName( "head" )[ 0 ],
-    // this references a meta tag's name whose content attribute should define the path to the full CSS file for the site
     fullCSSKey = "fullcss",
-    // this references a meta tag's name whose content attribute should define the path to the enhanced JS file for the site (delivered to qualified browsers)
-    fullJSKey = "fulljs",
-    // this references a meta tag's name whose content attribute should define the path to the custom fonts file for the site (delivered to qualified browsers)
+    fontJS = "fontjs",
     fontsKey = "fonts",
     // classes to be added to the HTML element in qualified browsers
     htmlClasses = [ "enhanced" ];
@@ -109,35 +106,31 @@
     loadCSS( fonts.content );
   }
 
+
   // IE9+
   if( !( 'geolocation' in navigator ) || !( "keys" in Object )) {
-    // basic browsers: last stop here!
     return;
   }
-
-
   // From here on we're dealing with qualified browsers.
 
   // Check if fonts loaded
-  if(sessionStorage.fontPrimaryLoaded && sessionStorage.fontSecondaryLoaded) {
-      htmlClasses.push('f1');
+  if(sessionStorage.fontPrimaryLoaded) {
+      htmlClasses[htmlClasses.length] = 'f1';
       if(sessionStorage.fontSecondaryLoaded) {
-        htmlClasses.push('f2');
+        htmlClasses[htmlClasses.length] = 'f2';
       }
+  }else{
+    var fontJS = getMeta( fontJS );
+    if( fontJS ){
+      loadJS( fontJS.content );
+    }
   }
 
-
-  // Add scoping classes to HTML element: useful for upgrading the presentation of elements that will be enhanced with JS behavior
+  // HTML classes
   docElem.className += " " + htmlClasses.join(" ");
 
-  /* Load JavaScript enhancements in one request.
-    Your DOM framework and dependent component scripts should be concatenated and minified into one file that we'll load dynamically (keep that file as small as possible!)
-    A meta tag with a name matching the fullJSKey should have a content attribute referencing the path to this JavaScript file.
-    */
-  var fullJS = getMeta( fullJSKey );
-  if( fullJS ){
-    loadJS( fullJS.content );
-  }
+
+  // Other JS here
 
 
   // expose the 'enhance' object globally. Use it to expose anything in here that's useful to other parts of your application.
