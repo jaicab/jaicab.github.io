@@ -26,7 +26,7 @@ In the end, mantaining all this stuff was very complicated. It gets to a point w
 ## Sketching a solution
 Two months ago we got a new project with **4 different themes** and I knew I had to put an end to these issues. This is what we needed:
 
-- A centralised map where all the themes and properties of each theme where set.
+- A centralised map with all the themes and properties.
 - A way of generating all the styles looping through this map, so when we update the map, the CSS gets automatically updated.
 - The ability to create body classes as well as BEM modifiers, so we can have template related styling and element-specific ones too.
 - Perform different actions for some of the themes and a different action for the rest of them. Some themes may use a color (e.g. color secondary) for a specific element when the rest use another (e.g. color primary).

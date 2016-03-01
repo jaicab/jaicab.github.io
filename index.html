@@ -1,32 +1,8 @@
 ---
-layout: aside
+layout: page
 meta: Frontend architect based in London | Jaime Caballero - Articles about Sass, web performance and more.
 ---
 
-<div itemscope itemtype="http://schema.org/Blog">
+<h1>Hi, I'm Jaime Caballero</h1>
 
-  <ul class="posts">
-    {% for post in paginator.posts %}
-      <li class="post__link" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-        <time class="post__time" datetime="{{ post.date | date: %F }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-        <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <ol class="pagination">
-    <li class="pagination__prev">
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}">Previous</a>
-        {% else %}
-            Previous
-        {% endif %}
-    </li><li class="pagination__next">
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}">Next</a>
-        {% else %}
-            Next
-        {% endif %}
-    </li>
-  </ol>
-</div>
+<p>I'm a frontend architect.</p>

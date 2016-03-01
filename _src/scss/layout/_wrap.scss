@@ -3,7 +3,7 @@
   margin: 0 1em;
 }
 
-@include mq($from: medium) {
+@include mq($from: smallx) {
   .wrap {
     margin: 0 2em;
   }
@@ -19,7 +19,7 @@
 @include mq($from: big) {
   .wrap {
     margin: 0 auto;
-    width: 44.5em;
-    width: calc(43.25em + 2vw);
+    width: 43.5em;
+    width: calc(42.25em + 2vw);
   }
 }

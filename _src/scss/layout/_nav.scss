@@ -1,5 +1,5 @@
 
-.nav--main {
+.l-nav--main {
   @extend %font-secondary;
   text-align: center;
   text-transform: lowercase;
@@ -34,7 +34,7 @@
 
 @include mq($from: medium) {
 
-  .nav--main {
+  .l-nav--main {
     a {
       padding-left: .5em;
       &:not(:last-child) {
@@ -48,14 +48,17 @@
 }
 
 @include mq($from: big) {
-  .nav--main {    
+  .l-nav--main {    
     text-transform: none;
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
 
     a{
       padding-left: .75em;
       padding-right: .75em;
-      margin-left: 3.5em;
       margin-top: .25em;
+      flex: 0 1 auto;
       
       &:not(:last-child) {
         &::after {

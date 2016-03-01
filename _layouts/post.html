@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<article class="main post">
+<article role="article" class="l-main t-post">
   <div class="wrap">
     
-    <header class="post__header">
-        <h1 class="post__title">{{ page.title }}</h1>
-        <div class="post__details">
-          <time class="post__date" datetime="{{ page.date }}">
+    <header class="t-post__header">
+        <h1 class="t-post__title">{{ page.title }}</h1>
+        <div class="t-post__details">
+          <time class="t-post__date" datetime="{{ page.date }}">
 {% assign d = page.date | date: "%-d" %} 
 {% assign m = page.date | date: "%B" %} 
 {% case m %}

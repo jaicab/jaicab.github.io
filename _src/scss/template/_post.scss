@@ -1,9 +1,9 @@
 
-.post {
+.t-post {
 }
 
 
-.post__header {
+.t-post__header {
 	margin-bottom: 1.5em;
     margin-top: 0;
 
@@ -17,28 +17,28 @@
     }
 }
 
-.post__title {
+.t-post__title {
 	margin: 0;
     font-size: 2em;
 }
 
-.post__date {
+.t-post__date {
 	@extend %font-secondary;
 	line-height: 1.1;
 }
 
-.post__details {
+.t-post__details {
 	margin: .5em 0 1.5em 0;
 }
 
 @include mq($from: medium) {
-	.post__title {
+	.t-post__title {
 		font-size: 2.2em;
 	}
 }
 
 @include mq($from: big) {
-	.post__title {
+	.t-post__title {
     	font-size: 2.8em;
     	letter-spacing: -0.03em;
 	}
@@ -46,7 +46,7 @@
 
 @include mq($from: bigx) {
 
-	.post__header {
+	.t-post__header {
 		position: relative;
 
 		&:after {
@@ -60,10 +60,10 @@
 		}
 	}
 
-	.post__date {
+	.t-post__date {
 	}
 
-	.post__details {
+	.t-post__details {
 		position: absolute;
 		margin: 0;
 		right: 100%;

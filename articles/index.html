@@ -1,0 +1,67 @@
+---
+layout: default
+meta: Articles about frontend development, design, Sass, web performance and more.
+title: I have something to share.
+---
+
+<div class="t-blog">
+  <div class="wrap">
+    <div class="text"><h1 class="t-blog__title">{{ page.title }}</h1></div>
+
+    <main class="t-blog__main" role="main" itemscope itemtype="http://schema.org/Blog">
+
+      <h2 class="t-blog__subtitle">Posts</h2>
+      <ul class="c-post-list">
+        {% for post in paginator.posts %}
+          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><a href="{{ post.url | prepend: site.baseurl }}">
+            <h3 class="c-post__title">{{ post.title }}</h3>
+            <time class="c-post__date" datetime="{{ post.date }}">
+{% assign d = post.date | date: "%-d" %} 
+{% assign m = post.date | date: "%B" %} 
+{% case m %}
+  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+  {% when 'September' %}Sept.
+  {% else %}{{ post.date | date: "%b" }}.
+  {% endcase %}
+{% case d %}
+  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+{{ post.date | date: "%Y" }}
+            </time>
+            <p class="c-post__desc">{{post.meta}}</p>
+          </a></li>
+        {% endfor %}
+      </ul>
+
+      <ol class="c-pagination">
+        <li class="c-pagination__prev">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}">Previous</a>
+            {% else %}
+                Previous
+            {% endif %}
+        </li><li class="c-pagination__next">
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}">Next</a>
+            {% else %}
+                Next
+            {% endif %}
+        </li>
+      </ol>
+    </main>
+
+    <aside class="t-blog__side" role="complementary">
+      <h2 class="t-blog__subtitle">Links</h2>
+      <ul class="c-link-list">
+        {% for link in site.data.links limit:10 %}
+          <li class="c-link">
+            <h4 class="c-link__title"><a href="{{ link.link }}">
+              {{ link.title }}
+            </a></h4>
+            <h5 class="c-link__on">{{ link.origin }}</h5>
+            <time class="c-link__date" datetime="{{ link.date }}">{{ link.date | date: "%-d.%-m.%y" }}</time>
+          </li>
+        {% endfor %}
+      </ul>
+    </aside>
+  </div>
+</div>

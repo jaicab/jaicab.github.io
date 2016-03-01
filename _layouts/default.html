@@ -3,20 +3,8 @@
 </head>
 <body itemscope itemtype="http://schema.org/WebPage">
 
-  <header class="header header--main">
-    <div class="header__top">
-      <div class="wrap">
-        <a href="/" id="logo" class="logo">
-          <object data="/images/logo.svg" title="{{ site.title }}"  type="image/svg+xml">Jaime Caballero</object>
-        </a>
-        
-        {% include nav.html %}
-      </div>
-    </div>
-  </header>
-  
+{% include header.html %}  
 
   {{ content }}
-
 
 {% include footer.html %}

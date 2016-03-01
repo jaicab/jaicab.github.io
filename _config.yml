@@ -36,6 +36,7 @@ exclude:
 
 # Pagination
 paginate: 5
+paginate_path: "/articles/page:num/"
 
 #Gems
 gems:
