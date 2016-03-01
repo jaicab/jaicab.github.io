@@ -39,6 +39,6 @@ pre code {
 
 hr {
   border: 0;
-  border-bottom: 1px solid mix($color-brand, $color-bg, 20%);
+  border-bottom: 1px solid $color-brand-light;
   margin: 3em 0 2em;
 }

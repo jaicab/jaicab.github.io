@@ -4,6 +4,6 @@
   		{% if page.url contains link.url %}
           	{% assign current = 'current' %}
         {% endif %}
-        <a href="{{ link.url }}" class="{{ current }}">{{ link.title }}</a>
+        <a href="{{ link.url }}" class="{{ current }}" title="{{ link.desc }}">{{ link.title }}</a>
   	{% endfor %}     
 </nav>

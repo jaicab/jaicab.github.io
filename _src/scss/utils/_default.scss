@@ -4,6 +4,7 @@
 $color-bg: mix(#fafafa, #FBF7E5, 90%);
 $color-text: #111;
 $color-brand: #006699;
+$color-brand-light: mix($color-brand, $color-bg, 20%);
 
 
 // FONTS
@@ -35,6 +36,7 @@ $mq-breakpoints: (
     medium:     40em,
     mediumx:    45em,
     big:        55em,
-    wide:       1200px
+    bigx:       60em,
+    wide:       1350px
 );
 

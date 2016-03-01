@@ -2,21 +2,23 @@
 layout: default
 ---
 
-<article class="main">
+<article class="main post">
   <div class="wrap">
     
-    <header class="article__header">
-        <h1>{{ page.title }}</h1>
-        <div class="article__details">
-          <time datetime="{{ page.date }}">
-{% assign d = page.date | date: "%-d"  %}
-{{ page.date | date: "%B" }} 
+    <header class="post__header">
+        <h1 class="post__title">{{ page.title }}</h1>
+        <div class="post__details">
+          <time class="post__date" datetime="{{ page.date }}">
+{% assign d = page.date | date: "%-d" %} 
+{% assign m = page.date | date: "%B" %} 
+
+{% case m %}
+  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+  {% when 'September' %}Sept.
+  {% else %}{{ page.date | date: "%b" }}.
+  {% endcase %}
 {% case d %}
-  {% when '1' or '21' or '31' %}{{ d }}st
-  {% when '2' or '22' %}{{ d }}nd
-  {% when '3' or '23' %}{{ d }}rd
-  {% else %}{{ d }}th
-  {% endcase %}, 
+  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} 
 {{ page.date | date: "%Y" }}
 </time> 
         </div>
