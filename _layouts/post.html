@@ -11,9 +11,8 @@ layout: default
           <time class="post__date" datetime="{{ page.date }}">
 {% assign d = page.date | date: "%-d" %} 
 {% assign m = page.date | date: "%B" %} 
-
 {% case m %}
-  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+  {% when 'April' or 'March' or 'May' or 'June' or 'July' %}{{ m }}
   {% when 'September' %}Sept.
   {% else %}{{ page.date | date: "%b" }}.
   {% endcase %}
