@@ -35,8 +35,10 @@ Now that we know how to assign different colors of the spectrum, let's create th
 ## The parametric equation of a circle
 In order to achieve this circular spread of the shadows, we have to understand this equation. Some of you may remember it from high school or college, but here's a quick explanation for those who don't.
 
+<div class="media">
 <p data-height="400" data-theme-id="7008" data-slug-hash="ifJHr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/ifJHr/'>Equation of a circle, graphic description</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
+</div>
 
 As you can see on the graph, any point on the circle is based on two distances to the center. These distances can be calculated with a trigonometric equation:
 
@@ -89,8 +91,10 @@ The `build-colors()` function creates a list of shadows and joins them using `ap
 
 So combining all this code you should get something like this:
 
+<div class="media">
 <p data-height="500" data-theme-id="7008" data-slug-hash="phrzf" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/phrzf/'>Article: Mixing colors with box-shadow #1</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
+</div>
 
 Nice, isn't it? The colors are mixed properly, the shape of the ring is right, all the shadows are spread evely... but it defenitely needs something else, something that makes it more vivid and colorful. 
 
@@ -155,7 +159,9 @@ animation: spectrum $colours-speed 1s cubic-bezier(.33,-0.46,.22,1.09) infinite 
 
 And the final result should look like this:
 
+<div class="media">
 <p data-height="450" data-theme-id="7008" data-slug-hash="xicaj" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/xicaj/'>Mixing colors with box-shadow</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
+</div>
 
 I hope you've understood how this works and have learned something new. If you have any doubts, please feel free to [fire me a tweet](http://twitter.com/{{site.twitter}}). Do you think you can do better? Go on and fork it on Codepen.

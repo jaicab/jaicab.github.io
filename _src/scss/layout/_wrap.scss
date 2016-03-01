@@ -1,17 +1,17 @@
 
 .wrap {
-  padding: 0 1rem;
+  margin: 0 1em;
 }
 
 @include mq($from: medium) {
   .wrap {
-    margin: 0 1rem;
+    margin: 0 2em;
   }
 }
 
 @include mq($from: mediumx) {
   .wrap {
-    margin: 0 3rem;
+    margin: 0 4em;
   }
 }
 
@@ -19,7 +19,7 @@
 @include mq($from: big) {
   .wrap {
     margin: 0 auto;
-    width: 44.5rem;
+    width: 44.5em;
     width: calc(43.25em + 2vw);
   }
 }

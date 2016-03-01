@@ -36,7 +36,7 @@
   
   
   
-  p, ol, ul {
+  p, ol, ul, iframe {
     margin: 0 0 1em 0;
   }
 
@@ -77,6 +77,11 @@
 
   .media {
     margin: 1em -1rem;
+    position: relative;
+
+    iframe {
+      margin: 0;
+    }
     
     &.embed-container {
       padding-bottom: 60.25%;
@@ -125,7 +130,7 @@
     line-height: 1.35;
     
     h1 {
-      font-size: 2em;
+      font-size: 1.95em;
       letter-spacing: -0.03em;
     }
 

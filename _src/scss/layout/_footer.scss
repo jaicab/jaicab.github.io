@@ -1,4 +1,14 @@
 
 .footer {
-  margin: 1em 0 5em 0;
+	@extend %font-secondary;
+}
+
+.footer--main {
+	margin: 4em 0;
+
+	.wrap {
+		padding-top: 2em;
+		padding-bottom: 2em;
+		border-top: 1px solid $color-brand-light;
+	}
 }

@@ -38,7 +38,13 @@ pre code {
 }
 
 hr {
+  box-sizing: content-box;
+  height: 0;
   border: 0;
   border-bottom: 1px solid $color-brand-light;
   margin: 3em 0 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
 }

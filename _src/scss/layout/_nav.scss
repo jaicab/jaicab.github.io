@@ -3,6 +3,7 @@
   @extend %font-secondary;
   text-align: center;
   text-transform: lowercase;
+  font-size: 1.1em;
   
   a {
     color: $color-text;
@@ -14,11 +15,11 @@
     transition: .25s all;
     
     &.current {
-      font-weight: bold;
+      font-weight: 600;
     }
     
     &:hover, &:focus {
-      color: lighten($color-brand, 10%);
+      background: lighten($color-brand-light, 10%);
     }
     
     &:not(:last-child) {
@@ -29,4 +30,39 @@
       }
     }
   }
+}
+
+@include mq($from: medium) {
+
+  .nav--main {
+    a {
+      padding-left: .5em;
+      &:not(:last-child) {
+        &::after {
+          margin-left: .75em;
+        }
+      }
+    }
+  }
+
+}
+
+@include mq($from: big) {
+  .nav--main {    
+    text-transform: none;
+
+    a{
+      padding-left: .75em;
+      padding-right: .75em;
+      margin-left: 3.5em;
+      margin-top: .25em;
+      
+      &:not(:last-child) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
 }

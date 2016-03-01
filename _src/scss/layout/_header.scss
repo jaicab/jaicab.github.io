@@ -4,9 +4,6 @@
 }
 
 .header__top {
-  //position: absolute;
-  //left: 0;
-  //right: 0;
   overflow: hidden;
 }
 
@@ -20,38 +17,38 @@
       margin: 3em 1em 4.5em;
     }
     .logo {
-      width: 50px;
-      height: 50px;
-    }
-    .nav--main {        
- 
-      a:not(:last-child) {
-        &::after {
-          margin-left: .75em;
-          margin-right: .5em;
-        }
+      object, img {
+        width: 50px;
+        height: 50px;
       }
     }
   }
+
   @include mq($from: big) {
+    .header__top {
+      margin: 3em 1em 3.5em;
+
+      .wrap {
+        overflow: hidden;
+      }
+    }
+
     .logo {
       float: left;
       margin: 0 0 0 .5em;
+
+      object, img {
+        width: 45px;
+        height: 45px;
+      }
     }
     .nav--main {
       float: right;
-      
-      a{
-        padding: .85em 0;
-        
-        &:not(:last-child) {
-          &::after {
-            margin-left: 1.5em;
-            margin-right: 1.25em;
-          }
-        }
+      a {
+        padding-top: .5em;
+        padding-bottom: .5em;
       }
-      
     }
   }
+
 }
