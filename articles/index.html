@@ -14,7 +14,7 @@ title: I have something to share.
       <ul class="c-post-list">
         {% for post in paginator.posts %}
           <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><a href="{{ post.url | prepend: site.baseurl }}">
-            <h3 class="c-post__title">{{ post.title }}</h3>
+            <h3 class="c-post__title"><span class="visuallyhidden">Read more about </span>{{ post.title }}</h3>
             <time class="c-post__date" datetime="{{ post.date }}">
 {% assign d = post.date | date: "%-d" %} 
 {% assign m = post.date | date: "%B" %} 

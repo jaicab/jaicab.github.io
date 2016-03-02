@@ -1,16 +1,19 @@
 ---
 layout: page
-class: header-dark
 
 title: I am a front-end architect.
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
-permalink: /about/
 ---
 
-Hi, I'm Jaime. I am a **front-end architect**. This means I care about quality of both **design** and **development**. I study, mock-up and put in place fast mobile-first **responsive** (read: responsible responsive) designs. 
+<p class="c-intro">A passionate frontend with an eye for user experience, who puts the user needs first through <em>responsible</em> responsive design.</p>
 
-I love **progressive enhancement**, so content and web performance go always first for me.
-I write scalable, reusable and easily refactorable code. In terms of CSS architecture, I use a mixture of **BEM** and **OOCSS**, always trying to keep it as **DRY** as possible.
+<div style="float:right; margin: 0 0 1em 2em; width: 7.5em;">
+	<img src="/images/jaime-caballero2.png" alt="Jaime Caballero - Photo">
+</div>
+
+I aim to create websites that make users, clients and teams happy. True care for quality and web standards is what has always motivated me, so I approach work through _progressive enhancement_.
+
+If there's a user, there's an enhancement.
 
 ---
 
