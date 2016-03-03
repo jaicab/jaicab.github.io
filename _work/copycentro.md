@@ -1,7 +1,14 @@
 ---
-layout: project
+logo: copycentro.png
 title: Copycentro
-meta: Case study for Copycentro, a website for a chain of stationery shops with a big QR code integration
+link: http://copycentro.es/
+meta: A presentational website for a spanish design agency, with a built-in QR generator and print assets management area. Built a CMS on pure PHP. Heavy use of OOCSS and simple, flexible patterns.
+order: 4
+tasks: 
+- html
+- css
+- backend (php)
+- web performance
 ---
 
 When Sergio called me to redo their website in 2012, I looked it up and I found a flash site. I was terrified. As always when I find a flash-based site, I inmediately recomended a **responsive, progressive enhancement** redesign. Fortunately, Sergio agreed with me. 

@@ -1,8 +1,9 @@
 ---
-logo: booksandparty.svg
+logo: booksandparty.png
 title: Books and Party
 link: http://booksandparty.com
-meta: A social network for college students
+meta: A social network for college students where they can share notes, tips and opinions. Built for a spanish startup. I built a CMS from scratch in PHP and a OOCSS-based styleguide, as well as some UX design.
+order: 4
 tasks: 
 - html
 - css
