@@ -31,7 +31,7 @@ This translates in frontend development to _responsible_ responsive design. Year
 > "Be conservative in what you do, be liberal on what you accept from others"  
  – _Robustness principle_ by [Jon Postel](https://tools.ietf.org/html/rfc1122#page-12)
 
-Good websites are **ubiquitous experiences enhanced when possible**. I use pragmatic frontend development practices with semantic HTML, enhanced with modular and scalable CSS and unobtrusive JavaScript.
+Good websites are **robust ubiquitous experiences enhanced where possible**. I use pragmatic frontend development practices with semantic HTML, enhanced with modular and scalable CSS and unobtrusive JavaScript.
 
 I'm best when working as a nexus between design and frontend, as I can mentally build a responsive model of the flats designers create, liaise with them to fill in the gaps to achieve a fully modular responsive experience. I usually produce **style guides** or pattern libraries to reproduce this model.
 

@@ -6,7 +6,7 @@ meta: Frontend architect based in London | Jaime Caballero - Articles about Sass
 <p class="c-intro c-intro--color">Hi! I’m <strong>Jaime Caballero</strong>, a <a href="/work/">frontend architect</a>, <a href="/articles/">writer</a> and film bluff based in London, UK. I work as a nexus between design and frontend, making purposeful websites scalable and lightning-fast.</p>
 
 <p class="c-intro c-intro--color">
-I like to build useful <a href="/projects/">side-projects</a> on my spare time, either to improve my skills or my workflow.
+I like to build useful <a href="/projects/">side-projects</a> in my spare time, either to improve my skills or my workflow.
 </p>
 
 <p class="c-intro c-intro--color">
