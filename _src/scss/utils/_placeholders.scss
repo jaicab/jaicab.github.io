@@ -14,3 +14,12 @@
     font-family: $font-secondary;
   }
 }
+
+%nice-link {
+	color: mix($color-brand, $color-text, 80%);
+	text-shadow: 0.04545em 0 0 $color-bg,0.09091em 0 0 $color-bg,0.13636em 0 0 $color-bg,-0.04545em 0 0 $color-bg,-0.09091em 0 0 #fff,-0.13636em 0 0 $color-bg,0 0.04545em 0 $color-bg,0 0.09091em 0 $color-bg,0 -0.04545em 0 $color-bg,0 -0.09091em 0 $color-bg;
+	background-image: linear-gradient(#808080, #808080);
+	background-position: 0 1.15em;
+	background-size: 1px 1px;
+	background-repeat: repeat-x;
+}

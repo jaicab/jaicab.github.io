@@ -6,6 +6,7 @@
 	
 	img {
   		mix-blend-mode: screen;
+  		display: block;
 	}
 
 	@include mq($from: mediumx) {

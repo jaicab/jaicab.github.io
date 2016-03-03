@@ -24,6 +24,9 @@ navigation:
    url: /about/
    desc: "My personal profile, my hobbies and tips for developers"
 
+collections: 
+ - projects
+
 
 # Build settings
 permalink: pretty
