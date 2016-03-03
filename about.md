@@ -5,7 +5,7 @@ title: I am a front-end architect.
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 ---
 
-<p class="c-intro">A passionate frontend with an eye for user experience, who puts the user needs first through <em>responsible</em> responsive design.</p>
+<p class="c-intro">A passionate frontend with an eye for user experience, who puts the user's needs first with <em>responsible</em> responsive design.</p>
 
 <figure class="c-jaime">
 	<picture>
@@ -14,7 +14,7 @@ meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 	</picture>
 </figure>
 
-I aim to create websites that make users, clients and teams happy. True care for quality and web standards is what has always motivated me, so I approach work through _progressive enhancement_.
+I aim to create websites that make users, clients and teams happy. True care for quality and web standards is what always has motivated me, so I approach work through _progressive enhancement_.
 
 My personal goal is to satisfy the web's ubiquity.
 
