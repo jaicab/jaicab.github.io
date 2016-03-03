@@ -26,7 +26,9 @@
     <![endif]-->
 
     <title>
-    {% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}
+    {% if page.microtitle %}{{ page.microtitle }} | {{ site.title }}
+    {% elsif page.title %}{{ page.title }} | {{ site.title }}
+    {% else %}{{ site.title }}{% endif %}
     </title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

@@ -2,6 +2,7 @@
 layout: page
 
 title: I am a front-end architect.
+microtitle: About
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 ---
 
