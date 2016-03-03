@@ -17,7 +17,7 @@ meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 
 I aim to create websites that make users, clients and teams happy. True care for quality and web standards is what has always motivated me, so I approach work through _progressive enhancement_.
 
-I design simple solutions to complex problems.
+I like simple solutions to complex problems.
 
 
 ---
