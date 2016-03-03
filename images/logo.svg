@@ -1,0 +1,22 @@
+<svg class="logo__image" width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes dash {
+      0% {
+        //fill: red;
+        stroke-dashoffset: 240;
+      }
+      100% {
+        //fill: blue;
+        stroke-dashoffset: 0;
+      }
+    }
+    path {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 240;
+      -webkit-animation: dash 1s ease-in;
+      animation: dash 1s ease-in;
+    }
+  </style>
+  <title>logo</title>
+  <path d="M14.702 30.98S16.984 37.085 25 37.085 37.124 30.98 37.124 25V6.126C35.018 3.702 30.016 2.5 25 2.5 12.574 2.5 2.5 12.574 2.5 25S12.574 47.5 25 47.5c7.083 0 13.402-3.273 17.526-8.39" stroke-width="4" stroke="#069" stroke-linejoin="round" fill="none" fill-rule="evenodd"/>
+</svg>

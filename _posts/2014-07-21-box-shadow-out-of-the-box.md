@@ -2,6 +2,7 @@
 layout: post
 title: box-shadow out of the box
 meta: Understand the possibilities of box-shadow besides creating shadows
+syntax: true
 ---
 
 First, let's do a brief introduction to `box-shadow`'s syntax. I'm sure you're already familiar with some part of it.  
@@ -25,7 +26,7 @@ The first two values are always going to be the distance from the shape. If ther
 
 **Squares**: Notice how by using the spread value we can get a bigger or smaller shadow. 
 
-{% highlight css %}
+```scss
 .square{ 
   box-shadow: 0 130px 0 10px #000;
 }
@@ -33,22 +34,22 @@ The first two values are always going to be the distance from the shape. If ther
 .squareinset{  
   box-shadow: 0 110px 0 -10px #000;
 }
-{% endhighlight %}
+```
 
 **Circle**: Here you can realise that the border is being considered for the shape of the shadow.
 
-{% highlight css %}
+```
 .circle{
   border-radius: 50%;
   border: 1em solid #004466;
 
   box-shadow: 0 120px #000;
 }
-{% endhighlight %}
+```
 
 **Triangle**: Since the triangle is created with transparent borders, they are also considered for the shape of the shadow. If you want to cast a shadow here, you must use the `drop-shadow` filter.
 
-{% highlight css %}
+```scss
 .triangle {
   width: 0;
   height: 0;
@@ -59,11 +60,11 @@ The first two values are always going to be the distance from the shape. If ther
   border-top: none;
   box-shadow: 0 120px #000;
 }
-{% endhighlight %}
+```
 
 So what does determine the actual shape of the shadow? Well, the shadow will be casted from **the shape of the border** of the elemet. All the inside will be filled with the color of the shadow (which by the way, supports alpha channel).
 
-##Combining shadows
+## Combining shadows
 
 You can have multiple shadows by combining them with commas, being the first shadow always the one on top and the last one on the bottom. By using low alpha colors you can mix these colors and create nice effects like [this one](http://codepen.io/jaicab/full/xicaj/).
 

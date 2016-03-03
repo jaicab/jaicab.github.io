@@ -1,0 +1,50 @@
+
+.l-header {
+  position: relative;
+}
+
+.l-header__top {
+  overflow: hidden;
+}
+
+.l-header--main {
+  .l-header__top {
+    margin: 1.5em 2em 2.25em;
+  }
+
+  @include mq($from: medium) {
+    .l-header__top {
+      margin: 3em 1em 4.5em;
+    }
+    .c-logo {
+        width: 50px;
+        height: 50px;
+    }
+  }
+
+  @include mq($from: big) {
+    .l-header__top {
+      margin: 3em 1em 3.5em;
+
+      .wrap {
+        overflow: hidden;
+      }
+    }
+
+    .c-logo {
+      float: left;
+      width: 45px;
+      height: 45px;
+      margin: 0 0 0 .5em;
+    }
+
+    .l-nav--main {
+      float: right;
+      a {
+        padding-top: .5em;
+        padding-bottom: .5em;
+      }
+    }
+  }
+
+}

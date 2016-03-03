@@ -1,0 +1,25 @@
+
+.wrap {
+  margin: 0 1em;
+}
+
+@include mq($from: smallx) {
+  .wrap {
+    margin: 0 2em;
+  }
+}
+
+@include mq($from: mediumx) {
+  .wrap {
+    margin: 0 3em;
+  }
+}
+
+
+@include mq($from: big) {
+  .wrap {
+    margin: 0 auto;
+    width: 43.5em;
+    width: calc(42.25em + 2vw);
+  }
+}

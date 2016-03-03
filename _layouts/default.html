@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" class="{{page.class}}">
+{% include head.html %}
 
-  {% include head.html %}
+</head>
+<body itemscope itemtype="http://schema.org/WebPage">
 
-    <body itemscope itemtype="http://schema.org/WebPage">
+{% include header.html %}  
 
-    {% include header.html %}
+  {{ content }}
 
-      {{ content }}
-
-    {% include footer.html %}
-
-    </body>
-</html>
+{% include footer.html %}

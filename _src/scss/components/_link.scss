@@ -1,0 +1,57 @@
+
+.c-link {
+	font-size: 1em;
+
+	& + & {
+		&:before {
+			content: '';
+			width: 3em;
+			height: .3em;
+			display: block;
+			background: $color-brand-light;
+			margin: 1em 0;
+		}
+	}
+}
+
+.c-link__title {
+	font-size: 1em;
+	font-weight: normal;
+	a {
+		color: darken($color-brand, 5%);
+	}
+}
+
+.c-link__date {
+	@extend %font-secondary;
+	font-size: .9em;
+	margin: 0 0 1em;
+	display: block;
+	color: #777;
+}
+
+.c-link__on {
+	@extend %font-primary;
+
+	font-size: 1em;
+	font-style: italic;
+	font-weight: normal;
+	margin: .2em 0 .5em;
+	color: #000;
+}
+
+
+@include mq($from: medium) {
+	.c-link__title {
+		line-height: 1.1;
+	}
+	.c-link {
+
+		& + & {
+			&:before {
+				width: 2em;
+				height: .2em;
+			}
+		}
+	}
+}
