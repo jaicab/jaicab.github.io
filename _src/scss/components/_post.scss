@@ -45,7 +45,7 @@
 
 		&:visited {
 			.c-post__title {
-				color: darken($color-brand, 10%)
+				color: $color-brand;
 			}
 		}
 	}
@@ -54,7 +54,7 @@
 .c-post__title {
 	font-size: 1.2em;
 	font-weight: normal;
-	color: $color-brand;
+	color: lighten($color-brand, 10%);
 	a {
 		color: $color-brand;
 	}
