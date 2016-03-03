@@ -2,10 +2,15 @@
 	float:right; 
 	margin: 0 0 .4em 1em;
 	width: 24%; 
-
+	background: $color-brand;
+	
+	img {
+  		mix-blend-mode: screen;
+	}
 
 	@include mq($from: mediumx) {
 		width: 7.5em;
+		height: 7.5em;
 		margin: 0 0 1em 1em;
 	}
 
