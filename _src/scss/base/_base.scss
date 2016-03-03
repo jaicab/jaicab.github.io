@@ -42,9 +42,17 @@ hr {
   height: 0;
   border: 0;
   border-bottom: .3rem solid $color-brand-light;
-  margin: 2em 0 1.5em;
+  margin: 2em 0 2.5em;
 }
 
 abbr[title] {
   border-bottom: 1px dotted;
+}
+
+dd {
+  margin-left: 1rem;
+}
+
+dd + dt {
+  margin-top: .33em;
 }

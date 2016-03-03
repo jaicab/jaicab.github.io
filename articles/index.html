@@ -33,19 +33,16 @@ title: I have something to share.
       </ul>
 
       <ol class="c-pagination">
-        <li class="c-pagination__prev">
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}">Previous</a>
-            {% else %}
-                Previous
-            {% endif %}
-        </li><li class="c-pagination__next">
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}">Next</a>
-            {% else %}
-                Next
-            {% endif %}
+        {% if paginator.previous_page %}
+        <li class="c-pagination__link c-pagination__link--prev">
+            <a href="{{ paginator.previous_page_path }}">Prev.</a>
         </li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="c-pagination__link c-pagination__link--next">
+            <a href="{{ paginator.next_page_path }}">Next</a>
+        </li>
+        {% endif %}
       </ol>
     </main>
 
@@ -54,7 +51,7 @@ title: I have something to share.
       <ul class="c-link-list">
         {% for link in site.data.links limit:10 %}
           <li class="c-link">
-            <h4 class="c-link__title"><a href="{{ link.link }}">
+            <h4 class="c-link__title"><a href="{{ link.link }}" target="_blank" external>
               {{ link.title }}
             </a></h4>
             <h5 class="c-link__on">{{ link.origin }}</h5>

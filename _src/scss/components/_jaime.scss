@@ -1,0 +1,15 @@
+.c-jaime {
+	float:right; 
+	margin: 0 0 .4em 1em;
+	width: 24%; 
+
+
+	@include mq($from: mediumx) {
+		width: 7.5em;
+		margin: 0 0 1em 1em;
+	}
+
+	@include mq($from: big) {
+		margin-left: 2em;
+	}
+}

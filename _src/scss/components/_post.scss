@@ -42,6 +42,12 @@
 				transform: scaleX(1);
 			}
 		}
+
+		&:visited {
+			.c-post__title {
+				color: darken($color-brand, 10%)
+			}
+		}
 	}
 }
 

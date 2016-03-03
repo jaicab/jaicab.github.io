@@ -7,25 +7,33 @@ meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 
 <p class="c-intro">A passionate frontend with an eye for user experience, who puts the user needs first through <em>responsible</em> responsive design.</p>
 
-<div style="float:right; margin: 0 0 1em 2em; width: 7.5em;">
-	<img src="/images/jaime-caballero2.png" alt="Jaime Caballero - Photo">
-</div>
+<figure class="c-jaime">
+	<picture>
+		<source srcset="/images/jaime-caballero-small.png 270w" media="(max-width: 40em)">
+		<img src="/images/jaime-caballero.png" alt="Jaime Caballero - Photo">
+	</picture>
+</figure>
 
 I aim to create websites that make users, clients and teams happy. True care for quality and web standards is what has always motivated me, so I approach work through _progressive enhancement_.
 
-If there's a user, there's an enhancement.
+My personal goal is to satisfy the web's ubiquity.
 
 ---
 
-I <a href="/">write</a>, <a href="http://twitter.com/{{site.twitter}}">tweet</a>, <a href="http://github.com/{{ site.username }}">share code</a> and <a href="http://codepen.io/{{ site.username }}">do experiments</a> about CSS and the latest, cutting edge technologies for the web.
+### Reaching out
 
-<dl>
-    <dt>Twitter: <a href="https://twitter.com/{{site.twitter}}">@{{ site.twitter }}</a></dt>
+<dl class="c-deflist">
+    <dt><b>Twitter:</b> <a href="https://twitter.com/{{site.twitter}}">@{{ site.twitter }}</a></dt>
     <dd>For quick contact, feel free to send me a tweet!</dd>
 
-    <dt>Email: <a href="mailto:me@jaicab.com">me@jaicab.com</a></dt>
+    <dt><b>Email:</b> <a href="mailto:me@jaicab.com">me@jaicab.com</a></dt>
     <dd>Email me if it doesn't fit in a tweet or it's going to be a large conversation.</dd>
 </dl>
+
+---
+
+### Design and development
+
 
 
 ## Technical skills

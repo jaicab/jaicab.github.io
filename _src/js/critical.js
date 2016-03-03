@@ -114,11 +114,9 @@
   // From here on we're dealing with qualified browsers.
 
   // Check if fonts loaded
-  if(sessionStorage.fontPrimaryLoaded) {
+  if(sessionStorage.fontsLoaded) {
       htmlClasses[htmlClasses.length] = 'f1';
-      if(sessionStorage.fontSecondaryLoaded) {
-        htmlClasses[htmlClasses.length] = 'f2';
-      }
+      htmlClasses[htmlClasses.length] = 'f2';
   }else{
     var fontJS = getMeta( fontJS );
     if( fontJS ){
