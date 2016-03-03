@@ -2,4 +2,5 @@
 $mq-static-breakpoint: big;
 $mq-responsive: false;
 
+@import "critical.scss";
 @import "full.scss";
