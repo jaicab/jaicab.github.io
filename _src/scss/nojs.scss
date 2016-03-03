@@ -1,10 +1,15 @@
 
 @import "utils/default";
 
-html body {
+
+html body,
+.c-link__on {
     font-family: $font-primary;
 }
 
-h1, h2, h3, h4, h5, h6, .nav--main {
+
+h1, h2, h3, h4, h5, h6, .nav--main,
+.l-nav--main, .t-post__date,
+.c-post__date, .c-link__date, .c-pagination, .l-footer {
     font-family: $font-secondary; 
 }
