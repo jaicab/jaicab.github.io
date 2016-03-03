@@ -2,6 +2,10 @@
 	margin: 1rem 0;
 }
 
+.c-project {
+	margin-top: 2em;
+}
+
 .c-project__title {
 	font-weight: normal;
 	font-size: 1.2em;
@@ -34,6 +38,7 @@
 	.c-project {
 		width: 28.33%;
 		margin-right: 5%;
+		margin-top: 0;
 		margin-bottom: 1rem;
 		float: left;
 		flex: 0 0 auto;
