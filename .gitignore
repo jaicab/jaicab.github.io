@@ -1,4 +1,11 @@
+# Jekyll stuff
 _site
 .css.map
-.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
+# Build stuff
 .scssc
+.sass-cache/
+node_modules/
+npm-debug.log
