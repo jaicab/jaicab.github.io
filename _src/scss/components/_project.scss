@@ -52,16 +52,3 @@
 		}
 	}
 }
-
-@include mq($from: mediumx) {
-
-	.c-project {
-		width: 20%;
-	}
-}
-
-@include mq($from: big) {
-	.c-project {
-		width: 28.33%;
-	}
-}
