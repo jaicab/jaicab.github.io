@@ -1,6 +1,8 @@
-# Site settings
-title: "Frontend architect based in London | Jaime Caballero"
+
+# Site data
+title: "Jaime Caballero"
 email: me@jaicab.com
+fullname: "Jaime Caballero"
 description: "Frontend architect based in London"
 baseurl: ""
 url: "https://jaicab.com"
@@ -8,14 +10,37 @@ enforce_ssl: "http://jaicab.com"
 username: "jaicab"
 twitter: "jaicab_"
 
+navigation:
+ - title: Articles
+   url: /articles/
+   desc: "Read articles about Sass, web performance and frontend techniques"
+ - title: Projects
+   url: /projects/
+   desc: "Projects I have built in my own time"
+ - title: Work
+   url: /work/
+   desc: "Case studies of websites I have built during my career"
+ - title: About
+   url: /about/
+   desc: "My personal profile, my hobbies and tips for developers"
+
+collections: 
+ - projects
+ - work
+
+
 # Build settings
-markdown: kramdown
 permalink: pretty
-exclude: [README.md, css/*.scss]
+exclude:
+  - README.md
+  - _src/
+  - node_modules/
+  - Gruntfile.js
+  - package.json
 
 # Pagination
 paginate: 5
-
+paginate_path: "/articles/page:num/"
 
 #Gems
 gems:
@@ -23,9 +48,3 @@ gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-feed
-
-
-#Include
-include: [
-  '.well-known'
-]

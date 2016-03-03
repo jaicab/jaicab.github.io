@@ -2,33 +2,31 @@
 layout: default
 ---
 
-<div class="post">
-<section class="wrap">
+<article role="article" class="l-main t-post">
+  <div class="wrap">
+    
+    <header class="t-post__header">
+        <h1 class="t-post__title">{{ page.title }}</h1>
+        <div class="t-post__details">
+          <time class="t-post__date" datetime="{{ page.date }}">
+{% assign d = page.date | date: "%-d" %} 
+{% assign m = page.date | date: "%B" %} 
+{% case m %}
+  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+  {% when 'September' %}Sept.
+  {% else %}{{ page.date | date: "%b" }}.
+  {% endcase %}
+{% case d %}
+  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %} 
+{{ page.date | date: "%Y" }}
+</time> 
+        </div>
+      </header>
+      
+      <div class="text">
+        {{ content }}
+      </div>
 
-  <article itemscope itemtype="http://schema.org/BlogPosting">
-     <header class="post-header island">
-      <time class="post__time" datetime="{{ page.date | date: %F }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
-      <h1 class="post-header__title" itemprop="headline">{{ page.title }}</h1>
-    </header>
-    <div class="post-content" itemprop="articleBody">
-      {{ content }}
     </div>
-  </article>
-
-  <div class="post-related"> 
-        {% if page.next.url %} 
-        <div class="post-related__right"> 
-            <a href="{{page.next.url}}" title="next Post: 
-{{page.next.title}}">{{page.next.title}}</a> 
-        </div> 
-        {% endif %} 
-
-        {% if page.previous.url %} 
-        <div class="post-related__left"> 
-            <a href="{{page.previous.url}}" title="Previous Post: 
-{{page.previous.title}}">{{page.previous.title}}</a> 
-        </div> 
-        {% endif %} 
-</div>
-</section>
-</div>
+  </div>
+</article>

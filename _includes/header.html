@@ -1,21 +1,11 @@
-<header class="site-header">
-
-  <div class="wrap">
-
-    <div class="logo"><a class="site-title" href="{{ site.baseurl }}/" title="{{ site.title }}">
-      <span class="logo__j">J</span><span class="logo__c">C</span>
-    </a>
-      <div class="site-description">{{ site.description }}</div>
+  <header role="banner" class="l-header l-header--main">
+    <div class="l-header__top">
+      <div class="wrap">
+        <a href="/" id="logo" class="c-logo">
+          <object class="c-logo__image" data="/images/logo.svg" title="{{ site.title }}"  type="image/svg+xml">Jaime Caballero</object>
+        </a>
+        
+        {% include nav.html %}
+      </div>
     </div>
-
-
-    <nav class="site-nav" role="nav">
-      <ul itemprop="breadcrumb">
-        <li><a class="site-nav__about" href="/about/">ABOUT</a></li>
-        <li><a class="site-nav__work" href="/work/">WORK</a></li>
-      </ul>
-    </nav>
-
-  </div>
-
-</header>
+  </header>

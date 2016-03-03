@@ -1,0 +1,25 @@
+{
+  "name": "jaicab.github.io",
+  "version": "1.0.0",
+  "description": "jaicab.github.io ================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaicab/jaicab.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaicab/jaicab.github.io/issues"
+  },
+  "homepage": "https://github.com/jaicab/jaicab.github.io",
+  "devDependencies": {
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.11.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

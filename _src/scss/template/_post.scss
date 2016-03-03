@@ -1,0 +1,75 @@
+
+.t-post {
+}
+
+
+.t-post__header {
+	margin-bottom: 1.5em;
+    margin-top: 0;
+
+    &:after {
+    	content:'';
+    	display: block;
+    	width: 3em;
+    	height: .3em;
+    	margin-top: 1em;
+    	background: $color-brand-light;
+    }
+}
+
+.t-post__title {
+	margin: 0;
+    font-size: 2em;
+}
+
+.t-post__date {
+	@extend %font-secondary;
+	line-height: 1.1;
+}
+
+.t-post__details {
+	margin: .5em 0 1.5em 0;
+}
+
+@include mq($from: medium) {
+	.t-post__title {
+		font-size: 2.2em;
+	}
+}
+
+@include mq($from: big) {
+	.t-post__title {
+    	font-size: 2.8em;
+    	letter-spacing: -0.03em;
+	}
+}
+
+@include mq($from: bigx) {
+
+	.t-post__header {
+		position: relative;
+
+		&:after {
+			position: absolute;
+			width: .3em;
+			height: auto;
+			left: -2.25em;
+			top: .35em;
+			bottom: -5em;
+			margin: auto;
+		}
+	}
+
+	.t-post__date {
+	}
+
+	.t-post__details {
+		position: absolute;
+		margin: 0;
+		right: 100%;
+		top: .45em;
+		width: 5em;
+		text-align: right;
+		margin-right: 3.25em;
+	}
+}

@@ -1,0 +1,41 @@
+---
+layout: default
+
+title: Side projects are fun.
+microtitle: Projects
+meta: I like to build useful side projects in my spare time, either to improve my skills or my workflow.
+---
+
+
+<main role="main" class="l-main">
+<div class="wrap">
+    <div class="text">
+    	<h1>{{ page.title }}</h1>       
+		<p>Sometimes I notice a pattern. Time wasted doing the same thing multiple times. Maybe there's a product that does this for me. Sometimes there isn't, or it isn't good enough. Then I put aside some weekends and get to it.</p>
+    </div>
+
+	<div class="c-project-list">
+	    {% assign projectlist = (site.projects | sort: 'order') %}
+	    {% for project in projectlist %}
+		<div class="c-project">
+			<div class="c-project__header">
+				<a class="c-project__link" href="{{ project.link }}">
+					<img class="c-project__logo" src="/images/project/{{ project.logo }}" alt="{{ project.title }} logo"/>
+				</a>
+			</div>
+			<div class="c-project__content">
+				<div class="text">
+					<strong>{{ project.title }}</strong>
+					{{ project.content }}
+				</div>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+
+	<div class="text">
+		<p>I also play around in <a href="https://codepen.io/jaicab">Codepen</a>, trying to reach the limits of CSS, building optical ilussions and 3D experiments.</p>
+	</div>
+
+</div>
+</main>

@@ -2,6 +2,7 @@
 layout: post
 title: "Revisiting Sass theming"
 meta: Sass theming made easy using vary
+syntax: true
 ---
 
 There is no _one way_ to do one thing in Sass. In the end, Sass is nothing more than supercharged CSS. And people love doing CSS their way. This is not a ruleset to follow, but an opinionated set of standards that we use at [Base Creative](http://basecreative.co.uk).
@@ -25,7 +26,7 @@ In the end, mantaining all this stuff was very complicated. It gets to a point w
 ## Sketching a solution
 Two months ago we got a new project with **4 different themes** and I knew I had to put an end to these issues. This is what we needed:
 
-- A centralised map where all the themes and properties of each theme where set.
+- A centralised map with all the themes and properties.
 - A way of generating all the styles looping through this map, so when we update the map, the CSS gets automatically updated.
 - The ability to create body classes as well as BEM modifiers, so we can have template related styling and element-specific ones too.
 - Perform different actions for some of the themes and a different action for the rest of them. Some themes may use a color (e.g. color secondary) for a specific element when the rest use another (e.g. color primary).
@@ -40,7 +41,8 @@ This mixin solves all the issues presented above and achieves all the needed fun
 
 The most common theming pattern is using a <code>.is-foo</code> body class, where <i>foo</i> is the entity for which the CSS variations are destinated to (e.g. user, admin). Let me show you how that would be done using vary:
 
-{% highlight sass %}
+
+```scss
 $vary-map: (
   user: (
     'color-primary': blue,
@@ -51,7 +53,6 @@ $vary-map: (
     'border': '10px solid black'
   )
 );
-
 .foo{
 	background: red;
 
@@ -60,11 +61,11 @@ $vary-map: (
 		border: vary-get('border');
 	}
 }
-{% endhighlight %}
+```
 
 And here's the compiled result:
 
-{% highlight css %}
+```scss
 .foo{
 	background: red;	
 }
@@ -78,7 +79,7 @@ And here's the compiled result:
 	background: pink;
 	border: 10px solid red;
 }
-{% endhighlight %}
+```
 
 
 And this is just the beggining. vary currently has **5 creation modes**, which have been more than enough for us.

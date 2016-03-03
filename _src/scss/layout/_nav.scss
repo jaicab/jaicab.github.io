@@ -1,0 +1,71 @@
+
+.l-nav--main {
+  @extend %font-secondary;
+  text-align: center;
+  text-transform: lowercase;
+  font-size: 1.1em;
+  
+  a {
+    color: $color-text;
+    font-weight: 400;
+    display: inline-block;
+    padding: .25em 0;
+    letter-spacing: -0.002em;
+    
+    transition: .25s all;
+    
+    &.current {
+      font-weight: 600;
+    }
+    
+    &:hover, &:focus {
+      background: lighten($color-brand-light, 10%);
+    }
+    
+    &:not(:last-child) {
+      &::after {
+        content: '/';
+        display: inline-block;
+        margin-left: .2em;
+      }
+    }
+  }
+}
+
+@include mq($from: medium) {
+
+  .l-nav--main {
+    a {
+      padding-left: .5em;
+      &:not(:last-child) {
+        &::after {
+          margin-left: .75em;
+        }
+      }
+    }
+  }
+
+}
+
+@include mq($from: big) {
+  .l-nav--main {    
+    text-transform: none;
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+
+    a{
+      padding-left: .75em;
+      padding-right: .75em;
+      margin-top: .25em;
+      flex: 0 1 auto;
+      
+      &:not(:last-child) {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

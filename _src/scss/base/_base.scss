@@ -1,0 +1,58 @@
+
+
+html {
+  background: $color-bg;
+  color: $color-text;
+  font-size: 1em;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+body {
+  @extend %font-primary;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  @extend %font-secondary;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -0.02em;
+  //text-transform: uppercase;
+}
+
+pre,
+code {
+  font-size: 1em;
+  color: lighten($color-text, 10%);
+}
+
+code {
+  font-size: .9em;
+  letter-spacing: 0;
+}
+
+pre code {
+  line-height: 1;
+  font-size: .7em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  border: 0;
+  border-bottom: .3rem solid $color-brand-light;
+  margin: 2em 0 2.5em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+dd {
+  margin-left: 1rem;
+}
+
+dd + dt {
+  margin-top: .33em;
+}

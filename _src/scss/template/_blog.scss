@@ -1,0 +1,35 @@
+
+.t-blog__subtitle {
+	font-size: 1.4em;
+	margin: 0 0 .5em 0;
+	text-transform: uppercase;
+}
+
+@include mq($from: medium) {
+	.t-blog__subtitle {
+		margin-bottom: 1.5em;
+	}
+	.t-blog {
+		overflow: hidden;
+	}
+	.t-blog__main,
+	.t-blog__side {
+		float: left;
+		width: 33.33%;
+		margin-top: 1rem;
+	}
+
+	.t-blog__main {
+		width: 66.66%;
+		padding-right: 3rem;
+	}
+}
+
+@include mq($from: big) {
+	.t-blog__side {
+		width: 25%;
+	}
+	.t-blog__main {
+		width: 75%;
+	}
+}
