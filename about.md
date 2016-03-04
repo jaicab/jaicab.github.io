@@ -1,7 +1,7 @@
 ---
 layout: page
 
-title: I am a front-end architect.
+title: I am a frontend architect.
 microtitle: About
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 ---
@@ -46,7 +46,7 @@ Modern JavaScript is something I find really interesting, so I've done some data
 
 With some background on back-end development, I have experience with PHP, Java and C/C++, so I can pick up any programming language or library really quick. I've also worked with plenty of **RESTful APIs** and even built one. 
 
-Well documented APIs are to back-end what styleguides are to front-end.
+Well documented APIs are to backend what styleguides are to frontend.
 
 ---
 
