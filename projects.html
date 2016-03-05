@@ -8,6 +8,7 @@ schema: CollectionPage
 ---
 
 
+
 <main role="main" class="l-main">
 <div class="wrap">
     <div class="text" id="skip" tabindex="-1">
@@ -18,9 +19,10 @@ schema: CollectionPage
 	<div class="c-project-list">
 	    {% assign projectlist = (site.projects | sort: 'order') %}
 	    {% for project in projectlist %}
+		<link rel="prefetch" href="{{ project.link }}">
 		<div class="c-project" itemscope itemid="{{ project.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" itemtype="https://schema.org/CreativeWork">
 			<div class="c-project__header">
-				<a itemprop="url" class="c-project__link" href="{{ project.link }}">
+				<a itemprop="url" class="c-project__link" rel="external" href="{{ project.link }}">
 					<img itemprop="image" class="c-project__logo" src="/images/project/{{ project.logo }}" alt="{{ project.title }} logo"/>
 				</a>
 			</div>
