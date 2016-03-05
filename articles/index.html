@@ -57,7 +57,7 @@ schema: Blog
       <ul class="c-link-list">
         {% for link in site.data.links limit:10 %}
           <li class="c-link">
-            <h4 class="c-link__title"><a href="{{ link.link }}" target="_blank" external>
+            <h4 class="c-link__title"><a href="{{ link.link }}" target="_blank" rel="external">
               {{ link.title }}
             </a></h4>
             <h5 class="c-link__on">{{ link.origin }}</h5>
