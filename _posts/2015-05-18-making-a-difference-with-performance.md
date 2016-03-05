@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Making a difference with performance"
 meta: I want to share the experience of building a responsive, performant website like Base Creative's one
 ---

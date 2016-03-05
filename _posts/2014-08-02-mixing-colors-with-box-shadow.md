@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Mixing colors with box-shadow
 meta: An explanation about the color-spectrum mixing effect we can get with shadows.
 syntax: true

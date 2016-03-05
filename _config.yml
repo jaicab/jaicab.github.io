@@ -28,6 +28,17 @@ collections:
  - projects
  - work
 
+ # Default front-matter
+defaults:
+  - 
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      schema: Article
+
+
 
 # Build settings
 permalink: pretty
