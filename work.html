@@ -4,6 +4,7 @@ layout: default
 title: Happy users, happy clients.
 microtitle: Work
 meta: The projects I've worked on for clients and agencies as a frontend developer/architect.
+schema: CollectionPage
 ---
 
 <main role="main" class="l-main">
@@ -16,16 +17,16 @@ meta: The projects I've worked on for clients and agencies as a frontend develop
 	<div class="c-project-list">
 	    {% assign worklist = (site.work | sort: 'order') %}
 	    {% for project in worklist %}
-		<div class="c-project">
+		<div class="c-project" itemscope itemtype="https://schema.org/CreativeWork">
 			<div class="c-project__header">
-				<a class="c-project__link" href="{{ project.link }}">
-					<img class="c-project__logo" src="/images/work/{{ project.logo }}" alt="{{ project.title }} logo"/>
+				<a itemprop="url" class="c-project__link" href="{{ project.link }}">
+					<img itemprop="image" class="c-project__logo" src="/images/work/{{ project.logo }}" alt="{{ project.title }} logo"/>
 				</a>
 			</div>
 			<div class="c-project__content">
 				<div class="text">
-					<strong>{{ project.title }}</strong>
-					{{ project.meta }}
+					<strong itemprop="name">{{ project.title }}</strong>
+					<span itemprop="text">{{ project.meta }}</span>
 				</div>
 			</div>
 		</div>

@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<main role="main" class="l-main">
+<main role="main" class="l-main" itemprop="mainContentOfPage" itemscope itemtype="https://schema.org/WebPageElement">
   <div class="wrap">
     <div class="text">
       {% if page.title %}
-      <h1>{{ page.title }}</h1>
+      <h1 itemprop="headline">{{ page.title }}</h1>
       {% endif %}
                 
-      {{ content }}
+      <div itemprop="text">
+      	{{ content }}
+      </div>
 
     </div>
   </div>

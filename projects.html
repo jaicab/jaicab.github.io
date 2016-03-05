@@ -4,6 +4,7 @@ layout: default
 title: Side projects are fun.
 microtitle: Projects
 meta: I like to build useful side projects in my spare time, either to improve my skills or my workflow.
+schema: CollectionPage
 ---
 
 
@@ -17,16 +18,16 @@ meta: I like to build useful side projects in my spare time, either to improve m
 	<div class="c-project-list">
 	    {% assign projectlist = (site.projects | sort: 'order') %}
 	    {% for project in projectlist %}
-		<div class="c-project">
+		<div class="c-project" itemscope itemtype="https://schema.org/CreativeWork">
 			<div class="c-project__header">
-				<a class="c-project__link" href="{{ project.link }}">
-					<img class="c-project__logo" src="/images/project/{{ project.logo }}" alt="{{ project.title }} logo"/>
+				<a itemprop="url" class="c-project__link" href="{{ project.link }}">
+					<img itemprop="image" class="c-project__logo" src="/images/project/{{ project.logo }}" alt="{{ project.title }} logo"/>
 				</a>
 			</div>
 			<div class="c-project__content">
 				<div class="text">
-					<strong>{{ project.title }}</strong>
-					{{ project.content }}
+					<strong itemprop="name">{{ project.title }}</strong>
+					<span itemprop="text">{{ project.meta }}</span>
 				</div>
 			</div>
 		</div>

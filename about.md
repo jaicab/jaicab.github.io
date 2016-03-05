@@ -4,6 +4,7 @@ layout: page
 title: I am a frontend architect.
 microtitle: About
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
+schema: AboutPage
 ---
 
 <p class="c-intro">A passionate frontend with an eye for user experience, who puts the user's needs first with <em>responsible</em> responsive design.</p>
