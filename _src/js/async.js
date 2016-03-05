@@ -1,4 +1,7 @@
 ;(function( doc ) {
+  // Clear localFont
+  localStorage.clear();
+
   var font_primary = 'Crimson Text';
   var font_secondary = 'Montserrat';
   var font_enhanced = 'Circular';
