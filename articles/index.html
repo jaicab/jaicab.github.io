@@ -3,6 +3,7 @@ layout: default
 meta: Articles about frontend development, design, Sass, web performance and more.
 title: I have something to share.
 microtitle: Articles
+schema: Blog
 ---
 
 <div class="t-blog">
@@ -11,14 +12,14 @@ microtitle: Articles
       <h1 class="t-blog__title">{{ page.title }}</h1>
     </div>
 
-    <main class="t-blog__main" role="main" itemscope itemtype="http://schema.org/Blog">
+    <main class="t-blog__main" role="main">
 
       <h2 class="t-blog__subtitle">Posts</h2>
       <ul class="c-post-list">
         {% for post in paginator.posts %}
-          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><a href="{{ post.url | prepend: site.baseurl }}">
-            <h3 class="c-post__title"><span class="visuallyhidden">Read more about </span>{{ post.title }}</h3>
-            <time class="c-post__date" datetime="{{ post.date }}">
+          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><a itemprop="url" href="{{ post.url | prepend: site.baseurl }}">
+            <h3 class="c-post__title"><span class="visuallyhidden">Read more about </span><span itemprop="headline">{{ post.title }}</span></h3>
+            <time itemprop="datePublished" class="c-post__date" datetime="{{ post.date }}">
 {% assign d = post.date | date: "%-d" %} 
 {% assign m = post.date | date: "%B" %} 
 {% case m %}
@@ -30,7 +31,7 @@ microtitle: Articles
   {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
 {{ post.date | date: "%Y" }}
             </time>
-            <p class="c-post__desc">{{post.meta}}</p>
+            <p itemprop="description" class="c-post__desc">{{post.meta}}</p>
           </a></li>
         {% endfor %}
       </ul>

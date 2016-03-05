@@ -18,7 +18,7 @@ schema: CollectionPage
 	<div class="c-project-list">
 	    {% assign projectlist = (site.projects | sort: 'order') %}
 	    {% for project in projectlist %}
-		<div class="c-project" itemscope itemtype="https://schema.org/CreativeWork">
+		<div class="c-project" itemscope itemid="{{ project.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" itemtype="https://schema.org/CreativeWork">
 			<div class="c-project__header">
 				<a itemprop="url" class="c-project__link" href="{{ project.link }}">
 					<img itemprop="image" class="c-project__logo" src="/images/project/{{ project.logo }}" alt="{{ project.title }} logo"/>

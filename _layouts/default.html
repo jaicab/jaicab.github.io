@@ -2,6 +2,8 @@
 
 </head>
 <body itemscope 
+itemid="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+
 {%if page.schema %}
 itemtype="{{ page.schema | prepend: 'http://schema.org/' }}"
 {% else %}
