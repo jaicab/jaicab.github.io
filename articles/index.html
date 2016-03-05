@@ -6,6 +6,12 @@ microtitle: Articles
 schema: Blog
 ---
 
+{% if paginator.page == 1 %}
+{% for post in site.posts limit: 2 %}
+<link rel="prerender" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+{% endfor %}
+{% endif %}
+
 <div class="t-blog">
   <div class="wrap">
     <div class="text">
@@ -17,8 +23,8 @@ schema: Blog
       <h2 class="t-blog__subtitle">Posts</h2>
       <ul class="c-post-list">
         {% for post in paginator.posts %}
-          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" itemid="{{ post.url | prepend: site.baseurl }}" itemref="author">
-            <a itemprop="url" href="{{ post.url | prepend: site.baseurl }}">
+          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" itemid="{{ post.url | prepend: site.baseurl | prepend: site.url }}" itemref="author">
+            <a itemprop="url" href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
               <h3 class="c-post__title"><span class="visuallyhidden">Read more about </span><span itemprop="headline name">{{ post.title }}</span></h3>
               <time itemprop="datePublished" class="c-post__date" datetime="{{ post.date }}">
   {% assign d = post.date | date: "%-d" %} 
