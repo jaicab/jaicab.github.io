@@ -1,11 +1,13 @@
   <header role="banner" class="l-header l-header--main">
     <div class="l-header__top">
       <div class="wrap">
-        <a href="{{ site.url }}" id="logo" class="c-logo" itemscope itemtype="https://schema.org/Person">
-          <object class="c-logo__image" data="/images/logo.svg" title="{{ site.title }}"  type="image/svg+xml">
-            <span itemprop="name">Jaime Caballero</span>
-          </object>
-        </a>
+        <span itemscope itemtype="https://schema.org/Person" itemref="author">
+          <a itemprop="url" href="{{ site.url }}" id="logo" class="c-logo">
+            <object class="c-logo__image" data="/images/logo.svg" title="{{ site.title }}"  type="image/svg+xml">
+              <span itemprop="name">Jaime Caballero</span>
+            </object>
+          </a>
+        </span>
         
         {% include nav.html %}
       </div>
