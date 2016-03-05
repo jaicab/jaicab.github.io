@@ -95,15 +95,15 @@
 
   /* Enhancements for all browsers - qualified or not */
 
-  /* Load CSS */
-  var fullCSS = getMeta( fullCSSKey );
-  if( fullCSS){
-    loadCSS( fullCSS.content );
-  }
   /* Load fonts */
   var fonts = getMeta( fontsKey );
   if( fonts ){
     loadCSS( fonts.content );
+  }
+  /* Load CSS */
+  var fullCSS = getMeta( fullCSSKey );
+  if( fullCSS){
+    loadCSS( fullCSS.content );
   }
 
 
