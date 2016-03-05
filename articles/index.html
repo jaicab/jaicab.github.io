@@ -17,23 +17,24 @@ schema: Blog
       <h2 class="t-blog__subtitle">Posts</h2>
       <ul class="c-post-list">
         {% for post in paginator.posts %}
-          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><a itemprop="url" href="{{ post.url | prepend: site.baseurl }}">
-            <h3 class="c-post__title"><span class="visuallyhidden">Read more about </span><span itemprop="headline name">{{ post.title }}</span></h3>
-            <time itemprop="datePublished" class="c-post__date" datetime="{{ post.date }}">
-{% assign d = post.date | date: "%-d" %} 
-{% assign m = post.date | date: "%B" %} 
-{% case m %}
-  {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
-  {% when 'September' %}Sept.
-  {% else %}{{ post.date | date: "%b" }}.
-  {% endcase %}
-{% case d %}
-  {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
-{{ post.date | date: "%Y" }}
-            </time>
-            <p itemprop="description" class="c-post__desc">{{post.meta}}</p>
-            <meta itemprop="author publisher" itemref="author">
-          </a></li>
+          <li class="c-post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting" itemref="author">
+            <a itemprop="url" href="{{ post.url | prepend: site.baseurl }}">
+              <h3 class="c-post__title"><span class="visuallyhidden">Read more about </span><span itemprop="headline name">{{ post.title }}</span></h3>
+              <time itemprop="datePublished" class="c-post__date" datetime="{{ post.date }}">
+  {% assign d = post.date | date: "%-d" %} 
+  {% assign m = post.date | date: "%B" %} 
+  {% case m %}
+    {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+    {% when 'September' %}Sept.
+    {% else %}{{ post.date | date: "%b" }}.
+    {% endcase %}
+  {% case d %}
+    {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
+  {{ post.date | date: "%Y" }}
+              </time>
+              <p itemprop="description" class="c-post__desc">{{post.meta}}</p>
+            </a>
+          </li>
         {% endfor %}
       </ul>
 
