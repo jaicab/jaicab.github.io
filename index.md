@@ -1,6 +1,6 @@
 ---
 layout: page
-meta: Frontend architect based in London | Jaime Caballero - Articles about Sass, web performance and more.
+meta: Jaime Caballero is a frontend architect based in London. He writes about about Sass, web performance and more.
 ---
 
 <p class="c-intro c-intro--color">Hi! I’m <strong>Jaime Caballero</strong>, a <a href="/work/">frontend architect</a>, <a href="/articles/">writer</a> and film buff based in London, UK. I work as a nexus between design and frontend, making purposeful websites scalable and lightning-fast.</p>
