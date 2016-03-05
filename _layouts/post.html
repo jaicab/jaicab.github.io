@@ -9,7 +9,7 @@ schema: Article
     <header class="t-post__header">
         <h1 class="t-post__title" itemprop="headline name">{{ page.title }}</h1>
         <div class="t-post__details">
-          <time class="t-post__date" datetime="{{ page.date }}">
+          <time itemprop="datePublished" class="t-post__date" datetime="{{ page.date }}">
 {% assign d = page.date | date: "%-d" %} 
 {% assign m = page.date | date: "%B" %} 
 {% case m %}
@@ -24,9 +24,16 @@ schema: Article
         </div>
       </header>
       
-      <div class="text" itemprop="articleBody">
+      <main class="text" itemprop="articleBody">
         {{ content }}
-      </div>
+      </main>
+
+      <meta itemprop="author publisher" content="{{ site.fullname }}">
+
+      <footer class="t-post__footer">
+
+        
+      </footer>
 
     </div>
   </div>
