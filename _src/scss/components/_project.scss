@@ -29,7 +29,7 @@
 
 @include mq($from: medium) {
 	.c-project-list {
-		padding-top: 1rem;
+		padding-top: 1.5rem;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -39,7 +39,7 @@
 		width: 28.33%;
 		margin-right: 5%;
 		margin-top: 0;
-		margin-bottom: 1rem;
+		margin-bottom: 1.5rem;
 		float: left;
 		flex: 0 0 auto;
 	}
