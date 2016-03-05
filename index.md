@@ -6,7 +6,7 @@ meta: Jaime Caballero is a frontend architect based in London. He writes about a
 <p class="c-intro c-intro--color" id="skip" tabindex="-1">Hi! I’m <strong>Jaime Caballero</strong>, a <a href="/work/">frontend architect</a>, <a href="/articles/">writer</a> and film buff based in London, UK. I work as a nexus between design and frontend, making purposeful websites scalable and lightning-fast.</p>
 
 <p class="c-intro c-intro--color">
-I like to build useful <a href="/projects/">side projects</a> in my spare time, either to improve my skills or my workflow.
+I like to build useful <a href="/projects/">side projects</a> in my spare time, to improve either my skills or my workflow.
 </p>
 
 <p class="c-intro c-intro--color">
