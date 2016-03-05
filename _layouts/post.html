@@ -6,7 +6,7 @@ layout: default
   <div class="wrap">
     
     <header class="t-post__header">
-        <h1 class="t-post__title" itemprop="headline name">{{ page.title }}</h1>
+        <h1 class="t-post__title" itemprop="headline name" id="skip" tabindex="-1">{{ page.title }}</h1>
         <div class="t-post__details">
           <time itemprop="datePublished" class="t-post__date" datetime="{{ page.date }}">
 {% assign d = page.date | date: "%-d" %} 
