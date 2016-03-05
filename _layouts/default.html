@@ -4,7 +4,7 @@
 <body itemscope 
 {%if page.schema %}
 itemtype="{{ page.schema | prepend: 'http://schema.org/' }}"
-{% elseif layout.schema %}
+{% elsif layout.schema %}
 itemtype="{{ layout.schema | prepend: 'http://schema.org/' }}"
 {% else %}http://schema.org/WebPage{% endif %}
 >
