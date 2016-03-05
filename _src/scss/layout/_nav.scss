@@ -18,8 +18,16 @@
       font-weight: 600;
     }
     
-    &:hover, &:focus {
+    &:hover,
+    &:active {
       background: lighten($color-brand-light, 10%);
+    }
+
+    &:focus {
+      outline: 0;
+      transition: none;
+      background: $color-brand;
+      color: $color-bg;
     }
     
     &:not(:last-child) {
