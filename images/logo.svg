@@ -14,7 +14,7 @@
       stroke-dashoffset: 0;
       stroke-dasharray: 240;
       -webkit-animation: dash 1s ease-in;
-      animation: dash 1s ease-in;
+      animation: dash .5s ease-in;
     }
   </style>
   <title>logo</title>
