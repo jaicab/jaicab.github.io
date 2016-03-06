@@ -20,7 +20,7 @@ Some assets are preprocessed with [Grunt](http://gruntjs.com) tasks to optimise 
 Other notable tools, scripts and services used worth mentioning are:
 
 - [fontfaceobserver](https://github.com/bramstein/fontfaceobserver) by Bram Stein
-- [enjance.js](https://github.com/filamentgroup/enhance) by Filament Group Inc.
+- [enhance](https://github.com/filamentgroup/enhance) by Filament Group Inc.
 - [sass-mq](https://github.com/sass-mq/sass-mq) by Kaelig
 - [ImageAlpha](https://pngmini.com/) by Kornel Lesinski
 - [clean-css](https://github.com/jakubpawlowicz/clean-css) by Jakub Pawlowicz
