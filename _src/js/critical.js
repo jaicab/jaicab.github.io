@@ -100,12 +100,6 @@
   if( fonts ){
     loadCSS( fonts.content );
   }
-  /* Load CSS */
-  var fullCSS = getMeta( fullCSSKey );
-  if( fullCSS){
-    loadCSS( fullCSS.content );
-  }
-
 
   // IE9+
   if( !( 'geolocation' in navigator ) || !( "keys" in Object )) {
