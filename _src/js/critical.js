@@ -114,7 +114,7 @@
   // From here on we're dealing with qualified browsers.
 
   // Check if fonts loaded
-  if(sessionStorage.fontsLoaded) {
+  if(localStorage.getItem("fontsLoaded")) {
       htmlClasses[htmlClasses.length] = 'f1';
       htmlClasses[htmlClasses.length] = 'f2';
   }else{
