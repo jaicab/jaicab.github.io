@@ -6,7 +6,7 @@ meta: "It's important to make the right choice when approaching work"
 
 When there’s at least two ways of doing something, there’s room for choice. By making a choice, you are designing.
 
-Before making a choice, one should contemplate all facts and the possible repercussions of each of the options. It’s important not to assume anything before this.
+Before making a choice, one should contemplate all facts and possible repercussions of each of the options. It’s important not to take anything for granted before doing this.
 
 For example, I build websites. Let’s consider the facts for the question <q>how should I build websites?</q>.
 
@@ -25,7 +25,7 @@ Now before I design and/or build a website, I choose how to approach it based on
 5. **Enhance the experience**: Making sure you test first and then apply, the sky is the limit. Layout, media queries, fonts, typography, SVGs, high-res images, JavaScript interactions, embeds…
 6. **Add features**: Iterating over the previous steps, add features one by one.
 
-Finally, we end up with an experience that is as great as it can ever be under the best conditions and where users with the worst possible scenario get a basic experience.
+And we end up with an experience that is as great as it can ever be under the best conditions. Meanwhile, the users with the worst possible scenario get a basic experience.
 
 What’s important is to consider the options before rushing into a decision, and more importantly **never assume anything**. I like what Anna Debenham says about console browsers:
 
@@ -35,7 +35,7 @@ This way of working, this mindset is called **progressive enhancement**. It allo
 
 ## I don't have time for this
 
-Some people say <q>I don’t have time for this</q> or <q>I can’t do it right now</q> when facing the idea of supporting more browsers or case scenarios. And hey, I understand. If you don’t have the budget or the time, but have consider the options before taking each decision, then ok, maybe next time. **You tried shooting for the best solution, but it’s not viable**, good job.
+Some people say <q>I don’t have time for this</q> or <q>I can’t do it right now</q> when facing the idea of supporting more browsers or case scenarios. And hey, I understand. If you don’t have the budget or the time, but have considered the options before taking each decision, then ok, maybe next time. **You tried shooting for the best solution, but it’s not viable**, good job.
 
 Those I don’t get are the ones that just **don’t care at all** and just want to make their work **easier**. I feel like they don’t respect their users. Could it be that they don’t know the potential of doing things this way, of doing things _right_?
 
