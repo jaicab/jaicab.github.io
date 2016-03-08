@@ -29,6 +29,10 @@
     font-weight: normal;
     color: lighten($color-text, 20%);
   }
+
+  p q {
+    font-style: italic;
+  }
   
   
   
@@ -48,9 +52,13 @@
   ul {
     list-style: square;
   }
+
+  ol {
+    list-style: decimal;
+  }
   
   li {
-    margin: 0 0 .25em 0;
+    margin: 0 0 .5em 0;
   }
 
 
@@ -116,7 +124,7 @@
   .text {
     font-size: 1.45em;
     line-height: 1.35;
-    word-spacing: .03em;
+    word-spacing: .05em;
   }
 }
 
