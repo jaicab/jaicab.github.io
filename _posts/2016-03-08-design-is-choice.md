@@ -50,7 +50,7 @@ Then you can use new APIs (Service Workers, web audio, etc) or new fancy CSS fea
 
 If what you do affects how a website is going to work or look, remember that you are in fact, designing an experience for The Web, the beauty of which is its **ubiquity**. There will always be users coming from places you didn’t expect, using devices you didn’t test for. 
 
-Progressive Enhancement helps you embrace the unexpected, make your job easier, reach to a bigger audience and in the end, deliver a better product. 
+Progressive Enhancement helps you embrace the unexpected, reach to a bigger audience and in the end, deliver a better product. 
 
 That's why I choose to build with it.
 
