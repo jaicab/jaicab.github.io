@@ -39,7 +39,7 @@ Some people say <q>I don’t have time for this</q> or <q>I can’t do it right 
 
 Those I don’t get are the ones that just **don’t care at all** and just want to make their work **easier**. I feel like they don’t respect their users. Could it be that they don’t know the potential of doing things this way, of doing things _right_?
 
-<q>It’s just boring</q>, I’ve heard too. <q>I just want to do cool stuff, not worry about old boring support</q>. I like how Jeremy Keith usually answers to this with <q>well, it’s called work for a reason, right?</q>.
+<q>It’s just boring</q>, I’ve heard too. <q>I just want to do cool stuff, not worry about old boring support</q>. I like how Jeremy Keith usually responds to this with <q>well, it’s called work for a reason, right?</q>.
 
 What most of these people that give excuses don't really know is that once you got you core experience up and running, you can **spend all your time working on the enhanced experience**, and not only a single experience but an great _flexible_ experience. Scott Jehl from Filament Group [wrote about this a while ago](https://the-pastry-box-project.net/scott-jehl/2014-March-7):
 
