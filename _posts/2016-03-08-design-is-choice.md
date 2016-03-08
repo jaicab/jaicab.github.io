@@ -11,7 +11,7 @@ Before making a choice, one should contemplate all facts and possible repercussi
 For example, I build websites. Let’s consider the facts for the question <q>how should I build websites?</q>.
 
 - People use websites for all sorts of things. They can come from all sorts of places and backgrounds, and use websites on all kinds of devices and contexts.
-- I want to create experiences that do what people want, not make people do what the product needs. Therefore the experience must be reachable from any device that can access The Web, no matter the context.
+- I want to create experiences that do what people want, not make people do what the experience requires. Therefore the experience must be reachable from any device that can access The Web, no matter the context.
 - HTML can be accessed by any device that can access The Web.
 - CSS can enhance that experience with layout, contrast in design, readability, animations, etc.
 - Browsers are _tolerant_ with HTML and CSS by design, if they don't understand something, they ignore it and move on.
