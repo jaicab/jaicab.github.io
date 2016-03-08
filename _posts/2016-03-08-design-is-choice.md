@@ -35,7 +35,7 @@ This way of working, this mindset is called **progressive enhancement**. It allo
 
 ## I don't have time for this
 
-Some people say <q>I don’t have time for this</q> or <q>I can’t do it right now</q> when facing the idea of supporting more browsers or case scenarios. And hey, I understand. If you don’t have the budget or the time, but have considered the options before taking each decision, then ok, maybe next time. **You tried shooting for the best solution, but it’s not viable**, good job.
+Some people say <q>I don’t have time for this</q> or <q>I can’t do it right now</q> when facing the idea of supporting more browsers or case scenarios. And hey, I understand. If you don’t have the budget or the time, but have considered the options before making each decision, then ok, maybe next time. **You tried shooting for the best solution, but it’s not viable**, good job.
 
 Those I don’t get are the ones that just **don’t care at all** and just want to make their work **easier**. I feel like they don’t respect their users. Could it be that they don’t know the potential of doing things this way, of doing things _right_?
 
