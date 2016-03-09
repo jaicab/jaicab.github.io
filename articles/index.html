@@ -38,7 +38,7 @@ schema: Blog
     {% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, 
   {{ post.date | date: "%Y" }}
               </time>
-              <p itemprop="description" class="c-post__desc">{{post.meta}}</p>
+              <p itemprop="description" class="c-post__desc">{{post.meta}}.</p>
             </a>
           </li>
         {% endfor %}
