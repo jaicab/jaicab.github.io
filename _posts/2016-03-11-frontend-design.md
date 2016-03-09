@@ -11,7 +11,7 @@ Many designers couldn’t adapt to this change due to legacy thinking, and start
 
 This led to designers not being happy about the design of the in-betweens and frontend developers overwhelmed with responsibility. Therefore, developers started asking designers to learn how to code in order to ensure the design was respected by doing it themselves. 
 
-And some did! It doesn't need to be production code, but the ability to understand how to implement a design in basic HTML and CSS, and make changes in CSS (which couln't be easier nowadays with Developer Tools) helped to smooth things between design and development.
+And some did! It doesn't need to be production code, but the ability to understand how to implement a design in basic HTML and CSS, and make changes in CSS (which couln't be easier nowadays with Developer Tools) helped to smooth things out between design and development.
 
 But it is not that common to see this happening the other way around with developers. Probably because developers sometimes tend to be more pragmatic, they want to _make it work_, and care less about how it looks. 
 
