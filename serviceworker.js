@@ -12,8 +12,7 @@ function updateStaticCache() {
             cache.addAll([
                 '/about/',
                 '/work/',
-                '/projects/',
-                '/articles/'
+                '/projects/'
             ]);
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
@@ -25,6 +24,8 @@ function updateStaticCache() {
             ]);
         });
 }
+
+
 
 function stashInCache(cacheName, request, response) {
     caches.open(cacheName)
