@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v0.1::';
+const version = 'v0.2::';
 const staticCacheName = version + 'static';
 const pagesCacheName = version + 'pages';
 const imagesCacheName = version + 'images';
@@ -12,7 +12,8 @@ function updateStaticCache() {
             cache.addAll([
                 '/about/',
                 '/work/',
-                '/projects/'
+                '/projects/',
+                '/css/syntax.css'
             ]);
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
