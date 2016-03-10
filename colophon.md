@@ -17,6 +17,8 @@ Font files are deliverd from [Google Fonts](https://www.google.com/fonts]). Ment
 
 Some assets are preprocessed with [Grunt](http://gruntjs.com) tasks to optimise and compress assets in ways not possible using CloudFlare nor Jekyll.
 
+There's an offline version working on those browsers that support [Service Workers](https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md). The more pages you visit, the more that will be cached. You can see what's being cached under Service Workers in Chrome Developer Tools.
+
 Other notable tools, scripts and services used worth mentioning are:
 
 - [fontfaceobserver](https://github.com/bramstein/fontfaceobserver) by Bram Stein
