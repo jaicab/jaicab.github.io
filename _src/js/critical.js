@@ -13,7 +13,7 @@
     docElem = doc.documentElement,
     head = doc.head || doc.getElementsByTagName( "head" )[ 0 ],
     fullCSSKey = "fullcss",
-    fontJS = "fontjs",
+    fontJSkey = "fontjs",
     fontsKey = "fonts",
     serviceWorkerKey = "swJS",
     // classes to be added to the HTML element in qualified browsers
