@@ -15,6 +15,7 @@
     fullCSSKey = "fullcss",
     fontJS = "fontjs",
     fontsKey = "fonts",
+    serviceWorkerKey = "swJS",
     // classes to be added to the HTML element in qualified browsers
     htmlClasses = [ "enhanced" ];
 
@@ -112,7 +113,7 @@
       htmlClasses[htmlClasses.length] = 'f1';
       htmlClasses[htmlClasses.length] = 'f2';
   }else{
-    var fontJS = getMeta( fontJS );
+    var fontJS = getMeta( fontJSkey );
     if( fontJS ){
       loadJS( fontJS.content );
     }
@@ -123,6 +124,15 @@
 
 
   // Other JS here
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register(
+      '/js/sw.js'
+    ).then(function(reg) {
+      console.log('Yey!', reg);
+    }).catch(function(err) {
+      console.log('Boo!', err);
+    });
+  }
 
 
   // expose the 'enhance' object globally. Use it to expose anything in here that's useful to other parts of your application.
