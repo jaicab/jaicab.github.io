@@ -19,7 +19,6 @@
     // classes to be added to the HTML element in qualified browsers
     htmlClasses = [ "enhanced" ];
 
-  /* Some commonly used functions - delete anything you don't need! */
 
   // loadJS: load a JS file asynchronously. Included from https://github.com/filamentgroup/loadJS/
   function loadJS( src ){
@@ -123,7 +122,7 @@
   docElem.className += " " + htmlClasses.join(" ");
 
 
-  // Other JS here
+  // Register Service Worker
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(
       '/serviceworker.js'
