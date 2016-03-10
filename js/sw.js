@@ -18,10 +18,10 @@ function updateStaticCache() {
             // These items must be cached for the Service Worker to complete installation
             return cache.addAll([
                 '/',
-                '/offline',
+                '/offline/',
                 '/images/logo.png',
                 '/images/logo.svg',
-                '/images/jaime-caballero.svg'
+                '/images/jaime-caballero.png'
             ]);
         });
 }
@@ -90,7 +90,7 @@ self.addEventListener('fetch', event => {
     if (request.method !== 'GET') {
         event.respondWith(
             fetch(request)
-                .catch( () => caches.match('/offline') )
+                .catch( () => caches.match('/offline/') )
         );
         return;
     }
@@ -119,7 +119,7 @@ self.addEventListener('fetch', event => {
                 .catch( () => {
                     // CACHE or FALLBACK
                     return caches.match(request)
-                        .then( response => response || caches.match('/offline') );
+                        .then( response => response || caches.match('/offline/') );
                 })
         );
         return;
