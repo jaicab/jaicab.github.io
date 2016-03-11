@@ -58,6 +58,6 @@ Well documented APIs are to backend what styleguides are to frontend.
     <dd>For quick contact, feel free to send me a tweet!</dd>
 
     <dt><b>Email:</b> <a href="mailto:{{ site.email }}">{{ site.email }}</a></dt>
-    <dd>Email me if it doesn't fit in a tweet or it's going to be a large conversation.</dd>
+    <dd>Email me if it doesn't fit in a tweet or it's going to be a long conversation.</dd>
 </dl>
 
