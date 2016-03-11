@@ -50,7 +50,7 @@
         <meta name="twitter:description" content="{{ page.meta }}">
         <meta name="description" content="{{ page.meta }}">
     {% endif %}
-    <meta name="twitter:image" content="{{ page.image }}">
+    <meta name="twitter:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url  }}">
 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">

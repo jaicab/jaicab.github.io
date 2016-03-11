@@ -1,7 +1,7 @@
 ---
 title: "Making a difference with performance"
 meta: I want to share the experience of building a responsive, performant website like Base Creative's one
-image: {{ site.url }}/assets/perfmatters_competitors.png
+image: "/assets/perfmatters_competitors.png"
 ---
 
 I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've been asked to build from scratch. And it's fast. Blazing fast. Now I want to share that experience with you and tell you what I learned on the way.
