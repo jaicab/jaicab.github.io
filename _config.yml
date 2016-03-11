@@ -41,7 +41,7 @@ defaults:
     scope:
       path: ""
     values: 
-      image: "https://jaicab.com/images/logo.png"
+      image: "https://jaicab.com/images/jaime.png"
 
 
 

@@ -45,7 +45,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter }}">
     <meta name="twitter:creator" content="@{{ site.twitter }}">
-    <meta property="og:title" name="twitter:title" content="{% if page.title %}{{ page.title }}{% elsif page.microtitle %}{{ page.microtitle }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:title" name="twitter:title" content="{% if page.title %}{{ page.title }}{% elsif page.microtitle %}{{ page.microtitle }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
     {% if page.meta %}
         <meta name="twitter:description" content="{{ page.meta }}">
         <meta name="description" content="{{ page.meta }}">
