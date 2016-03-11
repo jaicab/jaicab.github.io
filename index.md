@@ -1,5 +1,6 @@
 ---
 layout: page
+microtitle: Frontend architect
 meta: Jaime Caballero is a frontend architect based in London. He writes about about Sass, web performance and more.
 ---
 
