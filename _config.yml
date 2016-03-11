@@ -37,6 +37,11 @@ defaults:
     values:
       layout: post
       schema: BlogPosting
+  -
+    scope:
+      path: ""
+    values: 
+      image: "https://jaicab.com/images/jaime-caballero.png"
 
 
 

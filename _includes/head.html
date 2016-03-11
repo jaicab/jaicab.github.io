@@ -33,8 +33,7 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
     {% if page.path contains '_posts' %}
         <meta property="og:type" content="article" />
@@ -45,13 +44,13 @@
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.twitter }}">
-    <meta name="twitter:domain" content="jaicab.com">
     <meta name="twitter:creator" content="@{{ site.twitter }}">
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta property="og:title" name="twitter:title" content="{% if page.title %}{{ page.title }}{% elsif page.microtitle %}{{ page.microtitle }}{% else %}{{ site.title }}{% endif %}">
     {% if page.meta %}
         <meta name="twitter:description" content="{{ page.meta }}">
         <meta name="description" content="{{ page.meta }}">
     {% endif %}
+    <meta name="twitter:image" content="{{ page.image }}">
 
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
