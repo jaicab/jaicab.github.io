@@ -41,7 +41,7 @@ defaults:
     scope:
       path: ""
     values: 
-      image: "/images/jaime.png"
+      image: "/apple-touch-icon.png"
 
 
 
