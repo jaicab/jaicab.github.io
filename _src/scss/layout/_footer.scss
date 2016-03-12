@@ -21,6 +21,7 @@
 
 	a {
 		color: #666;
+		display: inline-block;
 
 		&:hover,
 		&:active {
@@ -32,18 +33,15 @@
 			background: $color-brand;
 			color: $color-bg;
 		}
-	}
-
-	li {
-		display: inline;
 
 		&:not(:last-child) {
-
 			&:after {
 				content:'|';
 				padding: 0 .5em 0 .75em;
+				color: $color-brand-light;
 			}
 		}
+
 	}
 }
 

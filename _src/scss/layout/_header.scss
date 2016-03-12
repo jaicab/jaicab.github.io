@@ -1,25 +1,13 @@
-
-.l-header {
-  position: relative;
-}
-
-.l-header__top {
-  overflow: hidden;
-}
-
 .l-header__author {
   line-height: 0;
 }
 
 .l-header--main {
-  .l-header__top {
-    margin: 1.5em 2em 2.25em;
-  }
+  margin: 1.5em 2em 2.25em;
 
   @include mq($from: medium) {
-    .l-header__top {
-      margin: 3em 1em 4.5em;
-    }
+    margin: 3em 1em 4.5em;
+    
     .c-logo {
         width: 50px;
         height: 50px;
@@ -27,12 +15,10 @@
   }
 
   @include mq($from: big) {
-    .l-header__top {
-      margin: 3em 1em 3.5em;
+    margin: 3em 1em 3.5em;
 
-      .wrap {
-        overflow: hidden;
-      }
+    .wrap {
+      overflow: hidden;
     }
 
     .c-logo {
