@@ -13,9 +13,7 @@
     docElem = doc.documentElement,
     head = doc.head || doc.getElementsByTagName( "head" )[ 0 ],
     fullCSSKey = "fullcss",
-    fontJSkey = "fontjs",
     fontsKey = "fonts",
-    serviceWorkerKey = "swJS",
     // classes to be added to the HTML element in qualified browsers
     htmlClasses = [ "enhanced" ];
 
@@ -111,11 +109,6 @@
   if(localStorage.getItem("fontsLoaded")) {
       htmlClasses[htmlClasses.length] = 'f1';
       htmlClasses[htmlClasses.length] = 'f2';
-  }else{
-    var fontJS = getMeta( fontJSkey );
-    if( fontJS ){
-      loadJS( fontJS.content );
-    }
   }
 
   // HTML classes

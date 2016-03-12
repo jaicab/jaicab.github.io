@@ -23,6 +23,10 @@ module.exports = function(grunt) {
           // Critical JS: Enhance.js
           '_includes/js/critical.min.js': [
             '_src/js/critical.js'
+          ],
+          // Critical ASYNC loader
+          '_includes/js/async.critical.min.js': [
+            '_src/js/async.critical.js'
           ]
         }
       },
