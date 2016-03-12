@@ -20,10 +20,11 @@
 
   // loadJS: load a JS file asynchronously. Included from https://github.com/filamentgroup/loadJS/
   function loadJS( src ){
+    var ref = window.document.getElementsByTagName( "script" )[ 0 ];
     var script = window.document.createElement( "script" );
     script.src = src;
     script.async = true;
-    document.body.appendChild( script );
+    ref.parentNode.insertBefore( script, ref );
     return script;
   }
 
@@ -108,11 +109,21 @@
   if(localStorage.getItem("fontsLoaded")) {
       htmlClasses[htmlClasses.length] = 'f1';
       htmlClasses[htmlClasses.length] = 'f2';
+  }else{
+    var fontJS = getMeta( fontJSkey );
+    if( fontJS ){
+      loadJS( fontJS.content );
+    }
   }
+
   // HTML classes
   docElem.className += " " + htmlClasses.join(" ");
 
 
+  // Register Service Worker
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/serviceworker.js');
+  }
 
 
   // expose the 'enhance' object globally. Use it to expose anything in here that's useful to other parts of your application.
