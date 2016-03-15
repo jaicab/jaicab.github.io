@@ -14,6 +14,7 @@
     head = doc.head || doc.getElementsByTagName( "head" )[ 0 ],
     fullCSSKey = "fullcss",
     fontsKey = "fonts",
+    fontJSkey = "fontjs",
     // classes to be added to the HTML element in qualified browsers
     htmlClasses = [ "enhanced" ];
 
