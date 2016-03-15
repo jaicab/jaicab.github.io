@@ -39,7 +39,7 @@ I'm best when working as a nexus between design and frontend, as I can mentally 
 
 #### Technical skillset
 
-I'm extremely fluent with CSS preprocessors (Sass, LESS). I'm familiar with task runners and bundlers (Grunt, gulp, webpack), content management systems (WordPress, Jekyll, Birch) and project planning software (Trello). 
+I'm extremely fluent with CSS preprocessors (Sass, LESS). I'm familiar with task runners and bundlers (Grunt, gulp, webpack), content management systems (WordPress, Jekyll, Perch) and project planning software (Trello). 
 
 **Web performance** is very important to me. I find performance budgets to be key for a good frontend architecture. I understand the waterfall, how browser requests work and how to optimise the above-the-fold content, with caching, conditional loading and asset optimisation.
 
