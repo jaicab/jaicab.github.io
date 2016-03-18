@@ -28,7 +28,7 @@
   });
 
   function fontsHaveLoaded(){
-    localStorage.setItem("fontsLoaded", true);
+    sessionStorage.fontsLoaded = true;
     doc.documentElement.className += " f2";
   }
 
