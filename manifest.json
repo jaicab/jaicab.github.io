@@ -1,6 +1,7 @@
 {
     "lang": "en",
-    "name": "jaicab",
+    "short_name": "jaicab",
+    "name": "Jaime Caballero",
     "icons": [
         {
             "src": "mstile.png",
