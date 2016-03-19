@@ -1,0 +1,15 @@
+{
+    "lang": "en",
+    "name": "jaicab",
+    "icons": [
+        {
+            "src": "mstile.png",
+            "sizes": "310x310",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "browser",
+    "background_color": "#fafaf8",
+    "theme_color": "#006699"
+}
