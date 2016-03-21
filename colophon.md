@@ -9,7 +9,7 @@ This website is produce on an [Apple Mac](http://www.apple.com/uk/macbook/), des
 
 Published using [Jekyll](https://jekyllrb.com), managed through [GitHub](https://github.com) and hosted on [GitHub Pages](https://pages.github.com), while [CloudFlare](https://www.cloudflare.com) acts as CDN, protection and caching optimisation.
 
-Font files are delivered (when necessary) from [Google Fonts](https://www.google.com/fonts]). Mention to type used:
+Font files are delivered (when necessary) from [Google Fonts](https://www.google.com/fonts]). Type used:
 
 - [Circular](https://lineto.com/The+Fonts/Font+Categories/Text+Fonts/Circular/) by Laurenz Brunner
 - [Montserrat](https://www.google.com/fonts/specimen/Montserrat) by Julieta Ulanovsky
