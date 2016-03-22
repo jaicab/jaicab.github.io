@@ -2,14 +2,13 @@
 .l-nav--main {
   @extend %font-secondary;
   text-align: center;
-  text-transform: lowercase;
   font-size: 1.1em;
   
   a {
     color: $color-text;
     font-weight: 400;
     display: inline-block;
-    padding: .25em 0;
+    padding: .25em;
     letter-spacing: -0.002em;
     
     transition: .25s all;
@@ -29,14 +28,6 @@
       background: $color-brand;
       color: $color-bg;
     }
-    
-    &:not(:last-child) {
-      &::after {
-        content: '/';
-        display: inline-block;
-        margin-left: .2em;
-      }
-    }
   }
 }
 
@@ -44,12 +35,7 @@
 
   .l-nav--main {
     a {
-      padding-left: .5em;
-      &:not(:last-child) {
-        &::after {
-          margin-left: .75em;
-        }
-      }
+      margin: .25em .5em;
     }
   }
 

@@ -3,14 +3,15 @@
 }
 
 .l-header--main {
-  margin: 1.5em 2em 2.25em;
+  margin: 1.5em 1em 2.25em;
 
   @include mq($from: medium) {
     margin: 3em 1em 4.5em;
     
     .c-logo {
-        width: 50px;
-        height: 50px;
+      margin-top: 2.5em;
+      width: 50px;
+      height: 50px;
     }
   }
 
