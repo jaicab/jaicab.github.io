@@ -35,7 +35,7 @@ This is given probably because the handheld devices are closer and may seem "sim
 
 What's really important it's not how long your site takes to load, but how fast it _feels_. This is what's called **perceived performance**. Getting the above-the-fold content to a visualy complete, usable state as fast as possible matters way more than performance across the page.
 
-[Akamai's study](http://www.akamai.com/dl/reports/Site_Abandonment_Final_Report.pdf) shows us some very strong facts about percieved performance, like:
+Akamai's study shows us some very strong facts about percieved performance, like:
 
 - 47% of people expect a web page to load in **2 seconds or less**.
 - 40% will abandon a web page if it takes more than 3 seconds to load.

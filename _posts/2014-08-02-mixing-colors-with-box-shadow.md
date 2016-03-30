@@ -44,7 +44,7 @@ As you can see on the graph, any point on the circle is based on two distances t
 >x = r * cos(t)    
 y = r * sin(t)
 
-Where **r** is the radius, **t** the angle, **x** the horizontal coordinate and **y** the vertical one. Now we have to apply this equation to `box-shadow`. However, **Sass can't handle trigonometric** functions out of the box so you must include [Compass](http://compass-style.org/reference/compass/helpers/trig/) to make them work. Of course you can also create your own functions if you like Vanilla Sass more.
+Where **r** is the radius, **t** the angle, **x** the horizontal coordinate and **y** the vertical one. Now we have to apply this equation to `box-shadow`. However, **Sass can't handle trigonometric** functions out of the box so you must include [Compass](http://compass-style.org) to make them work. Of course you can also create your own functions if you like Vanilla Sass more.
 
 But for this demo first we need to control how many points we want on the circle and split the circle (360deg) between them. Usign Sass lists we can get this done with a function:
 
