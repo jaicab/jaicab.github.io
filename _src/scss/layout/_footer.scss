@@ -1,79 +1,82 @@
 
 .l-footer {
-	@extend %font-secondary;
+  @extend %font-secondary;
 }
 
 .l-footer--main {
-	margin: 4em 0;
-	clear: both;
+  margin: 4em 0;
+  clear: both;
 
-	.wrap {
-		padding-top: 2em;
-		padding-bottom: 2em;
-		border-top: 1px solid $color-brand-light;
-	}
+  .u-wrap {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 1px solid $color-brand-light;
+  }
 }
 
 .c-footernav {
-	font-size: .9em;
-	margin-bottom: .5em;
-	color: $color-brand-light;
+  font-size: .9em;
+  margin-bottom: .5em;
+  color: $color-brand-light;
 
-	a {
-		color: #666;
+  a {
+    color: #666;
 
-		&:hover,
-		&:active {
-			color: $color-text;
-		}
+    &:hover,
+    &:active {
+      color: $color-text;
+    }
 
-		&:focus {
-			outline: 0;
-			background: $color-brand;
-			color: $color-bg;
-		}
-	}
+    &:focus {
+      outline: 0;
+      background: $color-brand;
+      color: $color-bg;
+    }
+  }
 
-	li {
-		display: inline;
+  li {
+    display: inline;
 
-		&:not(:last-child) {
+    &:not(:last-child) {
 
-			&:after {
-				content:'|';
-				padding: 0 .5em 0 .75em;
-			}
-		}
-	}
+      &:after {
+        content:'|';
+        padding: 0 .5em 0 .75em;
+      }
+    }
+  }
 }
 
 
 .l-footer__copy {
-	margin-bottom: .5em;
+  margin-bottom: .5em;
 }
 
 .l-footer__contact {
-	margin-bottom: 1em;
-	font-size: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
 
-	a {
-		color: $color-brand;
-	}
+  a {
+    color: $color-brand;
+  }
 }
 
 
 @include mq($from: medium) {
-	.l-footer--main {
-		overflow: hidden;
-	}
-	.l-footer__copy,
-	.l-footer__contact {
-		width: 50%;
-		float: left;
-	}
 
-	.l-footer__contact {
-		text-align: right;
-		margin-bottom: .5em;
-	}
+  .l-footer--main {
+    overflow: hidden;
+  }
+
+  .l-footer__copy,
+  .l-footer__contact {
+    width: 50%;
+    float: left;
+  }
+
+  .l-footer__contact {
+    text-align: right;
+    margin-bottom: .5em;
+  }
+
 }

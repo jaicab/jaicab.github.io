@@ -1,54 +1,58 @@
 .c-project-list {
-	margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .c-project {
-	margin-top: 2em;
+  margin-top: 2em;
 }
 
 .c-project__title {
-	font-weight: normal;
-	font-size: 1.2em;
+  font-weight: normal;
+  font-size: 1.2em;
 }
 
 .c-project__link {
-	display: block;
+  display: block;
 }
 
 .c-project__logo {
-	max-width: 130px;
-	max-height: 35px;
-	width: auto;
-	height: auto;
+  max-width: 130px;
+  max-height: 35px;
+  width: auto;
+  height: auto;
 }
 
 .c-project__content {
-	margin: 1rem 0;
-	font-size: .9em;
+  margin: 1rem 0;
+  font-size: .9em;
 }
 
 @include mq($from: medium) {
-	.c-project-list {
-		padding-top: 1.5rem;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: baseline;
-	}
-	.c-project {
-		width: 28.33%;
-		margin-right: 5%;
-		margin-top: 0;
-		margin-bottom: 1.5rem;
-		float: left;
-		flex: 0 0 auto;
-	}
-	.c-project__content {
-		margin-top: .5rem;
-		font-size: .75em;
 
-		.text {
-			line-height: 1.3;
-		}
-	}
+  .c-project-list {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .c-project {
+    width: 28.33%;
+    margin-right: 5%;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    float: left;
+    flex: 0 0 auto;
+  }
+
+  .c-project__content {
+    margin-top: .5rem;
+    font-size: .75em;
+
+    .text {
+      	line-height: 1.3;
+    }
+  }
+
 }

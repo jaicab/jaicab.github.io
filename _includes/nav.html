@@ -1,9 +1,9 @@
 <nav role="navigation" class="l-nav l-nav--main">
-	{% for link in site.navigation %}
-  		{% assign current = nil %}
-  		{% if page.url contains link.url %}
-          	{% assign current = 'current' %}
-        {% endif %}
-        <a href="{{ link.url }}" class="{{ current }}" title="{{ link.desc }}">{{ link.title }}</a>
-  	{% endfor %}     
+  {% for link in site.navigation %}
+    {% assign current = nil %}
+    {% if page.url contains link.url %}
+      {% assign current = 'current' %}
+    {% endif %}
+    <a href="{{ link.url }}" class="{{ current }}" title="{{ link.desc }}">{{ link.title }}</a>
+    {% endfor %}
 </nav>

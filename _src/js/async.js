@@ -34,10 +34,10 @@
 
   Promise.all([CrimsonText.check(null,0), CrimsonTextBold.check(null,0), CrimsonTextItalic.check(null,0)]).then(function () {
     doc.documentElement.className += " f1";
- 
+
     Promise.all([Circular.check(null,0,true), CircularBold.check(null,0,true)]).then(fontsHaveLoaded, function(e){
-      Promise.all([Montserrat.check(null,0), MontserratBold.check(null,0)]).then(fontsHaveLoaded);  
+      Promise.all([Montserrat.check(null,0), MontserratBold.check(null,0)]).then(fontsHaveLoaded);
     });
   });
-  
+
 })( document );

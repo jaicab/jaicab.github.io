@@ -7,7 +7,7 @@
 
   @include mq($from: medium) {
     margin: 3em 1em 4.5em;
-    
+
     .c-logo {
       margin-top: 2.5em;
       width: 50px;
@@ -18,7 +18,7 @@
   @include mq($from: big) {
     margin: 3em 1em 3.5em;
 
-    .wrap {
+    .u-wrap {
       overflow: hidden;
     }
 

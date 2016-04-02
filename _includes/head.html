@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>{% include css/critical.min.css %}</style>
+  <style>{% include css/critical.min.css %}</style>
 
-    <meta name="fonts"  content="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CCrimson+Text:400,400italic,600">
-    <meta name="fontjs"  content="/js/async.min.js">
+  <meta name="fonts"  content="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CCrimson+Text:400,400italic,600">
+  <meta name="fontjs"  content="/js/async.min.js">
 
-    <script>{% include js/critical.min.js %}</script>
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CCrimson+Text:400,400italic,600">
-        <link rel="stylesheet" type="text/css" href="/css/nojs.css">
-    </noscript>
+  <script>{% include js/critical.min.js %}</script>
+  <noscript>
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CCrimson+Text:400,400italic,600">
+      <link rel="stylesheet" type="text/css" href="/css/nojs.css">
+  </noscript>
 
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="/css/ie.css">
-    <![endif]-->
-    <!--[if IE]>
-     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" href="/css/ie.css">
+  <![endif]-->
+  <!--[if IE]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <title>
-    {% if page.microtitle %}{{ page.microtitle }} | {{ site.title }}
-    {% elsif page.title %}{{ page.title }} | {{ site.title }}
-    {% else %}{{ site.title }}{% endif %}
-    </title>
+  <title>
+  {% if page.microtitle %}{{ page.microtitle }} | {{ site.title }}
+  {% elsif page.title %}{{ page.title }} | {{ site.title }}
+  {% else %}{{ site.title }}{% endif %}
+  </title>
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="manifest" href="/manifest.json">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="manifest" href="/manifest.json">
 
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
-    {% if page.path contains '_posts' %}
-        <meta property="og:type" content="article" />
-        <meta property="og:published_time" content="{{ page.date | date_to_xmlschema }}" />
-    {% else %}
-        <meta property="og:type" content="website" />
-    {% endif%}
+  {% if page.path contains '_posts' %}
+    <meta property="og:type" content="article" />
+    <meta property="og:published_time" content="{{ page.date | date_to_xmlschema }}" />
+  {% else %}
+    <meta property="og:type" content="website" />
+  {% endif%}
 
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@{{ site.twitter }}">
-    <meta name="twitter:creator" content="@{{ site.twitter }}">
-    <meta property="og:title" name="twitter:title" content="{% if page.title %}{{ page.title }}{% elsif page.microtitle %}{{ page.microtitle }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    {% if page.meta %}
-        <meta name="twitter:description" content="{{ page.meta }}">
-        <meta name="description" content="{{ page.meta }}">
-    {% endif %}
-    <meta name="twitter:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url  }}">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ site.twitter }}">
+  <meta name="twitter:creator" content="@{{ site.twitter }}">
+  <meta property="og:title" name="twitter:title" content="{% if page.title %}{{ page.title }}{% elsif page.microtitle %}{{ page.microtitle }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  {% if page.meta %}
+    <meta name="twitter:description" content="{{ page.meta }}">
+    <meta name="description" content="{{ page.meta }}">
+  {% endif %}
+  <meta name="twitter:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url  }}">
 
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="msapplication-TileColor" content="#069">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta name="msapplication-TileColor" content="#069">
 
 

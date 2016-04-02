@@ -1,15 +1,16 @@
-.c-skip {
-	@extend %font-secondary;
-	position: absolute;
-	top: 0;
-	width: auto;
-	margin: 0 auto;
-	text-align: center;
-	color: $color-bg;
-	background: $color-brand;
-	padding: .5em;
 
-	&:not(:focus) {
-		@extend .visuallyhidden;
-	}
+.c-skip {
+  @extend %font-secondary;
+  position: absolute;
+  top: 0;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  color: $color-bg;
+  background: $color-brand;
+  padding: .5em;
+
+  &:not(:focus) {
+    @extend .visuallyhidden;
+  }
 }

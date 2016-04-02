@@ -1,32 +1,36 @@
 
-  <footer role="contentinfo" class="l-footer l-footer--main">
-  	<div class="wrap">
-	    <div class="l-footer__copy">
-	    	&copy;2016 Jaime Caballero
-	    </div>
+<footer role="contentinfo" class="l-footer l-footer--main">
+  <div class="u-wrap">
 
-	    <div class="c-footernav l-footer__contact">
-	    	<ul>
-	    	    <li><a href="mailto:{{ site.email }}">Contact</a></li>
-	    	    <li><a target="_blank" rel="external" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
-	    	    <li><a target="_blank" rel="external" href="https://github.com/{{ site.username }}">GitHub</a></li>
-	    	</ul>
-	    </div>
-	    <div class="c-footernav">
-	    	<ul>
-	    	    <li><a href="/colophon/">Colophon</a></li>
-	    	    <li><a href="https://github.com/jaicab/jaicab.github.io">Source</a></li>
-	    	</ul>
-	    </div>
-	</div>
-  </footer>
+    <div class="l-footer__copy">
+      &copy;2016 Jaime Caballero
+    </div>
 
-  {% if page.syntax %}
+    <div class="c-footernav l-footer__contact">
+      <ul>
+        <li><a href="mailto:{{ site.email }}">Contact</a></li>
+        <li><a target="_blank" rel="external" href="https://twitter.com/{{ site.twitter }}">Twitter</a></li>
+        <li><a target="_blank" rel="external" href="https://github.com/{{ site.username }}">GitHub</a></li>
+      </ul>
+    </div>
+
+    <div class="c-footernav">
+      <ul>
+        <li><a href="/colophon/">Colophon</a></li>
+        <li><a href="https://github.com/jaicab/jaicab.github.io">Source</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+
+{% if page.syntax %}
   <link rel="stylesheet" type="text/css" href="/css/syntax.css">
-  {% endif %}
+{% endif %}
 
 
-  <script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -35,7 +39,7 @@
   ga('create', 'UA-17212759-6', 'auto');
   ga('send', 'pageview');
 
-  </script>
+</script>
 
 </body>
 </html>

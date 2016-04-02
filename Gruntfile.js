@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   var the_tasks = [
-    'uglify', 
+    'uglify',
     'sass',
     'cssmin',
   ];
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         files: {
           // Fonts
           'js/async.min.js': [
-            '_src/js/components/FontFaceObserver.js', 
+            '_src/js/components/FontFaceObserver.js',
             '_src/js/async.js'
           ],
           // Critical JS: Enhance.js

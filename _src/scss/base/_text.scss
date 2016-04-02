@@ -1,15 +1,15 @@
 
-.text {
+.s-text {
   font-size: 1.3em;
   line-height: 1.3;
 
   text-rendering: optimizeLegibility;
-  font-variant-ligatures: common-ligatures;   
-  
+  font-variant-ligatures: common-ligatures;
+
   a {
     @extend %nice-link;
   }
-  
+
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: .75em;
     margin-top: 2em;
@@ -18,11 +18,11 @@
     margin-top: 0;
     font-size: 1.5em;
   }
-  
+
   h2 {
     font-size: 1.33em;
   }
-  
+
   h3 {
     font-size: 1.2em;
     font-weight: normal;
@@ -32,16 +32,16 @@
   p q {
     font-style: italic;
   }
-  
-  
-  
+
+
+
   p, ol, ul, iframe {
     margin: 0 0 1em 0;
   }
 
   ol, ul {
     padding-left: 1em;
-    
+
     & ul, & ol {
       padding-left: 1em;
       margin-top: .66em;
@@ -55,7 +55,7 @@
   ol {
     list-style: decimal;
   }
-  
+
   li {
     margin: 0 0 .5em 0;
   }
@@ -65,7 +65,7 @@
     margin: 1.5em 0 1.5em 1.5em;
     font-size: .9em;
     line-height: 1.5;
-    
+
     p:first-child {
       margin-bottom: .5em;
     }
@@ -85,7 +85,7 @@
     iframe {
       margin: 0;
     }
-    
+
     &.embed-container {
       padding-bottom: 60.25%;
     }
@@ -94,13 +94,13 @@
 }
 
 @include mq($from: medium) {
-  .text {
+  .s-text {
     line-height: 1.4;
-      
+
     .media {
       margin-left: 0;
       margin-right: 0;
-      
+
       &.embed-container {
         padding-bottom: 56.25%;
       }
@@ -111,7 +111,7 @@
       margin-right: 0;
       box-shadow: 0 1px darken($color-bg, 10%);
     }
-    
+
     ol, ul {
       padding-left: 0;
     }
@@ -120,7 +120,7 @@
 
 
 @include mq($from: mediumx) {
-  .text {
+  .s-text {
     font-size: 1.45em;
     line-height: 1.35;
     word-spacing: .05em;
@@ -129,10 +129,10 @@
 
 
 @include mq($from: big) {
-  .text {
+  .s-text {
     font-size: 1.43em;
     line-height: 1.35;
-    
+
     h1 {
       font-size: 1.95em;
       letter-spacing: -0.03em;
@@ -144,10 +144,10 @@
       margin-right: -2em;
       padding: 2em;
     }
-    
+
     .media {
       margin: 1em -3em;
-      
+
       &.embed-container {
         padding-bottom: 67.25%;
       }
