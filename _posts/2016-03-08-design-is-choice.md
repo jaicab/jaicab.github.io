@@ -11,8 +11,8 @@ Before making a choice, one should contemplate all facts and possible repercussi
 For example, I build websites. Let’s consider the facts for the question <q>how should I build websites?</q>.
 
 - People use websites for all sorts of things. They can come from all sorts of places and backgrounds, and use websites on all kinds of devices and contexts.
-- I want to create experiences that do what people want, not make people do what the experience requires. Therefore the experience must be reachable from any device that can access The Web, no matter the context.
-- HTML can be accessed by any device that can access The Web.
+- I want to create experiences that do what people want, not make people do what the experience requires. Therefore the experience must be reachable from any device that can access the Web, no matter the context.
+- HTML can be accessed by any device that can access the Web.
 - CSS can enhance that experience with layout, contrast in design, readability, animations, etc.
 - Browsers are _tolerant_ with HTML and CSS by design, if they don't understand something, they ignore it and move on.
 - JavaScript can enhance the experience with complex interactions that aren’t available in HTML.
@@ -48,7 +48,7 @@ Progressive Enhancement frees us to focus on the costs of building features for 
 
 Then you can use new APIs (Service Workers, web audio, etc) or new fancy CSS features (viewport units, `calc()`, etc) without worrying much about support because **your basic experience always has your back**. 
 
-If what you do affects how a website is going to work or look, remember that you are in fact, designing an experience for The Web, the beauty of which is its **ubiquity**. There will always be users coming from places you didn’t expect, using devices you didn’t test for. 
+If what you do affects how a website is going to work or look, remember that you are in fact, designing an experience for the Web, the beauty of which is its **ubiquity**. There will always be users coming from places you didn’t expect, using devices you didn’t test for. 
 
 Progressive Enhancement helps you embrace the unexpected, reach to a bigger audience and in the end, deliver a better product. 
 
