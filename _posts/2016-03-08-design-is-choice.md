@@ -1,6 +1,6 @@
 ---
-title: "Design is choice"
-meta: "It's important to make the right choice when approaching work"
+title: Design is choice
+meta: It's important to make the right choice when approaching work.
 ---
 
 

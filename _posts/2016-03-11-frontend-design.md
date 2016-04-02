@@ -1,7 +1,7 @@
 ---
 
-title: "Frontend design"
-meta: "You don't have to be a developer. You don't have to be a designer. If you feel like you are in the middle of the two, you probably are a frontend desginer"
+title: Frontend design
+meta: You don't have to be a developer. You don't have to be a designer. If you feel like you are in the middle of the two, you probably are a frontend desginer.
 
 ---
 

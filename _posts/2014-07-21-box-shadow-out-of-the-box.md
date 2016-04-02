@@ -1,6 +1,6 @@
 ---
 title: box-shadow out of the box
-meta: Understand the possibilities of box-shadow besides creating shadows
+meta: Understand the possibilities of box-shadow besides creating shadows.
 syntax: true
 ---
 

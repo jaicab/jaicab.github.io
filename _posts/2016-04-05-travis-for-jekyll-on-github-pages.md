@@ -1,7 +1,7 @@
 ---
 
-title: "Travis for Jekyll on GitHub Pages"
-meta: "Easy to setup continuous integration tests for your Jekyll site"
+title: Travis for Jekyll on GitHub Pages
+meta: Effortless continuous integration tests for your Jekyll site.
 syntax: true
 
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Revisiting Sass theming"
-meta: Sass theming made easy using vary
+title: Revisiting Sass theming
+meta: Sass theming made easy using vary.
 syntax: true
 ---
 

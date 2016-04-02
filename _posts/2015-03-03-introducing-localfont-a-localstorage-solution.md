@@ -1,6 +1,6 @@
 ---
-title: "Introducing localFont"
-meta: localFont allows you to implement localStorage caching for web font loading in seconds
+title: Introducing localFont
+meta: localFont allows you to implement localStorage caching for web font loading in seconds.
 ---
 
 I've been busy. Since I joined [Base Creative](http://basecreative.github.io/basecreative.co.uk/) last October I have done nothing but push myself forward to a better front end developer. I am using [pattern lab](http://basecreative.github.io/styleguide/), getting rid of jQuery (finally) and loving attending lots of conferences like Smashing Conference in Whistler and Awwwards in Barcelona. 

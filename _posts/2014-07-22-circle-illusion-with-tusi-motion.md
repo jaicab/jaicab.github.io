@@ -1,6 +1,6 @@
 ---
 title: Circle illusion with Tusi motion
-meta: An explanation of the Tusi motion method applied to CSS
+meta: An explanation of the Tusi motion method applied to CSS.
 syntax: true
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Making a difference with performance"
-meta: I want to share the experience of building a responsive, performant website like Base Creative's one
+title: Making a difference with performance
+meta: I want to share the experience of building a responsive, performant website like Base Creative's one.
 image: "/assets/perfmatters_competitors.png"
 ---
 
