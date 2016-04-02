@@ -1,6 +1,6 @@
 'use strict';
 
-const version = 'v0.4::';
+const version = 'v0.5::';
 const staticCacheName = version + 'static';
 const pagesCacheName = version + 'pages';
 const imagesCacheName = version + 'images';
@@ -20,7 +20,7 @@ function timeout(delay) {
 self.addEventListener('fetch', function(event) {
     // Add 1s timeout to HTML requests
     if (event.request.headers.get('Accept').indexOf('text/html') !== -1) {
-      event.respondWith(Promise.race([timeout(1000), fetch(event.request.url)]));
+      event.respondWith(Promise.race([timeout(3000), fetch(event.request.url)]));
     } else {
       event.respondWith(fetch(event.request));
     }
