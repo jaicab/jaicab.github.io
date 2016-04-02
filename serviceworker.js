@@ -9,7 +9,7 @@ const imagesCacheName = version + 'images';
 function timeout(delay) {
     return new Promise(function(resolve, reject) {
         setTimeout(function() {
-          resolve(new Response('', {
+          reject(new Response('', {
               status: 408,
               statusText: 'Request timed out.'
           }));
