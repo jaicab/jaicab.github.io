@@ -20,14 +20,14 @@ function timeout(delay) {
 self.addEventListener('fetch', function(event) {
     // Add 1s timeout to HTML requests
     if (event.request.headers.get('Accept').indexOf('text/html') !== -1) {
-      event.respondWith(Promise.race([timeout(1000), fetch(event.request.url)]);
+      event.respondWith(Promise.race([timeout(1000), fetch(event.request.url)]));
     } else {
       event.respondWith(fetch(event.request));
     }
 });
 
 function updateStaticCache() {
-	return caches.open(staticCacheName)
+    return caches.open(staticCacheName)
         .then( cache => {
             // These items won't block the installation of the Service Worker
             cache.addAll([
