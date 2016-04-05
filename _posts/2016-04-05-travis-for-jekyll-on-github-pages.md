@@ -12,9 +12,9 @@ Continuous Integration (CI) is a development practice where all the developers i
 
 [Travis](https://travis-ci.org/) is an online tool to run this build and perform any tests you may have on every commit. It works with GitHub repos and it's **free for any open source projects**.
 
-For our case, Travis will build the Jekyll site and test the HTML on every commit, and then warn us if the build fails or if any of the links on the HTML point to down pages. It will even check external links!
+In our case, Travis will build the Jekyll site and test the HTML on every commit, and then warn us if the build fails or if any of the links on the HTML are dead. It will even check external links!
 
-This process will not affect your code in any way. It’s just an enhancement to your process, an added test.
+This process will not affect your code in any way. It’s just an enhancement, an added test layer.
 
 
 ## Setting up Travis 
@@ -22,10 +22,10 @@ First of all, login on the Travis site. There’s two sites, one for [open sourc
 
 After it finishes syncing your data from GitHub you should be able to go to your profile and see all your public repos. Go ahead and **switch on** the repo for the Jekyll site you want use for this.
 
-In order to let Travis build the site, we need to provide him with the required packages for the build, the same you would need to build it locally. 
+In order to let Travis build the site, we need to provide the required packages for the build, the same you would need to build it locally. 
 In this case it means Jekyll and any other plugins you’re using. 
 
-To define these, create a filed called `Gemfile` and put it on your repo root. Here’s an example for this very site:
+To define these, create a filed called `Gemfile` and put it on your repo root. Here’s an example for this site:
 
 ```ruby
 source "https://rubygems.org"
