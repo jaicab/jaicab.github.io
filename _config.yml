@@ -9,6 +9,7 @@ url: "https://jaicab.com"
 enforce_ssl: "http://jaicab.com"
 username: "jaicab"
 twitter: "jaicab_"
+timezone: Europe/London
 
 navigation:
  - title: Articles
@@ -24,13 +25,13 @@ navigation:
    url: /about/
    desc: "My personal profile, my hobbies and tips for developers"
 
-collections: 
+collections:
  - projects
  - work
 
  # Default front-matter
 defaults:
-  - 
+  -
     scope:
       path: ""
       type: "posts"
@@ -40,7 +41,7 @@ defaults:
   -
     scope:
       path: ""
-    values: 
+    values:
       image: "/apple-touch-icon.png"
 
 
