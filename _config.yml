@@ -41,6 +41,12 @@ defaults:
   -
     scope:
       path: ""
+      type: "pages"
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
     values:
       image: "/apple-touch-icon.png"
 

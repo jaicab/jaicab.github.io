@@ -34,7 +34,7 @@ Now that we know how to assign different colors of the spectrum, let's create th
 ## The parametric equation of a circle
 In order to achieve this circular spread of the shadows, we have to understand this equation. Some of you may remember it from high school or college, but here's a quick explanation for those who don't.
 
-<div class="media">
+<div class="u-media">
 <p data-height="400" data-theme-id="7008" data-slug-hash="ifJHr" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/ifJHr/'>Equation of a circle, graphic description</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 </div>
@@ -90,7 +90,7 @@ The `build-colors()` function creates a list of shadows and joins them using `ap
 
 So combining all this code you should get something like this:
 
-<div class="media">
+<div class="u-media">
 <p data-height="500" data-theme-id="7008" data-slug-hash="phrzf" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/phrzf/'>Article: Mixing colors with box-shadow #1</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 </div>
@@ -158,7 +158,7 @@ animation: spectrum $colours-speed 1s cubic-bezier(.33,-0.46,.22,1.09) infinite 
 
 And the final result should look like this:
 
-<div class="media">
+<div class="u-media">
 <p data-height="450" data-theme-id="7008" data-slug-hash="xicaj" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/xicaj/'>Mixing colors with box-shadow</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 </div>
