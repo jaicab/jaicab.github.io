@@ -3,7 +3,8 @@ module.exports = function(grunt) {
   var the_tasks = [
     'uglify',
     'sass',
-    'cssmin',
+    'postcss',
+    'cssmin'
   ];
 
   var the_tasks_watch = Array.prototype.slice.call(the_tasks, 0);
@@ -59,6 +60,20 @@ module.exports = function(grunt) {
       }
     },
 
+    postcss: {
+      options: {
+        map: true, // inline sourcemaps
+        processors: [
+          require('pixrem')(), // add fallbacks for rem units
+          require('autoprefixer')({browsers: 'last 2 versions'}), // add vendor prefixes
+          require('cssnano')() // minify the result
+        ]
+      },
+      dist: {
+        src: ['css/*.css', '_includes/css/*.css']
+      }
+    },
+
     watch: {
       files: ['_src/**.js', '_src/**/*.scss'],
       tasks: the_tasks,
@@ -69,6 +84,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
 
