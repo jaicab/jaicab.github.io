@@ -1,4 +1,5 @@
 ---
+layout: page
 title: Style guide — Text scope
 meta: A guide to the collection of components used throught this site.
 syntax: true
