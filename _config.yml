@@ -9,6 +9,7 @@ url: "https://jaicab.com"
 enforce_ssl: "http://jaicab.com"
 username: "jaicab"
 twitter: "jaicab_"
+repository: jaicab/jaicab.github.io
 timezone: Europe/London
 
 navigation:
