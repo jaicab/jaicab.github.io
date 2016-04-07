@@ -9,22 +9,21 @@ $color-brand-light: mix($color-brand, $color-bg, 20%);
 
 // FONTS
 
-$font-primary:  'Crimson Text',
-  Adobe Garamond Pro, Georgia, serif;
+$font-primary:  "Crimson Text", Adobe Garamond Pro, Georgia, serif;
 $font-primary-initial: Adobe Garamond Pro, Georgia, serif;
 
-$font-secondary: 
-    'Circular', 'Montserrat', 
-    -apple-system, BlinkMacSystemFont, 
-    "Segoe UI", "Roboto", "Oxygen", 
-    "Ubuntu", "Cantarell", "Fira Sans", 
+$font-secondary:
+    'Circular', 'Montserrat',
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 
-$font-secondary-initial: 
-    'Circular',  
-    -apple-system, BlinkMacSystemFont, 
-    "Segoe UI", "Roboto", "Oxygen", 
-    "Ubuntu", "Cantarell", "Fira Sans", 
+$font-secondary-initial:
+    'Circular',
+    -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
 
 
