@@ -9,7 +9,7 @@ syntax: true
 
 The `.s-text` class applies this scope. It should wrap an area of user-generated content, where the HTML comes from a CMS. It will set some cross-screen typography styles. It will also provide styles for some classless components for an efortless styling experience.
 
-It's been designed to work across different screen widths with a maximum recommended with of `768px`. The reason behind this is keeping an optimal experience in terms of readability, following rules like the **45 to 75 characters line length** and a proper type/canvas size ratio and negative space, from close-up mobile screens to middle-distance reading from a TV.
+It's been designed to work across different screen widths with a maximum recommended width of `768px`. The reason behind this is keeping an optimal experience in terms of readability, following rules like the **45 to 75 characters line length** and a proper type/canvas size ratio and negative space, from close-up mobile screens to middle-distance reading from a TV.
 
 The utility `.u-wrap` is available to mantain a proper width, which is used to limit the width of this text.
 
@@ -125,7 +125,7 @@ The `hr` element represents a separation of sections that may not be connected t
 Inline elements are meant to be used within paragraphs and lists, but in some cases they can be used elsewhere. They should be used to provide a function, either visual or interaction-wise.
 
 ### Links
-Linked content should be wrapped in an `a` tag and use an `href` attribute with an URL in it. The text in the link should always be related to the content of the linked resource and never a pointer like "this" or "click here". Example: Read more about accesibility on [The A11Y project](http://a11yproject.com).
+Text to be linked should be wrapped in an `a` tag and use an `href` attribute with an actual URL in it. The text in the link should always be related to the content of the linked resource and never a pointer like "this" or "click here". Example: Read more about accesibility on [the A11Y project](http://a11yproject.com).
 
 ### Bold and italic
 **Bold** content should be wrapped in `strong` tags when semantically relevant or `b` tags in cases of visual differentiation. _Italic_ content follows the same rules with `em` and `i` respectively.
