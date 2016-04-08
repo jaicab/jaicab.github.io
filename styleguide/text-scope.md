@@ -76,11 +76,11 @@ Block quotes are pieces of HTML wrapped in a `blockquote` tag. It's recommended 
 
 ### Images
 
-Images should be implemented with an `image` tag, with a `picture` wrapper when necessary. A short description for the image must always be provided in the `alt` attribute.
+Images should be implemented with an `img` tag, with a `picture` wrapper when necessary. A short description for the image must always be provided in the `alt` attribute.
 
 <img src="http://placehold.it/900x300/006699/ffffff?text=Same%20width%20as%20container" alt="A placeholder image to showcase the image pattern">
 
-They also can be wrapped in a `figure` element with a `.u-media` class, which will make the images expand for greater visibility on bigger screens and ignore the margins on small ones. 
+They also can be wrapped in a `figure` element with a `.u-media` utility class, which will make the images expand for greater visibility on bigger screens and ignore the margins on small ones. 
 
 <figure class="u-media">
 <img src="http://placehold.it/800x250/006699/ffffff?text=Extra%20legroom" alt="A placeholder image to showcase the image pattern">
@@ -88,7 +88,7 @@ They also can be wrapped in a `figure` element with a `.u-media` class, which wi
 
 ### Embeds
 
-Usually embeds are given in the form of `iframe` elements. If the content is a video, it should be wrapped with a `div` element with the `.u-embed-container` class. This will make the `iframe` have a fluid with an a fixed 16:9 aspect ratio. Here's an example from vimeo: 
+Usually embeds are given in the form of `iframe` elements. If the content is a video, it should be wrapped with a `div` element with the `.u-embed-container` class. This will make the `iframe` responsive, giving it fluid width an a fixed 16:9 aspect ratio. Here's an example from vimeo: 
 
 <div class="u-embed-container">
 <iframe src="https://player.vimeo.com/video/118146193" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -101,7 +101,7 @@ You can combine this class with the `.u-media` and get the same results we got o
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KaOC9danxNo" frameborder="0" allowfullscreen></iframe>
 </div>
 
-These two patterns are not only applicable to videos, but also other kinds of `iframe` elements like Codepen or JSbin embeds.
+These two patterns are not only applicable to video embeds, but also other kinds of `iframe` elements like Codepen or JSbin embeds.
 
 ### Horizontal rule
 
