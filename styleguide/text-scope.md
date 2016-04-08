@@ -78,12 +78,12 @@ Block quotes are pieces of HTML wrapped in a `blockquote` tag. It's recommended 
 
 Images should be implemented with an `img` tag, with a `picture` wrapper when necessary. A short description for the image must always be provided in the `alt` attribute.
 
-<img src="http://placehold.it/900x300/006699/ffffff?text=Same%20width%20as%20container" alt="A placeholder image to showcase the image pattern">
+<img src="//placehold.it/900x300/006699/ffffff?text=Same%20width%20as%20container" alt="A placeholder image to showcase the image pattern">
 
 They also can be wrapped in a `figure` element with a `.u-media` utility class, which will make the images expand for greater visibility on bigger screens and ignore the margins on small ones. 
 
 <figure class="u-media">
-<img src="http://placehold.it/800x250/006699/ffffff?text=Extra%20legroom" alt="A placeholder image to showcase the image pattern">
+<img src="//placehold.it/800x250/006699/ffffff?text=Extra%20legroom" alt="A placeholder image to showcase the image pattern">
 </figure>
 
 ### Embeds
