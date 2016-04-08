@@ -80,24 +80,24 @@ Images should be implemented with an `img` tag, with a `picture` wrapper when ne
 
 <img src="//placehold.it/900x300/006699/ffffff?text=Same%20width%20as%20container" alt="A placeholder image to showcase the image pattern">
 
-They also can be wrapped in a `figure` element with a `.u-media` utility class, which will make the images expand for greater visibility on bigger screens and ignore the margins on small ones. 
+They also can be wrapped in a `figure` element with a `.u-expand` utility class, which will make the images expand for greater visibility on bigger screens and ignore the margins on small ones. 
 
-<figure class="u-media">
+<figure class="u-expand">
 <img src="//placehold.it/800x250/006699/ffffff?text=Extra%20legroom" alt="A placeholder image to showcase the image pattern">
 </figure>
 
 ### Embeds
 
-Usually embeds are given in the form of `iframe` elements. If the content is a video, it should be wrapped with a `div` element with the `.u-embed-container` class. This will make the `iframe` responsive, giving it fluid width an a fixed 16:9 aspect ratio. Here's an example from vimeo: 
+Usually embeds are given in the form of `iframe` elements. If the content is a video, it should be wrapped with a `div` element with the `.c-embed` class. This will make the `iframe` responsive, giving it fluid width an a fixed 16:9 aspect ratio. Here's an example from vimeo: 
 
-<div class="u-embed-container">
+<div class="c-embed">
 <iframe src="https://player.vimeo.com/video/118146193" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/118146193">The Long Web by Jeremy Keith &ndash; An Event Apart Video</a> from <a href="https://vimeo.com/zeldman">Jeffrey Zeldman</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 </div>
 
-You can combine this class with the `.u-media` and get the same results we got on images. Here's a YouTube video as an example: 
+You can combine this class with the `.u-expand` and get the same results we got on images. Here's a YouTube video as an example: 
 
-<div class="u-embed-container u-media">
+<div class="c-embed u-expand">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KaOC9danxNo" frameborder="0" allowfullscreen></iframe>
 </div>
 
@@ -113,7 +113,7 @@ The `hr` element represents a separation of sections that may not be connected t
 Inline elements are meant to be used within paragraphs and lists, but in some cases they can be used elsewhere. They should be used to provide a function, either visual or interaction-wise.
 
 ### Links
-Linked content should be wrapped in an `a` tag and use an `href` attribute with an HTTP link on it. The text in the link should always be related to the content of the linked resource and never a pointer like "this" or "click here".
+Linked content should be wrapped in an `a` tag and use an `href` attribute with an URL in it. The text in the link should always be related to the content of the linked resource and never a pointer like "this" or "click here". Example: Read more about accesibility on [The A11Y project](http://a11yproject.com).
 
 ### Bold and italic
 **Bold** content should be wrapped in `strong` tags when semantically relevant or `b` tags in cases of visual differentiation. _Italic_ content follows the same rules with `em` and `i` respectively.

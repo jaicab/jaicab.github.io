@@ -84,7 +84,7 @@
     background: #fff;
   }
 
-  .u-media {
+  .u-expand {
     margin: 1em -1rem;
     position: relative;
 
@@ -92,7 +92,7 @@
       margin: 0;
     }
 
-    &.u-embed-container {
+    &.c-embed {
       padding-bottom: 60.25%;
     }
   }
@@ -103,11 +103,11 @@
   .s-text {
     line-height: 1.4;
 
-    .u-media {
+    .u-expand {
       margin-left: 0;
       margin-right: 0;
 
-      &.u-embed-container {
+      &.c-embed {
         padding-bottom: 56.25%;
       }
     }
@@ -151,10 +151,10 @@
       padding: 2em;
     }
 
-    .u-media {
+    .u-expand {
       margin: 1em -3em;
 
-      &.u-embed-container {
+      &.c-embed {
         padding-bottom: 67.25%;
       }
     }

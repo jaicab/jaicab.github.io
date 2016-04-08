@@ -1,13 +1,13 @@
 
-.u-embed-container {
+.c-embed {
   position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
 }
-.u-embed-container iframe,
-.u-embed-container object,
-.u-embed-container embed {
+.c-embed iframe,
+.c-embed object,
+.c-embed embed {
   position: absolute;
   top: 0; left: 0;
   width: 100%;

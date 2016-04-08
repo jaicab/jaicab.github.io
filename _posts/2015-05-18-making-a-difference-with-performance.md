@@ -6,7 +6,7 @@ image: "/assets/perfmatters_competitors.png"
 
 I don't blog very often. But when I do, it's because I have something important to share. Today we've launched [Base Creative's new website](http://basecreative.co.uk) which I've been asked to build from scratch. And it's fast. Blazing fast. Now I want to share that experience with you and tell you what I learned on the way.
 
-<figure class="u-media">
+<figure class="u-expand">
 <a href="/assets/perfmatters_competitors.png" title="See augmented image">
 	<img src="/assets/perfmatters_competitors.png" alt="Filmstrip New Base vs Competitors" />
 </a>
@@ -22,7 +22,7 @@ There's been lot of discussions lately about [Facebook Instant Articles](https:/
 
 I had a [discussion with Scott Jehl](https://twitter.com/scottjehl/status/598860119628238848) from Filament Group about a good SpeedIndex and it was clear that a <3000 SpeedIndex on mobile 3G is kind of a low bar for what the web is up against.
 
-<div class="u-media">
+<div class="u-expand">
 <blockquote class="twitter-tweet tw-align-center" lang="en-gb"><p lang="en" dir="ltr">Test if your site is too slow:&#10;1. Open <a href="http://t.co/FIPFFm0HW8">http://t.co/FIPFFm0HW8</a>&#10;2. Add your url, Moto E, 3G&#10;3. Start&#10;&#10;Speed Index &gt; 3k?&#10;Your site is too slow.</p>&mdash; Scott Jehl (@scottjehl) <a href="https://twitter.com/scottjehl/status/598858314894725120">May 14, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
