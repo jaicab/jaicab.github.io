@@ -3,20 +3,20 @@
   @extend %font-secondary;
   text-align: center;
   font-size: 1.1em;
-  
+
   a {
     color: $color-text;
     font-weight: 400;
     display: inline-block;
     padding: .25em;
     letter-spacing: -0.002em;
-    
+
     transition: .25s all;
-    
+
     &.current {
       font-weight: 600;
     }
-    
+
     &:hover,
     &:active {
       background: lighten($color-brand-light, 10%);
@@ -27,6 +27,42 @@
       transition: none;
       background: $color-brand;
       color: $color-bg;
+    }
+  }
+}
+
+
+.l-nav--inline {
+  @extend %font-secondary;
+
+  font-size: .9em;
+  margin-bottom: .5em;
+  color: $color-brand-light;
+
+  a {
+    color: #666;
+
+    &:hover,
+    &:active {
+      color: $color-text;
+    }
+
+    &:focus {
+      outline: 0;
+      background: $color-brand;
+      color: $color-bg;
+    }
+  }
+
+  li {
+    display: inline;
+
+    &:not(:last-child) {
+
+      &:after {
+        content:'|';
+        padding: 0 .5em 0 .75em;
+      }
     }
   }
 }
@@ -42,7 +78,7 @@
 }
 
 @include mq($from: big) {
-  .l-nav--main {    
+  .l-nav--main {
     text-transform: none;
     display: flex;
     justify-content: space-around;
@@ -53,7 +89,7 @@
       padding-right: .75em;
       margin-top: .25em;
       flex: 0 1 auto;
-      
+
       &:not(:last-child) {
         &::after {
           display: none;

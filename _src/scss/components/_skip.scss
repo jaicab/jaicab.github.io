@@ -11,6 +11,6 @@
   padding: .5em;
 
   &:not(:focus) {
-    @extend .visuallyhidden;
+    @extend .u-visuallyhidden;
   }
 }

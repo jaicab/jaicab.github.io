@@ -1,15 +1,108 @@
 ---
 layout: default
 title: Style guide — Global scope
-meta: A guide to the collection of components used throught this site.
+meta: Patterns that can be used anywhere on the site.
 ---
 
 <main role="main" class="l-main u-wrap">
     <div class="s-text" id="skip" tabindex="-1">
       <h1 itemprop="headline">{{ page.title }}</h1>
+      <p class="c-intro">{{ page.meta }}</p>
+
       <p>Here patterns inherit the default properties from the root element. Besides its own styles, patterns here will only be afected by the resets and some basic generic styles like font family and size.</p>
+
+      <h3>Project component</h3>
+      <p>Each project is <code>.c-project</code> component, and it's made of two main parts: a <code>.c-project__header</code> (which usually contains a link and a logo) and a <code>.c-project__content</code> piece. To provide a grid, a list of projects must be wrapped in a <code>.c-project-list</code> component. This will use floats and enhance the experience with flexbox.</p>
     </div>
 
-    WIP
+    <div class="c-project-list">
+      {% for i in (1..3) %}
+
+      <div class="c-project" itemscope itemtype="https://schema.org/CreativeWork">
+        <div class="c-project__header">
+          <a itemprop="url" class="c-project__link" href="/" rel="external">
+            <img itemprop="image" class="c-project__logo" src="//placehold.it/190x90" alt="Project example logo"/>
+          </a>
+        </div>
+        <div class="c-project__content">
+          <div class="s-text">
+            <strong itemprop="name">Project title</strong>
+            <span itemprop="text">This is a project description. It should be short but not too short. Ideal length is between 80 and 100 characters.</span>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+  </div>
+
+  <div class="s-text">
+    <p>Notice how the content is wrapped in a <a href="/styleguide/text-scope/">text scope</a> to reuse the readability properties but base type size changes as it's provided by the parent component.</p>
+  </div>
+
+  <div class="s-text">
+    <h3>Post listing</h3>
+    <p>This component (<code>.c-post-list</code>) lists a collection of resources (<code>.c-post</code>) with at least a title (<code>.c-post__title</code>) and a date. A description of the resource (<code>.c-post__desc</code>) is optional.
+    For the date, the <code>time</code> element must be used with a W3C-valid formatted date in the <code>datetime</code> attribute.</p>
+
+    <p>The title must use the <code>.u-visuallyhidden</code> utility in a <code>span</code> to give a more complete meaning for screen readers.</p>
+  </div>
+
+  <ul class="c-post-list">
+    <li class="c-post">
+      <a href="#">
+        <h3 class="c-post__title"><span class="u-visuallyhidden">Read more about </span> Resource title</span></h3>
+        <time class="c-post__date" datetime="{{ post.date }}">
+          Jan 1th, 1970
+        </time>
+        <p class="c-post__desc">This is the post description, it should not be longer than 120 characters.</p>
+      </a>
+    </li>
+
+    <li class="c-post">
+      <a href="#">
+        <h3 class="c-post__title"><span class="u-visuallyhidden">Read more about </span> Second resource</span></h3>
+        <time class="c-post__date" datetime="{{ post.date }}">
+          Jan 1th, 1970
+        </time>
+      </a>
+    </li>
+
+    <li class="c-post">
+      <a href="#">
+        <h3 class="c-post__title"><span class="u-visuallyhidden">Read more about </span> Third resource</span></h3>
+        <time class="c-post__date" datetime="{{ post.date }}">
+          Jan 1th, 1970
+        </time>
+        <p class="c-post__desc">This is the post description, it should not be longer than 120 characters.</p>
+      </a>
+    </li>
+  </ul>
+
+
+  <div class="s-text">
+    <h3>Embeds</h3>
+    <p>Usually embeds are given in the form of <code>iframe</code> elements. If the content is a video, it should be wrapped with a <code>div</code> element with the <code>.c-embed</code> class. This will make the <code>iframe</code> responsive, giving it fluid width an a fixed 16:9 aspect ratio. Here’s an example from vimeo:</p>
+  </div>
+
+  <div class="c-embed">
+  <iframe src="https://player.vimeo.com/video/118146193" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <p><a href="https://vimeo.com/118146193">The Long Web by Jeremy Keith &ndash; An Event Apart Video</a> from <a href="https://vimeo.com/zeldman">Jeffrey Zeldman</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </div>
+
+  <div class="s-text">
+    <h3>Inline navigation</h3>
+    <p>This is the kind of navigation that should be used on long pages. It is determined by a <code>.l-nav--inline</code> element that wraps around a unordered list (made of an <code>ul</code> with multiple <code>li</code> elements) of links (<code>a</code>).</p>
+  </div>
+
+  <div class="l-nav--inline">
+    <ul>
+      <li><a href="#">First section</a></li>
+      <li><a href="#">Second section</a></li>
+      <li><a href="#">Final section</a></li>
+    </ul>
+  </div>
+
+
+
 
 </main>

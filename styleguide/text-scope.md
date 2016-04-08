@@ -1,9 +1,11 @@
 ---
 layout: page
 title: Style guide — Text scope
-meta: A guide to the collection of components used throught this site.
+meta: Areas of CMS generated content should be wrapped in this scope.
 syntax: true
 ---
+
+<p class="c-intro">{{ page.meta }}</p>
 
 The `.s-text` class applies this scope. It should wrap an area of user-generated content, where the HTML comes from a CMS. It will set some cross-screen typography styles. It will also provide styles for some classless components for an efortless styling experience.
 
@@ -29,6 +31,16 @@ These elements will take all the width available. In some cases, they will take 
 
 ### Paragraphs
 All paragraphs are wrapped in `p` tags.
+
+### Intro paragraphs
+This kind of paragraph should be used for introductory text on pages that require it. It is applied by adding the `.c-intro` class to a `p` element.
+
+<p class="c-intro">This is an intro paragraph. It sets the tone for the rest of the article. It shouldn't be longer than 130 characters.</p>
+
+You can also add the `.c-intro--color` class to it to avoid the color change.
+
+<p class="c-intro c-intro--color">Here is another intro paragraph. On this instance, the color in being inherited instead of overwritten.</p>
+
 
 
 ### Preformatted text
@@ -88,7 +100,7 @@ They also can be wrapped in a `figure` element with a `.u-expand` utility class,
 
 ### Embeds
 
-Usually embeds are given in the form of `iframe` elements. If the content is a video, it should be wrapped with a `div` element with the `.c-embed` class. This will make the `iframe` responsive, giving it fluid width an a fixed 16:9 aspect ratio. Here's an example from vimeo: 
+For embeds we can reuse the `.c-embed` pattern seen on the [global scope](/styleguide/global-scope/). The only difference here is that they will have margins to separate them from the text. Here's an example from vimeo: 
 
 <div class="c-embed">
 <iframe src="https://player.vimeo.com/video/118146193" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

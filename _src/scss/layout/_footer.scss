@@ -14,40 +14,6 @@
   }
 }
 
-.c-footernav {
-  font-size: .9em;
-  margin-bottom: .5em;
-  color: $color-brand-light;
-
-  a {
-    color: #666;
-
-    &:hover,
-    &:active {
-      color: $color-text;
-    }
-
-    &:focus {
-      outline: 0;
-      background: $color-brand;
-      color: $color-bg;
-    }
-  }
-
-  li {
-    display: inline;
-
-    &:not(:last-child) {
-
-      &:after {
-        content:'|';
-        padding: 0 .5em 0 .75em;
-      }
-    }
-  }
-}
-
-
 .l-footer__copy {
   margin-bottom: .5em;
 }
