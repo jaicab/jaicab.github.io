@@ -2,8 +2,8 @@
   {% for link in site.navigation %}
     {% assign current = nil %}
     {% if page.url contains link.url %}
-      {% assign current = 'current' %}
+      {% assign current = 'class="current"' %}
     {% endif %}
-    <a href="{{ link.url }}" class="{{ current }}" title="{{ link.desc }}">{{ link.title }}</a>
+    <a href="{{ link.url }}" {{ current }} title="{{ link.desc }}">{{ link.title }}</a>
     {% endfor %}
 </nav>
