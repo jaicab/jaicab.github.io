@@ -37,6 +37,17 @@
     color: lighten($color-brand, 5%);
   }
 
+  kbd {
+    font-family: Menlo, monospace;
+    font-size: .7em;
+    background: #fff;
+    border-radius: .1em;
+    color: #666;
+    padding: .25em .5em;
+    border: .1em solid transparent;
+    border-bottom-color: #ddd;
+  }
+
   pre code {
     color: inherit;
   }

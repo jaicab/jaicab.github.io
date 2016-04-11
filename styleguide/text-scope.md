@@ -133,3 +133,6 @@ Text to be linked should be wrapped in an `a` tag and use an `href` attribute wi
 ### Inline code 
 For inline code, the `code` tag should be used. It should never be used for more than a single word or a `key: value` pair.
 
+### Keyboard input
+
+When denoting user input via a keyboard, use the `kbd` element. For example: To switch on VoiceOver press <kbd>&#8984;Cmd</kbd> + <kbd>F5</kbd>.
