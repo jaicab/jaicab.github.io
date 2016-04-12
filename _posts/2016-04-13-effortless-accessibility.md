@@ -32,7 +32,7 @@ Providing an accessible HTML markup means basic accessibility for screen reader 
 - **[ARIA landmark roles](http://alistapart.com/column/wai-finding-with-aria-landmark-roles)**: In HTML5, some of these landmarks are implicit in the element. But browser support is not perfect yet, so I'd recommend adding them too. This helps screen readers understand what that area of content is, extending semantics. Example: `<header role="banner">`. 
 - **Language attribute**: Screen readers will use the the accent specified on this attribute. Example: `<html lang="en">`.
 - **Don't forget about `alt` text on images**: You probably do this already on `img` elements. Don't use the words "image" or "photo" as the screen readers will already identify it as an image. Read more about this on [A List Apart](http://alistapart.com/blog/post/on-alt-text).
-- **Alternative text on SVGs**: If you're serving an image as inline SVG, you won't have the `alt` attribute. But surely your SVG will have a `title` element in it. Now you just need to give it an `id` attribute, and add `aria-labelledby` on the parent `svg`. Check [my logo](https://github.com/jaicab/jaicab.github.io/blob/master/images/logo.svg?short_path=49c7b03) as an example.
+- **Label text on SVGs**: If you're serving an image as inline SVG, you won't have the `alt` attribute. But surely your SVG will have a `title` element in it. Now you just need to give it an `id` attribute, and add `aria-labelledby` on the parent `svg`. Check [my logo](https://github.com/jaicab/jaicab.github.io/blob/master/images/logo.svg?short_path=49c7b03) as an example.
 - **Avoid using lists for navigation**: Screen readers will read the entire list first and then read each link individually, wasting screen reader user's time. So just put inline `a` tags in the `nav` element.
 - **Document outline**: The general structure of the HTML should make sense, like if you were putting a book together. The keyboard navigation will go from top to bottom, and the screen readers will read the content in that order, so the order of the HTML elements is important.
 
@@ -56,7 +56,7 @@ If you use semantic HTML and unobtrusive JavaScript, you have almost everything 
 
 - **Use the right tool for the job**: If you use the right HTML for each task, you can save a lot of work in terms of making things accessible. Using `button` elements instead of `span` elements for buttons, means screen readers will understand it's not a button, but text. To make it work like a button, you'd need to add `role="button"` and a key event handler to trigger it with the spacebar. Lots of unnecessary work. A button is a button is a button.
 - **Don't change standarised behaviour**: Javascript links, right click overrides and parallax are some examples that override the browser's expected behaviour. This is not only frustrating for users with disabilities but every other user too. If I open a link in a new tab, I expect that to happen. 
-- **Make sure your buttons/links are focusable**: The easiest way of doing this is using `:focus` wherever you use `:hover`. This way keyboard navigation users will know what element has focus. If the difference between the normal state and the hover one are very subtle, separate these into two and add something more easier to identify just for focus.
+- **Make sure your buttons/links are focusable**: The easiest way of doing this is using `:focus` wherever you use `:hover`. This way keyboard navigation users will know what element has focus. If the difference between the normal state and the hover one are very subtle, separate these into two and add something easier to identify just for focus.
 - **Use ARIA states in JavaScript interactions**: If you develop custom JS interactions, please add this. It’s as easy as changing an `aria-something` when you change something visually. This helps screen readers and keyboard navigation users understand that something has changed and continue there, instead of where they were before triggering that action. See an example for an [off-canvas push menu](http://codepen.io/grayghostvisuals/pen/IkmGF). 
 
 
@@ -64,7 +64,7 @@ If you use semantic HTML and unobtrusive JavaScript, you have almost everything 
 
 To make a design accessible, you only need to check that people will vision deficiencies, either temporary or permanent, will be able to read the page comfortably. We'll cover colour blindness and partial visual impairment.
 
-**Colour blindness** affects **1 in 12 men** and **1 in 200 woman**.  To test it, I'd recommend [Color Oracle](http://colororacle.org/), a free Windows/Mac app that will change the colour rendering on your screen to match different types of colour blindness. It's great because you can use it to test the site and the design on whatever UI editing software you're using.
+**Colour blindness** affects around **1 in 12 men** and **1 in 200 women**. To test for it, I'd recommend [Color Oracle](http://colororacle.org/), a free Windows/Mac app that will change the colour rendering on your screen to match different types of colour blindness. It's great because you can use it to test the site and the design on whatever UI editing software you're using.
 
 **Partial visual impairment** refers to those with limited vision, and testing for them is literally about having a readable and zoomable text. To zoom in a browser, use:
 
