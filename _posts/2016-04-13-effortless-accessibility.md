@@ -35,6 +35,7 @@ Providing an accessible HTML markup means basic accessibility for screen reader 
 - **Label text on SVGs**: If you're serving an image as inline SVG, you won't have the `alt` attribute. But surely your SVG will have a `title` element in it. Now you just need to give it an `id` attribute, and add `aria-labelledby` on the parent `svg`. Check [my logo](https://github.com/jaicab/jaicab.github.io/blob/master/images/logo.svg?short_path=49c7b03) as an example.
 - **Avoid using lists for navigation**: Screen readers will read the entire list first and then read each link individually, wasting screen reader user's time. So just put inline `a` tags in the `nav` element.
 - **Document outline**: The general structure of the HTML should make sense, like if you were putting a book together. The keyboard navigation will go from top to bottom, and the screen readers will read the content in that order, so the order of the HTML elements is important.
+- **Linked text relates to linked resource**: This is not only good for accessibility but also a very good SEO practice. Imagine every link out of the paragraph's context. If you can still relate the linked text to the content of the linked resource, you're good to go. As a counterexample, the opposite would be to link text like "click here" or "this page".
 
 This will make a much less frustrating experience. Screen readers can give a more detailed explanation of what's on the page and what element you're on. 
 
