@@ -12,7 +12,7 @@ We'll be using a Mac for the examples as it's the easiest OS to test on and a de
 
 ## Testing content accessibility
 
-A **screen reader** will process your HTML and try to make some sense out of it. The most popular are [JAWS](http://www.freedomscientific.com/Products/Blindness/JAWS) on Windows and [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/) (which comes embedded in the OS) for Mac. To switch on VoiceOver, use <kbd>&#8984; Cmd</kbd> + <kbd>F5</kbd>.
+**Screen readers** will process your HTML and try to make some sense out of it. The most popular are [JAWS](http://www.freedomscientific.com/Products/Blindness/JAWS) on Windows and [VoiceOver](http://www.apple.com/accessibility/osx/voiceover/) (which comes embedded in the OS) for Mac. To switch on VoiceOver, use <kbd>&#8984; Cmd</kbd> + <kbd>F5</kbd>.
 
 **Keyboard navigation** means using only the keyboard to navigate through a site. Even though the commands can get pretty complex, you probably know some if not all of these from filling out online forms.
 
