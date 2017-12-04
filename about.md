@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I am a frontend architect.
+title: I am a frontend designer.
 microtitle: About
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 schema: AboutPage
