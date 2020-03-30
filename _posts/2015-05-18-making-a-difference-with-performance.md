@@ -12,13 +12,14 @@ I don't blog very often. But when I do, it's because I have something important 
 </a>
 </figure>
 
-As you can see on the image of the [WebPageTest comparison](http://www.webpagetest.org/video/view.php?id=150518_77c607d0a4f6d269d7426ac2cdd9fe1b4ede6ebe&data=1)  with some other well known websites on mobile over 3G, the best thing about the new site is its **SpeedIndex**: [~660 on Chrome over WiFi][base-desktop-wifi] and [~2350 on mobile over 3G][base-mobile-3g] even getting an outstanding [456 on the best scenario][base-desktop-london] (desktop from London).
+As you can see on the image of the [WebPageTest comparison](http://www.webpagetest.org/video/view.php?id=150518_77c607d0a4f6d269d7426ac2cdd9fe1b4ede6ebe&data=1) with some other well known websites on mobile over 3G, the best thing about the new site is its **SpeedIndex**: [~660 on Chrome over WiFi][base-desktop-wifi] and [~2350 on mobile over 3G][base-mobile-3g] even getting an outstanding [456 on the best scenario][base-desktop-london] (desktop from London).
 
 Now getting these scores didn't cost me a single penny, but some time and dedication.
 
 ## Performance matters
-If you're not worrying about performance yet, let me give you a couple of reasons to do so:  
-There's been lot of discussions lately about [Facebook Instant Articles](https://www.youtube.com/watch?v=zPvGF5bO0xs). With this feature, Facebook is avoiding hitting the website and getting directly to the content just because the web _is_ too slow. But that's our fault, and you can help to improve this situation. 
+
+If you're not worrying about performance yet, let me give you a couple of reasons to do so:
+There's been lot of discussions lately about [Facebook Instant Articles](https://www.youtube.com/watch?v=zPvGF5bO0xs). With this feature, Facebook is avoiding hitting the website and getting directly to the content just because the web _is_ too slow. But that's our fault, and you can help to improve this situation.
 
 I had a [discussion with Scott Jehl](https://twitter.com/scottjehl/status/598860119628238848) from Filament Group about a good SpeedIndex and it was clear that a <3000 SpeedIndex on mobile 3G is kind of a low bar for what the web is up against.
 
@@ -43,67 +44,70 @@ Akamai's study shows us some very strong facts about percieved performance, like
 - 14% will start shopping at a different site if page loads are slow, 23% will simply stop shopping.
 - 64% of shoppers who are dissatisfied with their site visit will go somewhere else to shop next time.
 
-In addition, it's been proven there is a direct relationship between performance and conversion rates. No matter what your site is offering, users won't get there if they have a slow experience. 
-For example, [Walmart.com found](http://www.webperformancetoday.com/2012/02/28/4-awesome-slides-showing-how-page-speed-correlates-to-business-metrics-at-walmart-com/) that for every 1 second of improvement, they experienced up to a 2% conversion increase.
+In addition, it's been proven there is a direct relationship between performance and conversion rates. No matter what your site is offering, users won't get there if they have a slow experience.
+For example, Walmart.com found that for every 1 second of improvement, they experienced up to a 2% conversion increase.
 
 Nowadays, we're getting more and more impatient and we expect faster responses. Here's how I tried to meet these expectations without compromising design.
 
 ## The case study
-![Filmstrip New Base vs Competitors](/assets/perfmatters_oldvsnew.png)
 
+![Filmstrip New Base vs Competitors](/assets/perfmatters_oldvsnew.png)
 
 Let's get to the specifics. The new site has been built with the intention to set an example for new projects in the company. A fresh start, I would say. In order to do so, the frontend has gone for the highest standards I could meet. Here's how it's been done:
 
 ### Scalable and reusable CSS
-It's important to keep scalable and reusable CSS. Enough experience will teach you that. Once you _see the world in markup_, tools like **Sass** become really useful. Something that really helped and I have always recommended is [Harry Robert's inuit-like folder structure](https://github.com/csswizardry/inuit.css/), too keep all these modules organised. Once you see it, you can't unsee it, just like [how ducks are wearing little dog masks](http://ubersuper.com/uploads/2010/08/tumblr_l7lw6navKd1qzpwi0o1_500.jpg). I would also recommend some Sass mixins:
+
+It's important to keep scalable and reusable CSS. Enough experience will teach you that. Once you _see the world in markup_, tools like **Sass** become really useful. Something that really helped and I have always recommended is [Harry Robert's inuit-like folder structure](https://github.com/csswizardry/inuit.css/), too keep all these modules organised. Once you see it, you can't unsee it, just like how ducks are wearing little dog masks. I would also recommend some Sass mixins:
 
 - [theguardian's mq](https://github.com/sass-mq/sass-mq): Media queries couldn't get easier or more consistent.
 - [ext()](http://jaicab.com/sass-ext/): This mixin lets you set a selector budget and control how you use the extend directive.
 
-
 ### A style guide
+
 There are tons of style guide systems out there. After some research, [pattern lab](http://patternlab.io/) seemed to be the style guide "generator" that better fit our process. The result is [on GitHub](http://basecreative.github.io/styleguide/).
 
 The best thing about it is that it includes a responsive testing tool. The idea is to present this growing, living style guide to the clients so they can see it grow and understand the complexity of the process and the fact that we're delivering a **system of independent, reusable components**, not a painting made in Photoshop.
 
 Pattern Lab is based on [Brad Frost's Atomic Design](http://bradfrost.com/blog/post/atomic-web-design/) methodology which is somehow the way I've always seen websites when planning the markup, but Brad has the right way to explain it. If you still haven't heard about it, don't worry because [he's writing a book about it](http://atomicdesign.bradfrost.com/).
-If you've read [SMACSS](https://smacss.com/), the experience is very similar. It's always been there and it's logic, but nobody has been able to put the right words together till now.
-
+If you've read [SMACSS](http://smacss.com/), the experience is very similar. It's always been there and it's logic, but nobody has been able to put the right words together till now.
 
 ### Proper responsive images
+
 I have been using responsive images for a long time, but when I was told that Blink was shipping with `picture` and `srcset` fully functional I knew it was time to do it properly. At the time of this writing, Chrome, Opera and Firefox have full support for both of these. Check the [Responsive Images Community Group site](http://responsiveimages.org/) to see the current state of implementation.
 
 Now this wasn't easy, but there's no way around it. Take a look at some talks like [Yoav Weiss at Smashing Conference Whistler](https://vimeo.com/125771900) and just dive right into it. If you're using WordPress, I'd really recommend [this resize function](https://core.trac.wordpress.org/ticket/15311?cversion=0&cnum_hist=110) to create the different images for `srcset`.
 
-
 ### No jQuery
+
 As a performance measure and since we were dropping support for IE under version 9 it seemed like a good time to make an example and not use jQuery because it wasn't really necessary for the project, not to mention [it is considered harmful](http://lea.verou.me/2015/04/jquery-considered-harmful/). A very helpful site that will help you get rid of it is [You Might Not Need jQuery](http://youmightnotneedjquery.com/).
 
-**EDIT**: I had a [chat with Anselm Hannemann](https://twitter.com/helloanselm/status/601280994877042688) because I wasn't reflecting what took part in this decision and it may have been seen as I was simply following the _no jQuery trend_. I didn't go no jQuery because somebody like Lea Verou said so, I did it because vanilla JavaScript is much faster and it avoided loading the library. But getting good browser support (even with the latest versions of Chrome and Firefox) is way more difficult than it seems. Being aware of these issues is a vital part of going no jQuery. 
+**EDIT**: I had a chat with Anselm Hannemann because I wasn't reflecting what took part in this decision and it may have been seen as I was simply following the _no jQuery trend_. I didn't go no jQuery because somebody like Lea Verou said so, I did it because vanilla JavaScript is much faster and it avoided loading the library. But getting good browser support (even with the latest versions of Chrome and Firefox) is way more difficult than it seems. Being aware of these issues is a vital part of going no jQuery.
 
 Resources like [Remy Sharp's polyfill collection](https://github.com/remy/polyfills) or [Polyfill.io from FT labs](https://cdn.polyfill.io/v1/docs/) will help you get a broader browser support, but you still need to know what you are doing, and all the [bugs that jQuery fixes for you](https://docs.google.com/document/d/1LPaPA30bLUB_publLIMF0RlhdnPx_ePXm7oW02iiT6o/preview). Even with all these concerns, I believe that most presentation websites could go no jQuery if they don't need to support IE8 and lower.
 
 ### Progressive enhancement
+
 Everybody but the MVC framework lovers loves progressive enhancement. My passion for _access first_ really made me push for a very well thought, progressively enhanced experience. A library that helps a lot with that is [Modernizr](http://modernizr.com/), which will let you use features when available. Basically, it's a matter of asking _if_ a lot.
 
 As a result, the site has been built **mobile first**, loading assets and executing JavaScript only when it is necessary. It works beautifully without any JS at all, and then as features become available the experience gets enhanced with CSS transitions, better navigation or in some cases an interactive, JS dependant experience was added (like a slider for example).
 
-One of my favourite talks on progressive enhancement (and ever) is [The Long Web by Jeremy Keith](https://vimeo.com/118146193).
+One of my favorite talks on progressive enhancement (and ever) is [The Long Web by Jeremy Keith](https://vimeo.com/118146193).
 
 ### A <1000 SpeedIndex
+
 Now this is a [golden rule established by Paul Irish](http://timkadlec.com/2014/01/fast-enough/#comment-1200946500) I really wanted to meet. This involves a series of factors, besides an optimal frontend development:
 
 - Use a CDN: A content delivery network gets your users your content faster by placing copies of it closer to them. A very good, free solution is [CloudFlare](https://www.cloudflare.com/).
 - Serve HTML cached files when possible: If you're using WordPress, you'll be sorted by using [WP Super Cache](https://wordpress.org/plugins/wp-super-cache/). Remember to check the `mod_rewrite` redirection as it's the fastest option.
 - Be smart about CSS/JS assets: If you're using multiple CSS or JS accross the page, merge them.
-- Compress images: Using WebP, progressive JPEGs and reducing the number of colors in PNGs will save you lots of image weight and enhance the experience a lot. Some Mac tools you can use are [ImageOptim](https://imageoptim.com) and [ImageAlpha](http://pngmini.com/). And for user-managed content on WordPress I'd recommend [EWWW Image Optimiser](https://wordpress.org/plugins/ewww-image-optimizer/).
+- Compress images: Using WebP, progressive JPEGs and reducing the number of colors in PNGs will save you lots of image weight and enhance the experience a lot. Some Mac tools you can use are [ImageOptim](https://imageoptim.com/mac) and [ImageAlpha](http://pngmini.com/). And for user-managed content on WordPress I'd recommend [EWWW Image Optimiser](https://wordpress.org/plugins/ewww-image-optimizer/).
 - Load fonts faster: [localFont](http://jaicab.com/localFont/) lets you store your font files in localStorage so they load faster than from the cache.
 - Inline heavily used CSS/JS: This depends a lot on your product, but for example in Base's new site I used Modernizr and picturefill a lot. Inlining both allowed me to render the CSS much faster since the browser didn't have to wait for Modernizr to render Modernizr-prefixed styles, and the right images from the picture elements were picked very quickly as well.
 
 If you want to have a better understanding of how browsers and servers work I would really encourage you to watch [Paul Irish's talk on Smashing Whistler](https://vimeo.com/125657469) about how TCP protocol is like 7th grade.
 
-
 ### Get to know your product
+
 In the end, the best performance optimizations depend on your product. Ask yourself the following questions. If there's no reasonable answer, you probably don't need it:
 
 - Unify font files: Do you really need all those font files? Are you using every font weight? Even if you do, do you use them that often? Try changing isolated font weight declarations to the closest one.
@@ -114,6 +118,7 @@ In the end, the best performance optimizations depend on your product. Ask yours
 Use free tools like [WebPageTest](http://www.webpagetest.org/) or [ShowSlow](http://www.showslow.com/) to keep track of how your site is doing. Compare the before and after, see if it works for you.
 
 ## To sum up
+
 The combination of all of these requirements resulted in a highly polished website that performs really well and is a good competitor against some globally well-known companies. Base may not be the most famous agency in the world, but it's making a difference with performance.
 
 - [Comparison Base old vs new on mobile over 3G][old-vs-new-mobile]
@@ -128,6 +133,5 @@ I hope you learned something today. If only you are worried about performance no
 [base-mobile-3g]: http://www.webpagetest.org/result/150514_XD_5bfb63d23712e49332b9400c02768b2b/
 [base-desktop-wifi]: http://www.webpagetest.org/result/150517_R6_20109e842c060552a2cfc5bc8e28ce34/
 [base-desktop-london]: http://www.webpagetest.org/result/150517_QN_e9ac5a50db463a9ea9457d187571b244/
-
 [old-vs-new-desktop]: http://www.webpagetest.org/video/view.php?id=150517_fe35c4a5d164211d0457d4c7bc7e57cc7162a419&data=1
 [old-vs-new-mobile]: http://www.webpagetest.org/video/view.php?id=150517_780ff29fa4e22920134d774bbb9ad7324ada9010&data=1

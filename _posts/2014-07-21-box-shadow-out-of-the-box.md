@@ -4,8 +4,8 @@ meta: Understand the possibilities of box-shadow besides creating shadows.
 syntax: true
 ---
 
-First, let's do a brief introduction to `box-shadow`'s syntax. I'm sure you're already familiar with some part of it.  
-In total, there are **6 parameters**: 
+First, let's do a brief introduction to `box-shadow`'s syntax. I'm sure you're already familiar with some part of it.
+In total, there are **6 parameters**:
 
 - The **`inset`** keyword: It makes the shadow work inside the element, not outside.
 - **Horizontal** distance to the box.
@@ -14,23 +14,23 @@ In total, there are **6 parameters**:
 - **Size** of the shadow itself.
 - **Color**: it's gonna be used to fill the entire shape of the shadow, the spread (if added) and to degrade proportionally from the edge of the shape (plus spread obviosuly) to transparent at the end of the shadow (if not zero).
 
-You must know that by default, inset is not present. But what about the other values? Why isn't the third value taken as the spread? That's because **browsers apply the shadow depending on how many values you set** (apart from inset and color). 
+You must know that by default, inset is not present. But what about the other values? Why isn't the third value taken as the spread? That's because **browsers apply the shadow depending on how many values you set** (apart from inset and color).
 
 The first two values are always going to be the distance from the shape. If there's a third value, it will be the size. And **if there's a fourth**, then the third will be the spread and the fourth, the size.
 
 ## Let's see some examples
 
-<p data-height="300" data-theme-id="7008" data-slug-hash="shbxI" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/shbxI/'>shbxI</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="300" data-theme-id="7008" data-slug-hash="shbxI" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/jaicab/pen/shbxI/'>shbxI</a> by Jaime Caballero (<a href='https://codepen.io/jaicab'>@jaicab</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-**Squares**: Notice how by using the spread value we can get a bigger or smaller shadow. 
+**Squares**: Notice how by using the spread value we can get a bigger or smaller shadow.
 
 ```scss
-.square{ 
+.square {
   box-shadow: 0 130px 0 10px #000;
 }
 
-.squareinset{  
+.squareinset {
   box-shadow: 0 110px 0 -10px #000;
 }
 ```
@@ -65,17 +65,13 @@ So what does determine the actual shape of the shadow? Well, the shadow will be 
 
 ## Combining shadows
 
-You can have multiple shadows by combining them with commas, being the first shadow always the one on top and the last one on the bottom. By using low alpha colors you can mix these colors and create nice effects like [this one](http://codepen.io/jaicab/full/xicaj/).
+You can have multiple shadows by combining them with commas, being the first shadow always the one on top and the last one on the bottom. By using low alpha colors you can mix these colors and create nice effects like [this one](https://codepen.io/jaicab/full/xicaj/).
 
 One thing you should know is that **no matter how hard you try, you can't see the shadow of an element through the element itself**. In the following example you can see how multiple shadows are combined but the element (with a transparent background) gets the background image, resulting in a interesting effect.
 
-
-<p data-height="350" data-theme-id="7008" data-slug-hash="ImFyn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/jaicab/pen/ImFyn/'>ImFyn</a> by Jaime Caballero (<a href='http://codepen.io/jaicab'>@jaicab</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<p data-height="350" data-theme-id="7008" data-slug-hash="ImFyn" data-default-tab="result" class='codepen'>See the Pen <a href='https://codepen.io/jaicab/pen/ImFyn/'>ImFyn</a> by Jaime Caballero (<a href='https://codepen.io/jaicab'>@jaicab</a>) on <a href='https://codepen.io'>CodePen</a>.</p>
 <script async src="//codepen.io/assets/embed/ei.js"></script>
 
-
-Something amazing about box-shadows is that they **follow the shape at any time**, not only on the pageload. If you animate the shape of an element (throught `border-radius`, `width`, `height` or `transform`) the shadow will follow. Check out [this demo](http://codepen.io/jaicab/pen/ohbdJ) I made for Lea Verou's brithday.
+Something amazing about box-shadows is that they **follow the shape at any time**, not only on the pageload. If you animate the shape of an element (throught `border-radius`, `width`, `height` or `transform`) the shadow will follow. Check out [this demo](https://codepen.io/jaicab/pen/ohbdJ) I made for Lea Verou's brithday.
 
 Amazing, right? Although it's kind of hacky, it could be useful when you want/must keep the number of elements to a minimum. I'll be covering some use cases for these properties on the next articles.
-
-
