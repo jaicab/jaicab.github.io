@@ -1,4 +1,3 @@
-
 # Site data
 title: "Jaime Caballero"
 email: me@jaicab.com
@@ -13,39 +12,35 @@ repository: jaicab/jaicab.github.io
 timezone: Europe/London
 
 navigation:
- - title: Articles
-   url: /articles/
-   desc: "Read articles about Sass, web performance and frontend techniques"
- - title: Projects
-   url: /projects/
-   desc: "Projects I have built in my own time"
- - title: Work
-   url: /work/
-   desc: "Case studies of websites I have built during my career"
- - title: About
-   url: /about/
-   desc: "My personal profile, my hobbies and tips for developers"
+  - title: Articles
+    url: /articles/
+    desc: "Read articles about Sass, web performance and frontend techniques"
+  - title: Projects
+    url: /projects/
+    desc: "Projects I have built in my own time"
+  - title: Work
+    url: /work/
+    desc: "Case studies of websites I have built during my career"
+  - title: About
+    url: /about/
+    desc: "My personal profile, my hobbies and tips for developers"
 
 collections:
- - projects
- - work
+  - projects
+  - work
 
- # Default front-matter
+  # Default front-matter
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: post
       schema: BlogPosting
-  -
-    scope:
+  - scope:
       path: ""
     values:
       image: "/apple-touch-icon.png"
-
-
 
 # Build settings
 permalink: pretty
@@ -62,7 +57,7 @@ paginate: 5
 paginate_path: "/articles/page:num/"
 
 #Gems
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-paginate
   - jekyll-sitemap

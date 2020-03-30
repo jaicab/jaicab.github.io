@@ -7,5 +7,6 @@ Gemfile.lock
 # Build stuff
 .scssc
 .sass-cache/
+.jekyll-cache
 node_modules/
 npm-debug.log

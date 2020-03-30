@@ -18,8 +18,8 @@ schema: CollectionPage
   </div>
 
   <div class="c-project-list">
-    {% assign worklist = (site.work | sort: 'order') %} {% for project in
-    worklist %}
+    {% assign worklist = site.work | sort: 'order' %} {% for project in worklist
+    %}
     <div
       class="c-project"
       itemscope

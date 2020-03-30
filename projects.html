@@ -7,7 +7,7 @@ meta: I like to build useful side projects in my spare time, either to improve m
 schema: CollectionPage
 ---
 
-{% assign projectlist = (site.projects | sort: 'order') %}
+{% assign projectlist = site.projects | sort: 'order' %}
 {% for project in projectlist limit:3 %}
 <link rel="prefetch" href="{{ project.link }}">
 {% endfor %}
@@ -19,7 +19,7 @@ schema: CollectionPage
     </div>
 
 	<div class="c-project-list">
-	    {% assign projectlist = (site.projects | sort: 'order') %}
+	    {% assign projectlist = site.projects | sort: 'order' %}
 	    {% for project in projectlist %}
 		<div class="c-project" itemscope itemid="{{ project.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" itemtype="https://schema.org/CreativeWork">
 			<div class="c-project__header">
