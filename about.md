@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Designer who can code
+title: Designer who codes
 microtitle: About
 meta: I love progressive enhancement, OOCSS, SMACSS, BEM and DRY CSS.
 schema: AboutPage
@@ -21,30 +21,44 @@ I like simple solutions to complex problems.
 
 ---
 
-### Design and development
+### A technical designer
 
-While my main skills are in frontend architecture, my mindset is that of a designer. I like to come up with simple and friendly ways for a user to achieve the task. Good design I believe, is _invisible_. It's when you can't think of a product in any other, better way when you've achieved good design.
+While I mainly focus on UX/UI design work now, my background is on frontend engineering.
 
-This translates in frontend development to _responsible_ responsive design. Years ago I realised it's not just about adapting to screen sizes, but also the browser, network conditions, ways the device is being used, accessibility and more.
+Starting my career as a full-stack developer, I always worried about the experience of the people using my code, and took responsive design and web performance extremely seriously. Improving speed and flexibility was always critical, as it seemed my duty to avoid these roadblocks for the user.
+
+Scott Jehl calls this _responsible_ responsive design, but it can all be tracked back to this famous quote:
 
 > "Be conservative in what you do, be liberal on what you accept from others"
 > – _Robustness principle_ by [Jon Postel](https://tools.ietf.org/html/rfc1122#page-12)
 
-Good websites are **robust ubiquitous experiences enhanced where possible**. I use pragmatic frontend development practices with semantic HTML, enhanced with modular and scalable CSS and unobtrusive JavaScript.
+It was The Web's ubiquitousness that made me fell in love with it, and it seemed unfair to limit user's experiences only to save effort as developers. So I put my efforts into building **robust ubiquitous experiences enhanced where possible**.
 
-I'm best when working as a nexus between design and frontend, as I can mentally build a responsive model of the flats designers create, liaise with them to fill in the gaps to achieve a fully modular responsive experience. I usually produce **style guides** or pattern libraries to reproduce this model.
+This took me on a path of following great minds that I can consider colleagues now, like [Jeremy Keith](https://adactio.com/), [Phil Hawksworth](https://www.hawksworx.com/) or [Brad Frost](https://bradfrost.com), as we all share principles like Progressive Enhancement and Future Friendly Design.
 
-#### Technical skillset
+As my experience working with digital products progressed, I realised more and more my passion for design was greater than expected, so I started shifting my career while freelancing to work closer and closer to UX designers and brand directors.
 
-I'm extremely fluent with CSS preprocessors (Sass, LESS). I'm familiar with task runners and bundlers (Grunt, gulp, webpack), content management systems (WordPress, Jekyll, Perch) and project planning software (Trello).
+I am currently Head of Design at [eola](https://eola.co).
 
-**Web performance** is very important to me. I find performance budgets to be key for a good frontend architecture. I understand the waterfall, how browser requests work and how to optimise the above-the-fold content, with caching, conditional loading and asset optimisation.
+## Design skills
 
-Modern JavaScript is something I find really interesting, so I've done some data visualization (canvas, D3.js) and MVC (React, flux).
+I have taken ownership of full product design and product management decisions, both in the past and currently.
 
-With some background on back-end development, I have experience with PHP, Java and C/C++, so I can pick up any programming language or library really quick. I've also worked with plenty of **RESTful APIs** and even built one.
+In terms of UX, I've dominated projects from forming personas, with or without a customer success person to partner with (as I've often had to be the one-man-band for all UX things) to developing user journeys and realising card sorting exercises.
 
-Well documented APIs are to backend what styleguides are to frontend.
+As for UI, I've developed and grown full Sketch Libraries as design systems both as a design refactor and slowly grown others.
+
+I've created and led consistent branding guidelines both through the interface components as well as the imagery direction.
+
+Therefore, I'm fluent in Sketch, have worked less so but still some work with Figma, worked with vector animations and the standard Adobe Suite handling.
+
+#### Technical skills
+
+I excel at Sass and/or CSS, knowing how to set up a comprehensible design system and naming conventions for any given product. I've built design systems on React using Storybook all the way to Pattern Lab with PHP.
+
+I can handle JavaScript from old-school prototype components all the way to modern ES6 arrow functions and modules.
+
+Web Performance is an area I can easily improve massively as I have proudly taken many sites from 30 to 100 on PageSpeed, so everything from image optimisation and responsiveness to asset loading and priotarisation is easy-peasy!
 
 ---
 
