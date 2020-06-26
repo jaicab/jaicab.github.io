@@ -21,7 +21,7 @@ I like simple solutions to complex problems.
 
 ---
 
-### A technical designer
+## A technical designer
 
 While I mainly focus on UX/UI design work now, my background is on frontend engineering.
 
@@ -40,11 +40,11 @@ As my experience working with digital products progressed, I realised more and m
 
 I am currently Head of Design at [eola](https://eola.co).
 
-## Design skills
+### Design skills
 
 I have taken ownership of full product design and product management decisions, both in the past and currently.
 
-In terms of UX, I've dominated projects from forming personas, with or without a customer success person to partner with (as I've often had to be the one-man-band for all UX things) to developing user journeys and realising card sorting exercises.
+In terms of UX, I've dominated projects from forming personas, with or without a customer success person to partner with (as I've often had to be the one-man-band for all UX things) to developing user journeys and directing card sorting exercises.
 
 As for UI, I've developed and grown full Sketch Libraries as design systems both as a design refactor and slowly grown others.
 
@@ -52,7 +52,7 @@ I've created and led consistent branding guidelines both through the interface c
 
 Therefore, I'm fluent in Sketch, have worked less so but still some work with Figma, worked with vector animations and the standard Adobe Suite handling.
 
-#### Technical skills
+### Technical skills
 
 I excel at Sass and/or CSS, knowing how to set up a comprehensible design system and naming conventions for any given product. I've built design systems on React using Storybook all the way to Pattern Lab with PHP.
 
