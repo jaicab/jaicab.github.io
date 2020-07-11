@@ -18,36 +18,36 @@ schema: CollectionPage
   </div>
 
   <div class="c-project-list">
-    {% assign worklist = site.work | sort: 'order' %} {% for project in worklist
-    %}
-    <div
-      class="c-project"
-      itemscope
-      itemid="{{ project.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
-      itemtype="https://schema.org/CreativeWork"
-    >
-      <div class="c-project__header">
-        <a
-          itemprop="url"
-          class="c-project__link"
-          href="{{ project.link }}"
-          rel="external"
-        >
-          <img
-            itemprop="image"
-            class="c-project__logo"
-            src="/images/work/{{ project.logo }}"
-            alt="{{ project.title }} logo"
-          />
-        </a>
-      </div>
-      <div class="c-project__content">
-        <div class="s-text">
-          <strong itemprop="name">{{ project.title }}</strong>
-          <span itemprop="text">{{ project.meta }}</span>
+    {% assign worklist = site.work | sort: 'order' %}
+    {% for project in worklist %}
+      <div
+        class="c-project"
+        itemscope
+        itemid="{{ project.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+        itemtype="https://schema.org/CreativeWork"
+      >
+        <div class="c-project__header">
+          <a
+            itemprop="url"
+            class="c-project__link"
+            href="{{ project.link }}"
+            rel="external"
+          >
+            <img
+              itemprop="image"
+              class="c-project__logo"
+              src="/images/work/{{ project.logo }}"
+              alt="{{ project.title }} logo"
+            />
+          </a>
+        </div>
+        <div class="c-project__content">
+          <div class="s-text">
+            <strong itemprop="name">{{ project.title }}</strong>
+            <span itemprop="text">{{ project.meta }}</span>
+          </div>
         </div>
       </div>
-    </div>
     {% endfor %}
   </div>
 </main>
