@@ -9,10 +9,7 @@ schema: AboutPage
 <p class="c-intro">A passionate frontend with an eye for user experience, who puts the user's needs first with <em>responsible</em> responsive design.</p>
 
 <figure class="c-jaime">
-	<picture>
-		<source srcset="/images/jaime-caballero-small.png 270w" media="(max-width: 40em)">
 		<img src="/images/jaime-caballero.png" alt="Jaime Caballero - Photo">
-	</picture>
 </figure>
 
 I aim to create websites that make users, clients and teams happy. True care for quality and web standards is what has always motivated me, so I approach work through _progressive enhancement_.

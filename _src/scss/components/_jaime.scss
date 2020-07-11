@@ -1,13 +1,12 @@
 .c-jaime {
-  float:right;
-  margin: 0 0 .4em 1em;
+  float: right;
+  margin: 0 0 0.4em 1em;
   width: 24%;
-  background: $color-brand;
+  // background: $color-brand;
 
   img {
-      mix-blend-mode: screen;
-      display: block;
-	}
+    display: block;
+  }
 
   @include mq($from: mediumx) {
     width: 7.5em;
