@@ -1,9 +1,9 @@
 ---
-logo: copycentro.png
-title: Copycentro
-link: http://copycentro.es/
-meta: A presentational website for a spanish design agency, with a built-in QR generator and print assets management area. Built a CMS on pure PHP. Heavy use of OOCSS and simple, flexible patterns.
-order: 4
+logo: eola.svg
+title: eola
+link: http://eola.co/
+meta: Booking management platform for activity centres. Built in Rails and React. Built UX, UI and frontend through a pattern library both static and in Storybook, partnering with business needs and customer feedback.
+order: 1
 tasks:
   - html
   - css
@@ -29,7 +29,7 @@ Sergio is one of the owners of Copycentro, a chain of stationery shops. He neede
 	See <a target="_blank" href="/images/cover/enormous/copycentro.jpg">full version</a>.
 </figcaption>
 
-##Responsibilities
+## Responsibilities
 
 - Design and responsive rationalisation
 - UI development - Architecture - Object oriented style guide - Responsive development
