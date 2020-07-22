@@ -10,7 +10,9 @@ Product Designer Who Codes
 
 ---
 
+<p id="skip" tabindex="-1">
 I'm a user-driven product designer with a background in frontend engineering and a passion for crafts. My best work is done combining business needs, user feedback and technical scope, creating simple solutions for complex problems.
+</p>
 
 ## Work
 
