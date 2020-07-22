@@ -4,8 +4,6 @@ microtitle: Curriculum Vitae
 meta: Jaime Caballero is a product designer and digital nomad based in Oviedo, Spain and London
 ---
 
-# Jaime Caballero
-
 Product Designer Who Codes
 
 ---
