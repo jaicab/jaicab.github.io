@@ -24,7 +24,7 @@ Since the very first MVP, I kept a close relationship to users, personally inter
 
 I established a design process that evolved as the team grew from 3 to 13 people. I created a Sketch Library and a living style guide, both static in Rails initially and now on Storybook as we moved to React.
 
-I work closely with the CEO for business needs, CTO to be aware of the resources and Customer Success Manager to understand the user's pains and struggles. I then create project scopes, balancing impact on business and user experience while being resource and time-efficient. Then execute them in stages, and track success over time, which helps prioritising iterations over other parallel projects, which helps putting time where the users need it most.
+I work closely with the CEO for business needs, CTO to be aware of the resources and Customer Success Manager to understand the user's pains and struggles. I then create project scopes, balancing impact on business and user experience while being resource and time-efficient. Then execute them in stages and track success over time, which helps prioritising iterations over other parallel projects, putting efforts where the users need it most.
 
 ### Frontend Architect @ Moteefe
 
